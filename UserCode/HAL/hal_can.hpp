@@ -1,0 +1,9 @@
+//
+// Created by ye on 2026/10/30.
+//
+
+#ifndef THREE_FRICTION_HAL_CAN_HPP
+#define THREE_FRICTION_HAL_CAN_HPP
+
+
+#endif //THREE_FRICTION_HAL_CAN_HPP
