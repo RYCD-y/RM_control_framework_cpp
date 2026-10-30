@@ -5,22 +5,34 @@
 #ifndef THREE_FRICTION_MOTOR_BASE_HPP
 #define THREE_FRICTION_MOTOR_BASE_HPP
 
-class Motor
+#include <algorithm>
+#include "hal_bus.hpp"
+#include "stm32f4xx_hal_def.h"
+
+class MotorBase
 {
-        protected:
-                float target_torque;
-
-                float torque;
-                float speed;
-                float angle;
-
-                float temp;
-
         public:
-                void setTorque(const float tor)
+                MotorBase(
+                        float max_torque
+                )
+                        : max_torque_(max_torque)
+                {}
+
+                void setTorque(float torque)
                 {
-                        target_torque = tor;
+                        target_torque_ = std::clamp(torque, -max_torque_, max_torque_);
                 }
+
+                virtual HAL_StatusTypeDef sendTorque(float torque) = 0;
+
+                float getTargetTorque() const
+                {
+                        return target_torque_;
+                }
+
+        protected:
+                float target_torque_ = 0.0f;
+                float max_torque_    = 0.0f;
 };
 
 #endif //THREE_FRICTION_MOTOR_BASE_HPP

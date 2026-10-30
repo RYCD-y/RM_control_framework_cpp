@@ -73,7 +73,14 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
 # Add project symbols (macros)
 target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined symbols
+        ARM_MATH_CM4
 )
+
+# C++ only: warn when a parameter/local shadows a member or another local.
+# Kept out of CXX flags globally because CubeMX/HAL C code would be noisy.
+#target_compile_options(${CMAKE_PROJECT_NAME} PRIVATE
+#    $<$<COMPILE_LANGUAGE:CXX>:-Wshadow>
+#)
 
 # Remove wrong libob.a library dependency when using cpp files
 list(REMOVE_ITEM CMAKE_C_IMPLICIT_LINK_LIBRARIES ob)
@@ -83,4 +90,5 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
     stm32cubemx
 
     # Add user defined libraries
+        arm_cortexM4lf_math
 )
