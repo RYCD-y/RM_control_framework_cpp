@@ -7,15 +7,16 @@
 HAL_StatusTypeDef djiMotor::sendTorque(float torque)
 {
         uint8_t Motor_Tx_Data[8];
-        Motor_Tx_Data[0] = group[0]->target_torque_ >> 8;
-        Motor_Tx_Data[1] = group[0]->target_torque_  & 0xFF;
-        Motor_Tx_Data[2] = group[1]->target_torque_  >> 8;
-        Motor_Tx_Data[3] = group[1]->target_torque_  & 0xFF;
-        Motor_Tx_Data[4] = group[2]->target_torque_  >> 8;
-        Motor_Tx_Data[5] = group[2]->target_torque_  & 0xFF;
-        Motor_Tx_Data[6] = group[3]->target_torque_  >> 8;
-        Motor_Tx_Data[7] = group[3]->target_torque_  & 0xFF;
-        return CanNode::send(Motor_Tx_Data, sizeof(Motor_Tx_Data));
+        Motor_Tx_Data[0] = utils::float_to_signed<int16_t>(group[0]->target_torque_, max_torque_) >> 8;
+        Motor_Tx_Data[1] = utils::float_to_signed<int16_t>(group[0]->target_torque_, max_torque_)  & 0xFF;
+        Motor_Tx_Data[2] = utils::float_to_signed<int16_t>(group[1]->target_torque_, max_torque_)  >> 8;
+        Motor_Tx_Data[3] = utils::float_to_signed<int16_t>(group[1]->target_torque_, max_torque_)  & 0xFF;
+        Motor_Tx_Data[4] = utils::float_to_signed<int16_t>(group[2]->target_torque_, max_torque_)  >> 8;
+        Motor_Tx_Data[5] = utils::float_to_signed<int16_t>(group[2]->target_torque_, max_torque_)  & 0xFF;
+        Motor_Tx_Data[6] = utils::float_to_signed<int16_t>(group[3]->target_torque_, max_torque_)  >> 8;
+        Motor_Tx_Data[7] = utils::float_to_signed<int16_t>(group[3]->target_torque_, max_torque_)  & 0xFF;
+
+        return canNode::send(Motor_Tx_Data, sizeof(Motor_Tx_Data));
 }
 
 HAL_StatusTypeDef djiMotor::groupInit(

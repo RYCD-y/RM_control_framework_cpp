@@ -10,10 +10,13 @@
 #include "can.h"
 #include "hal_bus.hpp"
 
-class CanNode : public BusNode
+class canNode : public BusNode
 {
         public:
-                CanNode(
+                //掩码预设
+                static constexpr uint32_t IdMaskNone = 0xFFFF;  //精确匹配( 默认)
+                static constexpr uint32_t IdMaskLow8 = 0xFF00;  //精确匹配( 默认)
+                canNode(
                         CAN_HandleTypeDef *hcan,
                         uint32_t           id,
                         uint32_t           feedback_id,
@@ -24,34 +27,11 @@ class CanNode : public BusNode
 
                 HAL_StatusTypeDef send(const uint8_t *data, uint16_t len) override;
 
-                HAL_StatusTypeDef sendEx(const uint8_t *data, uint16_t len)
-                {
-                        if (hcan_ == nullptr || data == nullptr) { return HAL_ERROR; }
-                        if (len > 8) len = 8; //经典帧最大8字节, 只取有效长度, 其余保持0(HAL发送时仍会读满8字节缓冲区)
+                HAL_StatusTypeDef sendEx(const uint8_t *data, uint16_t len);
 
-                        CAN_TxHeaderTypeDef tx_header = {};
-                        tx_header.ExtId               = id_;
-                        tx_header.IDE                 = CAN_ID_EXT;
-                        tx_header.RTR                 = CAN_RTR_DATA;
-                        tx_header.DLC                 = len; //经典帧 0~8 字节时 DLC 即字节数
-                        tx_header.TransmitGlobalTime  = DISABLE;
+                //CAN过滤器初始化: CAN1→bank0, CAN2→bank14, 全部放行(标准帧+扩展帧)→FIFO0
+                static void filterInit(CAN_HandleTypeDef *hcan);
 
-                        uint32_t mailbox = 0;
-                        // HAL 的 aData 形参是 uint8_t[]（非 const），只能就地去掉 const
-                        return HAL_CAN_AddTxMessage(
-                                                    hcan_,
-                                                    &tx_header,
-                                                    const_cast<uint8_t *>(data),
-                                                    &mailbox
-                                                   );
-                }
-
-                HAL_StatusTypeDef onFrame(const uint8_t *data, uint16_t len) override
-                {
-                        (void) data;
-                        (void) len;
-                        return HAL_OK;
-                }
 
         protected:
                 CAN_HandleTypeDef *hcan_ = nullptr;

@@ -68,6 +68,7 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/DRV/motor
     ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/SRV
     ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/APP
+    ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/ENT
 )
 
 # Add project symbols (macros)

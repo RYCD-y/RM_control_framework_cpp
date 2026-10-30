@@ -23,12 +23,12 @@ class MotorBase
                         target_torque_ = std::clamp(torque, -max_torque_, max_torque_);
                 }
 
-                virtual HAL_StatusTypeDef sendTorque(float torque) = 0;
-
                 float getTargetTorque() const
                 {
                         return target_torque_;
                 }
+
+                virtual HAL_StatusTypeDef sendTorque(float torque) = 0;
 
         protected:
                 float target_torque_ = 0.0f;

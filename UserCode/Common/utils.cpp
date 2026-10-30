@@ -2,10 +2,10 @@
 // Created by ye on 2026/10/30.
 //
 
-#include "utility.hpp"
+#include "utils.hpp"
 
 template <typename IntType>
-IntType float_to_signed(float x, float x_max) {
+IntType utils::float_to_signed(float x, float x_max) {
         static_assert(std::is_signed_v<IntType>, "IntType must be signed");
 
         // 1. 限幅
@@ -25,7 +25,7 @@ IntType float_to_signed(float x, float x_max) {
 }
 
 template <typename IntType>
-float int16_to_float(IntType x_int, float x_max) {
+float utils::int_to_float(IntType x_int, float x_max) {
         static_assert(std::is_signed_v<IntType>, "IntType must be signed");
 
         constexpr auto max_val = static_cast<float>(std::numeric_limits<IntType>::max());
