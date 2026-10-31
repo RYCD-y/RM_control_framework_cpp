@@ -1,0 +1,5 @@
+cmake -DCMAKE_BUILD_TYPE=Release --preset Release -S /home/ye/Projects/embedded/three_friction -B /home/ye/Projects/embedded/three_friction/build/Release
+Build type: Release
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ye/Projects/embedded/three_friction/build/Release

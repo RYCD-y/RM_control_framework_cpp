@@ -1,4 +1,4 @@
-/home/ye/Projects/embedded/three_friction/Src/freertos.c:141:6:StartDefaultTask	8	static
-/home/ye/Projects/embedded/three_friction/Src/freertos.c:73:6:vApplicationGetIdleTaskMemory	0	static
-/home/ye/Projects/embedded/three_friction/Src/freertos.c:87:6:vApplicationGetTimerTaskMemory	0	static
-/home/ye/Projects/embedded/three_friction/Src/freertos.c:102:6:MX_FREERTOS_Init	48	static
+/home/ye/Projects/embedded/three_friction/Src/freertos.c:140:6:StartDefaultTask	8	static
+/home/ye/Projects/embedded/three_friction/Src/freertos.c:72:6:vApplicationGetIdleTaskMemory	0	static
+/home/ye/Projects/embedded/three_friction/Src/freertos.c:86:6:vApplicationGetTimerTaskMemory	0	static
+/home/ye/Projects/embedded/three_friction/Src/freertos.c:101:6:MX_FREERTOS_Init	48	static

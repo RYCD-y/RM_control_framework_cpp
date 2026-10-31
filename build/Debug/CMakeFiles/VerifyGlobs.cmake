@@ -37,6 +37,7 @@ set(OLD_GLOB
   "/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/Common/utils.cpp"
+  "/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/ENT/ent_main.cpp"

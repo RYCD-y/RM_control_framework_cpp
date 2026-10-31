@@ -47,6 +47,9 @@ CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=Release
 
+//Enable colored diagnostics throughout.
+CMAKE_COLOR_DIAGNOSTICS:BOOL=ON
+
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
 CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/sbin/arm-none-eabi-gcc-ar
@@ -223,7 +226,9 @@ CMAKE_STRIP:FILEPATH=/usr/sbin/arm-none-eabi-strip
 //Path to a program.
 CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 
-//The CMake toolchain file
+//Path to a CMake toolchain file, read early in the CMake run,
+// that specifies the compilers, toolchain utilities, and target-platform
+// information used when cross-compiling.
 CMAKE_TOOLCHAIN_FILE:FILEPATH=/home/ye/Projects/embedded/three_friction/cmake/gcc-arm-none-eabi.cmake
 
 //If this value is on, makefiles will be generated without the

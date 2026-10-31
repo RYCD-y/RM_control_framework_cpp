@@ -2,4 +2,4 @@
 /home/ye/Projects/embedded/three_friction/Src/usart.c:67:6:MX_USART3_UART_Init	8	static
 /home/ye/Projects/embedded/three_friction/Src/usart.c:96:6:MX_USART6_UART_Init	8	static
 /home/ye/Projects/embedded/three_friction/Src/usart.c:124:6:HAL_UART_MspInit	72	static
-/home/ye/Projects/embedded/three_friction/Src/usart.c:309:6:HAL_UART_MspDeInit	8	static
+/home/ye/Projects/embedded/three_friction/Src/usart.c:312:6:HAL_UART_MspDeInit	8	static

@@ -1,0 +1,5 @@
+cmake -DCMAKE_BUILD_TYPE=Debug --preset Debug -S /home/ye/Projects/embedded/three_friction -B /home/ye/Projects/embedded/three_friction/build/Debug
+Build type: Debug
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ye/Projects/embedded/three_friction/build/Debug

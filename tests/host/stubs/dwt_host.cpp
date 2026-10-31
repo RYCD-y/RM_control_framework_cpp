@@ -3,13 +3,16 @@
 #include "dwt.hpp"
 #include "hal_dwt.h"
 
-uint32_t Dwt::cpu_freq_hz_    = 0U;
-uint32_t Dwt::cpu_freq_hz_ms_ = 0U;
-uint32_t Dwt::cpu_freq_hz_us_ = 0U;
-uint32_t Dwt::cyccnt_last_    = 0U;
-uint64_t Dwt::cyccnt_round_   = 0U;
+uint32_t Dwt::cpu_freq_hz_        = 0U;
+uint32_t Dwt::cpu_freq_hz_ms_     = 0U;
+uint32_t Dwt::cpu_freq_hz_us_     = 0U;
+uint32_t Dwt::cyccnt_round_count_ = 0U;
+uint32_t Dwt::cyccnt_last_        = 0U;
+uint64_t Dwt::cyccnt64_           = 0U;
+DwtTime  Dwt::sys_time_           = { 0U, 0U, 0U };
 
 uint32_t Dwt::cycleCount() { return dwtHostCycles(); }
+void Dwt::cntUpdate() {}
 
 void Dwt::init(uint32_t cpu_freq_mhz)
 {
@@ -17,8 +20,10 @@ void Dwt::init(uint32_t cpu_freq_mhz)
         cpu_freq_hz_    = cpu_freq_mhz * 1000000U;
         cpu_freq_hz_ms_ = cpu_freq_hz_ / 1000U;
         cpu_freq_hz_us_ = cpu_freq_hz_ / 1000000U;
-        cyccnt_round_   = 0U;
-        cyccnt_last_    = 0U;
+        cyccnt_round_count_ = 0U;
+        cyccnt_last_        = 0U;
+        cyccnt64_           = 0U;
+        sys_time_           = { 0U, 0U, 0U };
 }
 
 float Dwt::deltaT(uint32_t &cnt_last) { return DWT_GetDeltaT(&cnt_last); }

@@ -1,0 +1,7 @@
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:24:14:void {anonymous}::rxEventCallback(UART_HandleTypeDef*, uint16_t)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:36:14:void {anonymous}::uartErrorCallback(UART_HandleTypeDef*)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:45:14:void vofa::init(UART_HandleTypeDef*)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:61:14:void vofa::set(uint8_t, float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:66:27:HAL_StatusTypeDef vofa::flush()	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:80:27:HAL_StatusTypeDef vofa::send(uint8_t, float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:88:18:uint32_t vofa::errorCount()	4	static
