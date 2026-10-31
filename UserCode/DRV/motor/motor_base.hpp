@@ -18,9 +18,10 @@ class MotorBase
                         : max_torque_(max_torque)
                 {}
 
-                void setTorque(float torque)
+                HAL_StatusTypeDef setTorque(float torque)
                 {
                         target_torque_ = std::clamp(torque, -max_torque_, max_torque_);
+                        return HAL_OK;
                 }
 
                 float getTargetTorque() const
