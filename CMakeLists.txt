@@ -19,9 +19,9 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 
 # Define the build type
-if(NOT CMAKE_BUILD_TYPE)
+if (NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE "Debug")
-endif()
+endif ()
 
 # Set the project name
 set(CMAKE_PROJECT_NAME three_friction)
@@ -44,36 +44,38 @@ add_subdirectory(cmake/stm32cubemx)
 
 # Link directories setup
 target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user defined library search paths
+        # Add user defined library search paths
 )
 
 # Add sources to executable
 # User code lives under UserCode/ ; collect C and C++ files recursively.
 # CONFIGURE_DEPENDS makes CMake re-glob when files are added/removed.
 file(GLOB_RECURSE USER_SOURCES CONFIGURE_DEPENDS
-    ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/*.c
-    ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/*.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/*.c
+        ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/*.cpp
 )
 
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
-    ${USER_SOURCES}
+        ${USER_SOURCES}
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
-    ${CMAKE_CURRENT_SOURCE_DIR}/UserCode
-    ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/Common
-    ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/HAL
-    ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/DRV
-    ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/DRV/motor
-    ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/SRV
-    ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/APP
-    ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/ENT
+        ${CMAKE_CURRENT_SOURCE_DIR}/UserCode
+        ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/Common
+        ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/HAL
+        ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/DRV
+        ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/DRV/motor
+        ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/SRV
+        ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/APP
+        ${CMAKE_CURRENT_SOURCE_DIR}/UserCode/ENT
+
+        ${CMAKE_CURRENT_SOURCE_DIR}/Middlewares/Third_Party/etl/include
 )
 
 # Add project symbols (macros)
 target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user defined symbols
+        # Add user defined symbols
         ARM_MATH_CM4
 )
 
@@ -88,8 +90,8 @@ list(REMOVE_ITEM CMAKE_C_IMPLICIT_LINK_LIBRARIES ob)
 
 # Add linked libraries
 target_link_libraries(${CMAKE_PROJECT_NAME}
-    stm32cubemx
+        stm32cubemx
 
-    # Add user defined libraries
+        # Add user defined libraries
         arm_cortexM4lf_math
 )

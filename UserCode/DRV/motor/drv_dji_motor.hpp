@@ -148,7 +148,7 @@ class djiMotor : public MotorBase, public canNode
                         const djiMotorSpec &spec
                 )
                         : MotorBase(spec.maxTorque()),
-                          canNode(hcan, tx_frame_id, feedback_id, can_cfg::kIdMaskNone),
+                          canNode(hcan, tx_frame_id, feedback_id, canCfg::kIdMaskNone),
                           spec_(spec) {}
 
                 // 反馈帧解析（由 CAN 中断回调按 feedback_id 分发进来）
@@ -162,8 +162,10 @@ class djiMotor : public MotorBase, public canNode
                         djiMotor *dji_motor4 = nullptr
                 );
 
+                HAL_StatusTypeDef sendTorque(float torque) override;
+
                 // 整组打包成一帧，用本组共用帧 ID 发出。组内任意成员调用一次即可。
-                HAL_StatusTypeDef groupSend();
+                HAL_StatusTypeDef groupSendTorque();
 
                 const djiMotorSpec &spec() const { return spec_; }
 
@@ -178,7 +180,7 @@ class djiMotor : public MotorBase, public canNode
                 int16_t  torqueToRaw() const;
                 uint8_t  slot() const;      // 本机在帧内的槽位 = (feedback_id-0x201)%4
 
-                djiMotorSpec spec_;          // 按值存：允许运行期自定义减速箱，也不会悬垂
+                djiMotorSpec spec_ = {};          // 按值存：允许运行期自定义减速箱，也不会悬垂
 
                 //电机组,都怪邪恶dji
                 djiMotor *group_[kGroupSize] = {};

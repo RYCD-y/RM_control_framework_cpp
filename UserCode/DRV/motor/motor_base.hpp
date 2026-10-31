@@ -6,12 +6,13 @@
 #define THREE_FRICTION_MOTOR_BASE_HPP
 
 #include <algorithm>
-#include "hal_bus.hpp"
-#include "stm32f4xx_hal_def.h"
+#include "stm32f4xx_hal.h"
 
 class MotorBase
 {
         public:
+                virtual ~MotorBase() = default;
+
                 MotorBase(
                         float max_torque
                 )

@@ -39,8 +39,8 @@ void debugTask(void *ptr)
                 m3.sendTorque(0.0f);
                 g1.sendTorque(0.0f);
 
-                m1.groupSend();      // 一帧 0x200 带 3 台
-                g1.groupSend();      // 一帧 0x1FF 带 1 台
+                m1.groupSendTorque();      // 一帧 0x200 带 3 台
+                g1.groupSendTorque();      // 一帧 0x1FF 带 1 台
 
                 vTaskDelayUntil(&last_wake, pdMS_TO_TICKS(kMotorCtrlPeriodMs));
         }

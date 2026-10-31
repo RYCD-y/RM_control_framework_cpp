@@ -21,5 +21,5 @@ void ent_main(void)
                 (void) HAL_CAN_Start(&hcan2);
         }
 
-        xTaskCreate(debugTask, "DeBug", 512, NULL, 5, NULL);
+        xTaskCreate(debugTask, "DeBug", 512, nullptr, 5, nullptr);
 }
