@@ -44,7 +44,8 @@ class canNode
                 {
                         uint32_t primask = __get_PRIMASK();
                         __disable_irq();
-                        if (node_tab.size() < canCfg::kCanNodeSizeMax) node_tab.push_back(this);
+                        if (node_tab.size() < canCfg::kCanNodeSizeMax)
+                                node_tab.push_back(this);
                         else
                                 __BKPT(0);
                         __set_PRIMASK(primask);
@@ -68,6 +69,8 @@ class canNode
                 // 拷贝构造不执行注册逻辑（对象不在表里），但析构却会去表里删自己。
                 canNode(const canNode &)            = delete;
                 canNode &operator=(const canNode &) = delete;
+
+
 
                 // 只读遍历接口（供中断分发使用），增删仍由构造/析构负责
                 static const etl::ivector<canNode *> &nodes() { return node_tab; }

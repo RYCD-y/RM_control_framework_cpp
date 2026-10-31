@@ -1,0 +1,10 @@
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:8:19:virtual HAL_StatusTypeDef djiMotor::onFrame(const uint8_t*, uint16_t)	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:54:25:canNode::~canNode()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.hpp:136:7:djiMotor::~djiMotor()	8	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.hpp:136:7:virtual djiMotor::~djiMotor()	8	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:54:25:virtual canNode::~canNode()	8	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:28:19:static HAL_StatusTypeDef djiMotor::groupInit(djiMotor*, djiMotor*, djiMotor*, djiMotor*)	48	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:91:9:uint8_t djiMotor::slot() const	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:96:9:int16_t djiMotor::torqueToRaw() const	8	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:75:19:HAL_StatusTypeDef djiMotor::groupSendTorque()	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:67:19:virtual HAL_StatusTypeDef djiMotor::sendTorque(float)	0	static

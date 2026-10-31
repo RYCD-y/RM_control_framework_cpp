@@ -1,0 +1,2 @@
+/usr/sbin/ar qc libref_algo.a CMakeFiles/ref_algo.dir/home/ye/Projects/embedded/control_framework_v2/UserCode/Common/utils.c.o CMakeFiles/ref_algo.dir/home/ye/Projects/embedded/control_framework_v2/UserCode/Common/controller.c.o CMakeFiles/ref_algo.dir/home/ye/Projects/embedded/control_framework_v2/UserCode/Common/kalman_filter.c.o CMakeFiles/ref_algo.dir/ref/QuaternionEKF_host.c.o CMakeFiles/ref_algo.dir/home/ye/Projects/embedded/control_framework_v2/UserCode/Common/crc8_crc16.c.o CMakeFiles/ref_algo.dir/cases/ref_wrap.c.o
+/usr/sbin/ranlib libref_algo.a

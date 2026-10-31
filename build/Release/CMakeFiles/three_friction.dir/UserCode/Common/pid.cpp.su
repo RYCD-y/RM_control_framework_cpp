@@ -1,0 +1,25 @@
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:54:6:void FuzzyRule::init(const float (*)[7], const float (*)[7], const float (*)[7], float, float, float, float, float)	8	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:70:6:void FuzzyRule::update(float, float)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:116:6:void Pid::init(float, float, float, float, float, float, float, float, float, float, uint16_t, uint8_t)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:150:6:void Pid::setGains(float, float, float)	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:157:6:void Pid::setLimits(float, float, float)	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:164:6:void Pid::setHooks(Hook, Hook)	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:170:6:void Pid::enableFuzzy(const float (*)[7], const float (*)[7], const float (*)[7], float, float, float, float, float)	8	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:178:6:void Pid::updateFuzzy(float, float)	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:238:6:void Pid::reset()	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:258:6:void Pid::trapezoidIntegral()	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:264:6:void Pid::changingIntegrationRate()	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:277:6:void Pid::integralLimit()	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:298:6:void Pid::derivativeOnMeasurement()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:312:6:void Pid::derivativeFilter()	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:318:6:void Pid::outputFilter()	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:324:6:void Pid::outputLimit()	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:330:6:void Pid::proportionLimit()	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:336:6:void Pid::errorHandle()	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:183:7:float Pid::calculate(float, float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:347:6:void Feedforward::init(float, const float*, float, uint16_t, uint16_t)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:373:7:float Feedforward::calculate(float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:395:6:void Ldob::init(float, float, const float*, float, uint16_t, uint16_t)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:422:7:float Ldob::calculate(float, float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:452:6:void TrackingDifferentiator::init(float, float)	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp:464:7:float TrackingDifferentiator::calculate(float)	40	static

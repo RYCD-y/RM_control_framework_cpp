@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/ye/Projects/embedded/three_friction/tests/host/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

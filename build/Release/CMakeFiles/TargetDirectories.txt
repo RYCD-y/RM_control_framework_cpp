@@ -1,0 +1,8 @@
+/home/ye/Projects/embedded/three_friction/build/Release/CMakeFiles/three_friction.dir
+/home/ye/Projects/embedded/three_friction/build/Release/CMakeFiles/edit_cache.dir
+/home/ye/Projects/embedded/three_friction/build/Release/CMakeFiles/rebuild_cache.dir
+/home/ye/Projects/embedded/three_friction/build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+/home/ye/Projects/embedded/three_friction/build/Release/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir
+/home/ye/Projects/embedded/three_friction/build/Release/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir
+/home/ye/Projects/embedded/three_friction/build/Release/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+/home/ye/Projects/embedded/three_friction/build/Release/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

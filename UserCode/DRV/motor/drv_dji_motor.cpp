@@ -38,33 +38,16 @@ HAL_StatusTypeDef djiMotor::groupInit(
                 dji_motor3,
                 dji_motor4
         };
-
-        uint8_t            count             = 0;
+        if (motor[0] == nullptr) return HAL_ERROR;
         CAN_HandleTypeDef *group_hcan        = motor[0]->getHcan();
-        uint32_t           group_id          = motor[0]->getId();
         djiMotor *         group[kGroupSize] = {};
 
         for (uint8_t i = 0; i < kGroupSize; i++)
         {
                 if (motor[i] == nullptr) continue;
 
-                // ① 同一对象不能出现两次
-                for (uint32_t j = 0; j < kGroupSize; j++)
-                {
-                        count = 0;
-                        if (motor[i] == motor[j]) count++;
-                        if (count != 1) return HAL_ERROR;
-                }
-
                 // ③ 必须同一条 CAN，且共用同一个控制帧 ID
                 if (motor[i]->getHcan() != group_hcan) return HAL_ERROR;
-
-                // ④ 必须同一组：0x201~0x204、0x205~0x208、0x209~0x20B
-                if (
-                        motor[i]->getFeedbackId() - group_id <= 0 ||
-                        motor[i]->getFeedbackId() - group_id >= kGroupSize
-                )
-                        return HAL_ERROR;
 
                 // ⑥ 按反馈 ID 升序：槽位 = (fb_id-0x201)%4，顺序错了电流会打到别的电机上
                 group[motor[i]->slot()] = motor[i];
@@ -88,7 +71,6 @@ HAL_StatusTypeDef djiMotor::sendTorque(float torque)
         if (slot() == 0U) { return groupSendTorque(); } // 组内 0 号统一发一帧
         return HAL_OK;
 }
-
 
 HAL_StatusTypeDef djiMotor::groupSendTorque()
 {
@@ -114,9 +96,6 @@ uint8_t djiMotor::slot() const
 int16_t djiMotor::torqueToRaw() const
 {
         // N·m → 协议 raw：满量程力矩对应 ±ctrl_raw_full
-        const float max_nm = spec_.maxTorque();
-        if (max_nm <= 0.0f) { return 0; }
-
-        const float ratio = std::clamp(target_torque_ / max_nm, -1.0f, 1.0f);
+        const float ratio = std::clamp(target_torque_ / spec_.maxTorque(), -1.0f, 1.0f);
         return static_cast<int16_t>(std::lround(ratio * spec_.ctrl_raw_full));
 }

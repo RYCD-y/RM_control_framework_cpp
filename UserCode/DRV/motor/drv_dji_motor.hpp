@@ -156,7 +156,7 @@ class djiMotor : public MotorBase, public canNode
 
                 // 组初始化。参数可为 nullptr，顺序任意，内部校验同组/去重/按 ID 排序。
                 static HAL_StatusTypeDef groupInit(
-                        djiMotor *dji_motor1,
+                        djiMotor *dji_motor1 = nullptr,
                         djiMotor *dji_motor2 = nullptr,
                         djiMotor *dji_motor3 = nullptr,
                         djiMotor *dji_motor4 = nullptr

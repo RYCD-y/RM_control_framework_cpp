@@ -1,0 +1,8 @@
+/home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp:102:17:uint8_t crc::crc8(const uint8_t*, uint32_t, uint8_t)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp:114:14:bool crc::verify8(const uint8_t*, uint32_t)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp:121:14:void crc::append8(uint8_t*, uint32_t)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp:127:18:uint16_t crc::crc16(const uint8_t*, uint32_t, uint16_t)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp:140:14:bool crc::verify16(const uint8_t*, uint32_t)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp:148:14:void crc::append16(uint8_t*, uint32_t)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp:156:18:uint16_t crc::ccittByte(uint16_t, uint8_t)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp:161:18:uint16_t crc::ccitt(uint16_t, const uint8_t*, size_t)	24	static

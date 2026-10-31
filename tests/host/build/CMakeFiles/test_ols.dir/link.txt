@@ -1,0 +1,1 @@
+/usr/sbin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/test_ols.dir/link.d CMakeFiles/test_ols.dir/cases/test_ols.cpp.o -o test_ols  libref_algo.a libhost_stubs.a libnew_algo.a libhost_stubs.a

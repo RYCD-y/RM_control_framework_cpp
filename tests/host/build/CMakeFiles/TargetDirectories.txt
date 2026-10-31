@@ -1,0 +1,13 @@
+/home/ye/Projects/embedded/three_friction/tests/host/build/CMakeFiles/host_stubs.dir
+/home/ye/Projects/embedded/three_friction/tests/host/build/CMakeFiles/ref_algo.dir
+/home/ye/Projects/embedded/three_friction/tests/host/build/CMakeFiles/new_algo.dir
+/home/ye/Projects/embedded/three_friction/tests/host/build/CMakeFiles/test_smoke.dir
+/home/ye/Projects/embedded/three_friction/tests/host/build/CMakeFiles/test_dwt.dir
+/home/ye/Projects/embedded/three_friction/tests/host/build/CMakeFiles/test_ols.dir
+/home/ye/Projects/embedded/three_friction/tests/host/build/CMakeFiles/test_crc.dir
+/home/ye/Projects/embedded/three_friction/tests/host/build/CMakeFiles/test_pid.dir
+/home/ye/Projects/embedded/three_friction/tests/host/build/CMakeFiles/test_kf.dir
+/home/ye/Projects/embedded/three_friction/tests/host/build/CMakeFiles/test_ekf.dir
+/home/ye/Projects/embedded/three_friction/tests/host/build/CMakeFiles/test.dir
+/home/ye/Projects/embedded/three_friction/tests/host/build/CMakeFiles/edit_cache.dir
+/home/ye/Projects/embedded/three_friction/tests/host/build/CMakeFiles/rebuild_cache.dir

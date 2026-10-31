@@ -43,6 +43,9 @@ namespace utils
                 return static_cast<float>(x_int) / kMin * x_max;
         }
 
+        // 符号：>= 0 返回 +1（与 v2 的 sign() 语义一致）
+        inline float sign(float v) { return (v >= 0.0f) ? 1.0f : -1.0f; }
+
         // 大端：DJI 协议里 16 位数都是高字节在前
         inline int16_t be_i16(const uint8_t *p)
         {

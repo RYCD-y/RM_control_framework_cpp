@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/ye/Projects/embedded/three_friction/build/Release/cmake_install.cmake",
+		"/home/ye/Projects/embedded/three_friction/build/Release/cmake/stm32cubemx/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

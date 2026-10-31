@@ -1,0 +1,11 @@
+/usr/arm-none-eabi/include/c++/16.2.0/cmath:100:3:constexpr float std::acos(float)	16	static
+/usr/arm-none-eabi/include/c++/16.2.0/cmath:119:3:constexpr float std::asin(float)	16	static
+/usr/arm-none-eabi/include/c++/16.2.0/cmath:157:3:constexpr float std::atan2(float, float)	16	static
+/usr/arm-none-eabi/include/c++/16.2.0/cmath:245:3:constexpr float std::fabs(float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.cpp:31:7:static float QuaternionEkf::invSqrt(float)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.cpp:43:6:void QuaternionEkf::init(float, float, float, float, float)	80	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.cpp:80:6:void QuaternionEkf::update(float, float, float, float, float, float, float)	72	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.cpp:173:6:static void QuaternionEkf::hookObserve(KalmanFilter&, void*)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.cpp:179:6:static void QuaternionEkf::hookFLinearizationPFading(KalmanFilter&, void*)	48	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.cpp:212:6:static void QuaternionEkf::hookSetH(KalmanFilter&, void*)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.cpp:238:6:static void QuaternionEkf::hookXhatUpdate(KalmanFilter&, void*)	64	static

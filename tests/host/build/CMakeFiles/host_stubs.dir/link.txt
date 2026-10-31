@@ -1,0 +1,2 @@
+/usr/sbin/ar qc libhost_stubs.a CMakeFiles/host_stubs.dir/stubs/arm_math_stub.cpp.o CMakeFiles/host_stubs.dir/stubs/hal_dwt_host.cpp.o
+/usr/sbin/ranlib libhost_stubs.a

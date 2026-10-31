@@ -1,0 +1,4 @@
+/home/ye/Projects/embedded/three_friction/Src/freertos.c:73:6:vApplicationGetIdleTaskMemory	24	static
+/home/ye/Projects/embedded/three_friction/Src/freertos.c:87:6:vApplicationGetTimerTaskMemory	24	static
+/home/ye/Projects/embedded/three_friction/Src/freertos.c:102:6:MX_FREERTOS_Init	48	static
+/home/ye/Projects/embedded/three_friction/Src/freertos.c:141:6:StartDefaultTask	16	static

@@ -1,0 +1,10 @@
+/home/ye/Projects/embedded/three_friction/Src/tim.c:289:6:MX_TIM6_Init	16	static
+/home/ye/Projects/embedded/three_friction/Src/tim.c:441:6:HAL_TIM_Base_MspInit	48	static
+/home/ye/Projects/embedded/three_friction/Src/tim.c:546:6:HAL_TIM_MspPostInit	64	static
+/home/ye/Projects/embedded/three_friction/Src/tim.c:37:6:MX_TIM1_Init	96	static
+/home/ye/Projects/embedded/three_friction/Src/tim.c:119:6:MX_TIM3_Init	64	static
+/home/ye/Projects/embedded/three_friction/Src/tim.c:173:6:MX_TIM4_Init	64	static
+/home/ye/Projects/embedded/three_friction/Src/tim.c:227:6:MX_TIM5_Init	64	static
+/home/ye/Projects/embedded/three_friction/Src/tim.c:322:6:MX_TIM8_Init	96	static
+/home/ye/Projects/embedded/three_friction/Src/tim.c:400:6:MX_TIM10_Init	40	static
+/home/ye/Projects/embedded/three_friction/Src/tim.c:693:6:HAL_TIM_Base_MspDeInit	0	static
