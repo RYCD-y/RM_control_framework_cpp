@@ -31,7 +31,7 @@ UserCode/Common/
 ├── dwt.hpp / dwt.cpp                     class Dwt            （全静态，硬件计时封装）
 ├── ols.hpp / ols.cpp                     class OrdinaryLeastSquares
 ├── crc.hpp / crc.cpp                     namespace crc        （无状态，inline 表）
-├── pid.hpp / pid.cpp                     class Pid / FuzzyRule / Feedforward / Ldob / TrackingDifferentiator
+├── pid.hpp / cotr.cpp                     class Pid / FuzzyRule / Feedforward / Ldob / TrackingDifferentiator
 ├── kalman_filter.hpp / kalman_filter.cpp class KalmanFilter
 └── quaternion_ekf.hpp / quaternion_ekf.cpp class QuaternionEkf
 ```

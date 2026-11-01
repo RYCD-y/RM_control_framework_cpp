@@ -133,7 +133,7 @@ inline constexpr djiMotorSpec kC610_M2006_Direct = kM2006Direct;
 // inline constexpr djiMotorSpec kC620_M3508_x2 =
 //         withExtraGear(kC620_M3508, 2.0f, "M3508/C620+x2");
 
-class djiMotor : public MotorBase, public canNode
+class DjiMotor : public MotorBase, public CanNode
 {
         public:
                 static constexpr uint32_t kFirstFbId = 0x201U;   // 反馈ID 0x201~0x20B
@@ -141,14 +141,14 @@ class djiMotor : public MotorBase, public canNode
 
                 // tx_frame_id : 控制帧 ID，同组 4 台共享（0x200 / 0x1FF / 0x1FE / 0x2FF）
                 // feedback_id : 本机反馈帧 ID（0x201~0x20B），决定它在帧里的槽位
-                djiMotor(
+                DjiMotor(
                         CAN_HandleTypeDef  *hcan,
                         uint32_t            tx_frame_id,
                         uint32_t            feedback_id,
                         const djiMotorSpec &spec
                 )
                         : MotorBase(spec.maxTorque()),
-                          canNode(hcan, tx_frame_id, feedback_id, canCfg::kIdMaskNone),
+                          CanNode(hcan, tx_frame_id, feedback_id, canCfg::kIdMaskNone),
                           spec_(spec) {}
 
                 // 反馈帧解析（由 CAN 中断回调按 feedback_id 分发进来）
@@ -156,10 +156,10 @@ class djiMotor : public MotorBase, public canNode
 
                 // 组初始化。参数可为 nullptr，顺序任意，内部校验同组/去重/按 ID 排序。
                 static HAL_StatusTypeDef groupInit(
-                        djiMotor *dji_motor1 = nullptr,
-                        djiMotor *dji_motor2 = nullptr,
-                        djiMotor *dji_motor3 = nullptr,
-                        djiMotor *dji_motor4 = nullptr
+                        DjiMotor *dji_motor1 = nullptr,
+                        DjiMotor *dji_motor2 = nullptr,
+                        DjiMotor *dji_motor3 = nullptr,
+                        DjiMotor *dji_motor4 = nullptr
                 );
 
                 HAL_StatusTypeDef sendTorque(float torque) override;
@@ -172,7 +172,9 @@ class djiMotor : public MotorBase, public canNode
                 // 反馈量（已换算到输出轴）
                 float getTorque() const { return torque_; }   // N·m
                 float getSpeed() const { return speed_; }     // rpm（输出轴）
-                float getAngle() const { return angle_; }     // 度（输出轴）
+                float getAngle() const { return angle_; }          // 单圈角度，度（输出轴）
+                float getTotalAngle() const { return total_angle_; }        // 累计角度，度（输出轴）
+                float getTotalAngleSpeed() const { return total_angle_speed_; } // 累计角速度，rpm（输出轴，已低通）
                 float getTemp() const { return temp_; }       // ℃
                 float getMaxTorque() const { return spec_.maxTorque(); }
 
@@ -183,12 +185,27 @@ class djiMotor : public MotorBase, public canNode
                 djiMotorSpec spec_ = {};          // 按值存：允许运行期自定义减速箱，也不会悬垂
 
                 //电机组,都怪邪恶dji
-                djiMotor *group_[kGroupSize] = {};
+                DjiMotor *group_[kGroupSize] = {};
 
                 float torque_ = 0.0f;
                 float speed_ = 0.0f;
                 float angle_ = 0.0f;
                 float temp_ = 0.0f;
+
+                // ── 累计角度 / 角速度（参考 v2 的 Motor_Get_TotalAngle_Speed）──
+                static constexpr float kTotalAngleSpeedLpf = 0.3f;  // 一阶低通系数：新值权重
+                static constexpr int16_t kEncHalfTurn      = 4096;  // 编码器半圈，用于判圈
+
+                void updateTotalAngle(int16_t raw_angle);
+                void updateTotalAngleSpeed(float k = kTotalAngleSpeedLpf);
+
+                int32_t  round_               = 0;      // 圈数（可负）
+                int16_t  last_raw_angle_      = 0;      // 上一帧原始编码器值
+                float    total_angle_         = 0.0f;   // 累计角度（度，输出轴）
+                float    total_angle_last_    = 0.0f;   // 上一帧累计角度
+                float    total_angle_speed_   = 0.0f;   // 累计角速度（rpm，低通后）
+                uint32_t dwt_cnt_ = 0;      // 独立计时
+                bool     total_angle_ready_   = false;  // 第一帧只记录，不算速度
 };
 
 #endif //THREE_FRICTION_DRV_DJI_MOTOR_HPP

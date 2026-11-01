@@ -1,5 +1,5 @@
-CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.o: \
- /home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp \
+CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.o: \
+ /home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp \
  /usr/include/stdc-predef.h \
  /home/ye/Projects/embedded/three_friction/UserCode/Common/pid.hpp \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdint.h \

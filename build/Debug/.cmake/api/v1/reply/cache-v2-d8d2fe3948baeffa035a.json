@@ -215,7 +215,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "4"
+			"value" : "5"
 		},
 		{
 			"name" : "CMAKE_COLOR_DIAGNOSTICS",
@@ -1243,7 +1243,7 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "Path to a CMake toolchain file, read early in the CMake run, that specifies the compilers, toolchain utilities, and target-platform information used when cross-compiling."
+					"value" : "The CMake toolchain file"
 				}
 			],
 			"type" : "FILEPATH",

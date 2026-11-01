@@ -1,7 +1,7 @@
 //
 // 控制算法实现（逐行对应 v2 的 controller.c，运算顺序保持一致以便对拍 bit-exact）
 //
-#include "pid.hpp"
+#include "cotr.hpp"
 
 #include <algorithm>
 #include <cmath>

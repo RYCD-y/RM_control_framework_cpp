@@ -100,19 +100,19 @@ CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp.s"
 	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp -o CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp.s
 
-CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.o: CMakeFiles/new_algo.dir/flags.make
-CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.o: /home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp
-CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.o: CMakeFiles/new_algo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ye/Projects/embedded/three_friction/tests/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.o"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.o -MF CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.o.d -o CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.o -c /home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp
+CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.o: CMakeFiles/new_algo.dir/flags.make
+CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.o: /home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp
+CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.o: CMakeFiles/new_algo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ye/Projects/embedded/three_friction/tests/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.o"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.o -MF CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.o.d -o CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.o -c /home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp
 
-CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.i"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp > CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.i
+CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.i"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp > CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.i
 
-CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.s"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp -o CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.s
+CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.s"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp -o CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.s
 
 CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp.o: CMakeFiles/new_algo.dir/flags.make
 CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp.o: /home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp
@@ -160,7 +160,7 @@ CMakeFiles/new_algo.dir/stubs/dwt_host.cpp.s: cmake_force
 new_algo_OBJECTS = \
 "CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp.o" \
 "CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp.o" \
-"CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.o" \
+"CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.o" \
 "CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp.o" \
 "CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.cpp.o" \
 "CMakeFiles/new_algo.dir/stubs/dwt_host.cpp.o"
@@ -170,7 +170,7 @@ new_algo_EXTERNAL_OBJECTS =
 
 libnew_algo.a: CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp.o
 libnew_algo.a: CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp.o
-libnew_algo.a: CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.o
+libnew_algo.a: CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.o
 libnew_algo.a: CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp.o
 libnew_algo.a: CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.cpp.o
 libnew_algo.a: CMakeFiles/new_algo.dir/stubs/dwt_host.cpp.o

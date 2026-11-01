@@ -110,7 +110,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11 -fdiagnostics-color=always"
+					"fragment" : " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -Os -g0 -std=gnu11 -fdiagnostics-color=always"
 				}
 			],
 			"defines" : 
@@ -118,10 +118,6 @@
 				{
 					"backtrace" : 6,
 					"define" : "ARM_MATH_CM4"
-				},
-				{
-					"backtrace" : 4,
-					"define" : "DEBUG"
 				},
 				{
 					"backtrace" : 4,
@@ -251,7 +247,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -x assembler-with-cpp -MMD -MP -g"
+					"fragment" : " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -x assembler-with-cpp -MMD -MP -O3 -DNDEBUG"
 				}
 			],
 			"defines" : 
@@ -259,10 +255,6 @@
 				{
 					"backtrace" : 6,
 					"define" : "ARM_MATH_CM4"
-				},
-				{
-					"backtrace" : 4,
-					"define" : "DEBUG"
 				},
 				{
 					"backtrace" : 4,
@@ -366,7 +358,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -fno-rtti -fno-exceptions -fno-threadsafe-statics -O0 -g3 -std=c++17 -fdiagnostics-color=always"
+					"fragment" : " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -fno-rtti -fno-exceptions -fno-threadsafe-statics -Os -g0 -std=c++17 -fdiagnostics-color=always"
 				}
 			],
 			"defines" : 
@@ -374,10 +366,6 @@
 				{
 					"backtrace" : 6,
 					"define" : "ARM_MATH_CM4"
-				},
-				{
-					"backtrace" : 4,
-					"define" : "DEBUG"
 				},
 				{
 					"backtrace" : 4,
@@ -507,11 +495,11 @@
 		},
 		{
 			"backtrace" : 4,
-			"id" : "USB_Device_Library::@768a070a0fe75716b479"
+			"id" : "FreeRTOS::@768a070a0fe75716b479"
 		},
 		{
 			"backtrace" : 4,
-			"id" : "FreeRTOS::@768a070a0fe75716b479"
+			"id" : "USB_Device_Library::@768a070a0fe75716b479"
 		}
 	],
 	"id" : "three_friction::@6890427a1f51a3e7e1df",
@@ -520,7 +508,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -fno-rtti -fno-exceptions -fno-threadsafe-statics -O0 -g3",
+				"fragment" : "-mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -fno-rtti -fno-exceptions -fno-threadsafe-statics -Os -g0",
 				"role" : "flags"
 			},
 			{
@@ -920,6 +908,16 @@
 				9
 			],
 			"compileGroupIndex" : 2,
+			"path" : "UserCode/Common/cotr.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 9,
+			"backtraces" : 
+			[
+				9
+			],
+			"compileGroupIndex" : 2,
 			"path" : "UserCode/Common/crc.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -951,16 +949,6 @@
 			],
 			"compileGroupIndex" : 2,
 			"path" : "UserCode/Common/ols.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 9,
-			"backtraces" : 
-			[
-				9
-			],
-			"compileGroupIndex" : 2,
-			"path" : "UserCode/Common/pid.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -1050,7 +1038,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Src/system_stm32f4xx.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Src/system_stm32f4xx.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1060,7 +1048,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1070,7 +1058,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1080,7 +1068,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1090,7 +1078,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1100,7 +1088,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1110,7 +1098,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1120,7 +1108,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1130,7 +1118,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1140,7 +1128,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1150,7 +1138,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1160,7 +1148,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1170,7 +1158,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1180,7 +1168,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1190,7 +1178,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1200,7 +1188,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1210,7 +1198,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1220,7 +1208,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1230,7 +1218,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1240,7 +1228,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1250,7 +1238,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1260,7 +1248,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1270,7 +1258,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1280,7 +1268,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1290,7 +1278,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1300,7 +1288,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1310,7 +1298,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1320,7 +1308,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1330,7 +1318,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1340,7 +1328,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1350,7 +1338,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1360,7 +1348,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1370,7 +1358,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1380,7 +1368,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1390,7 +1378,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1400,7 +1388,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1410,7 +1398,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1420,7 +1408,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1430,7 +1418,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1440,7 +1428,7 @@
 				4
 			],
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj",
+			"path" : "build/Release/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj",
 			"sourceGroupIndex" : 2
 		}
 	],

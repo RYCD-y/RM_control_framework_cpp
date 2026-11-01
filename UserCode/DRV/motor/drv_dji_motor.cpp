@@ -3,9 +3,11 @@
 //
 
 #include "drv_dji_motor.hpp"
+
+#include "dwt.hpp"
 #include <cstring>
 
-HAL_StatusTypeDef djiMotor::onFrame(const uint8_t *data, uint16_t len)
+HAL_StatusTypeDef DjiMotor::onFrame(const uint8_t *data, uint16_t len)
 {
         if (data == nullptr || len < 7U) { return HAL_ERROR; }
 
@@ -22,17 +24,19 @@ HAL_StatusTypeDef djiMotor::onFrame(const uint8_t *data, uint16_t len)
 
         temp_ = static_cast<float>(data[6]);
 
+        updateTotalAngle(raw_angle);
+
         return HAL_OK;
 }
 
-HAL_StatusTypeDef djiMotor::groupInit(
-        djiMotor *dji_motor1,
-        djiMotor *dji_motor2,
-        djiMotor *dji_motor3,
-        djiMotor *dji_motor4
+HAL_StatusTypeDef DjiMotor::groupInit(
+        DjiMotor *dji_motor1,
+        DjiMotor *dji_motor2,
+        DjiMotor *dji_motor3,
+        DjiMotor *dji_motor4
 )
 {
-        djiMotor *const motor[kGroupSize] = {
+        DjiMotor *const motor[kGroupSize] = {
                 dji_motor1,
                 dji_motor2,
                 dji_motor3,
@@ -40,7 +44,7 @@ HAL_StatusTypeDef djiMotor::groupInit(
         };
         if (motor[0] == nullptr) return HAL_ERROR;
         CAN_HandleTypeDef *group_hcan        = motor[0]->getHcan();
-        djiMotor *         group[kGroupSize] = {};
+        DjiMotor *         group[kGroupSize] = {};
 
         for (uint8_t i = 0; i < kGroupSize; i++)
         {
@@ -64,7 +68,7 @@ HAL_StatusTypeDef djiMotor::groupInit(
         return HAL_OK;
 }
 
-HAL_StatusTypeDef djiMotor::sendTorque(float torque)
+HAL_StatusTypeDef DjiMotor::sendTorque(float torque)
 {
         // (void) setTorque(torque);            // 记录本机目标力矩（已按 maxTorque 钳位）
 
@@ -72,13 +76,13 @@ HAL_StatusTypeDef djiMotor::sendTorque(float torque)
         return HAL_OK;
 }
 
-HAL_StatusTypeDef djiMotor::groupSendTorque()
+HAL_StatusTypeDef DjiMotor::groupSendTorque()
 {
         uint8_t frame[8] = {};
 
         for (uint8_t i = 0; i < kGroupSize; i++)
         {
-                djiMotor *m = group_[i];
+                DjiMotor *m = group_[i];
                 if (m == nullptr) continue;
 
                 utils::put_be_i16(&frame[2U * m->slot()], m->torqueToRaw());
@@ -88,14 +92,53 @@ HAL_StatusTypeDef djiMotor::groupSendTorque()
         return send(frame, sizeof(frame));
 }
 
-uint8_t djiMotor::slot() const
+uint8_t DjiMotor::slot() const
 {
         return static_cast<uint8_t>((getFeedbackId() - kFirstFbId) % kGroupSize);
 }
 
-int16_t djiMotor::torqueToRaw() const
+int16_t DjiMotor::torqueToRaw() const
 {
         // N·m → 协议 raw：满量程力矩对应 ±ctrl_raw_full
         const float ratio = std::clamp(target_torque_ / spec_.maxTorque(), -1.0f, 1.0f);
         return static_cast<int16_t>(std::lround(ratio * spec_.ctrl_raw_full));
+}
+
+void DjiMotor::updateTotalAngle(int16_t raw_angle)
+{
+        // 判圈：编码器值跳变超过半圈，说明跨圈（两帧间转过半圈会漏判，见注释）
+        if (total_angle_ready_)
+        {
+                if (raw_angle - last_raw_angle_ > kEncHalfTurn) { round_--; }
+                else if (raw_angle - last_raw_angle_ < -kEncHalfTurn) { round_++; }
+        }
+        last_raw_angle_ = raw_angle;
+
+        // 累计角度（度，输出轴）
+        total_angle_ = 360.0f * (static_cast<float>(round_) + static_cast<float>(raw_angle) / 8192.0f) / spec_.gear_ratio;
+
+        updateTotalAngleSpeed();
+}
+
+void DjiMotor::updateTotalAngleSpeed(float k)
+{
+        const float dt = Dwt::deltaT(dwt_cnt_);
+
+        if (!total_angle_ready_)
+        {
+                // 第一帧只记基准：此时 dt 是从 0 起算的，算出来的速度没意义
+                total_angle_ready_ = true;
+                total_angle_last_  = total_angle_;
+                total_angle_speed_ = 0.0f;
+                return;
+        }
+
+        if (dt <= 0.0f) { return; }
+
+        // 度/秒 → rpm，再做一阶低通
+        float speed = (total_angle_ - total_angle_last_) / dt * 60.0f / 360.0f;
+        speed       = k * speed + (1.0f - k) * total_angle_speed_;
+
+        total_angle_speed_ = speed;
+        total_angle_last_  = total_angle_;
 }

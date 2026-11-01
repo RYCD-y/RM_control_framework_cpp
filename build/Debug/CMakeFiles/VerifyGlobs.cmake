@@ -30,11 +30,11 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ye/Projects/embedded/three_friction/UserCode/*.cpp")
 set(OLD_GLOB
   "/home/ye/Projects/embedded/three_friction/UserCode/APP/debug.cpp"
+  "/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/Common/dwt.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp"
-  "/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/Common/utils.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp"

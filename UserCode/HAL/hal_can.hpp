@@ -9,7 +9,7 @@
 #include "can.h"
 #include <etl/vector.h>
 
-class canNode;
+class CanNode;
 
 namespace canCfg
 {
@@ -28,10 +28,10 @@ namespace canCfg
         inline constexpr uint8_t kCanNodeSizeMax = 32;
 }
 
-class canNode
+class CanNode
 {
         public:
-                canNode(
+                CanNode(
                         CAN_HandleTypeDef *hcan,
                         uint32_t           id,
                         uint32_t           feedback_id,
@@ -51,7 +51,7 @@ class canNode
                         __set_PRIMASK(primask);
                 }
 
-                virtual ~canNode()
+                virtual ~CanNode()
                 {
                         uint32_t primask = __get_PRIMASK();
                         __disable_irq();
@@ -67,13 +67,13 @@ class canNode
 
                 // 会自我注册进全局表的对象不能被拷贝：
                 // 拷贝构造不执行注册逻辑（对象不在表里），但析构却会去表里删自己。
-                canNode(const canNode &)            = delete;
-                canNode &operator=(const canNode &) = delete;
+                CanNode(const CanNode &)            = delete;
+                CanNode &operator=(const CanNode &) = delete;
 
 
 
                 // 只读遍历接口（供中断分发使用），增删仍由构造/析构负责
-                static const etl::ivector<canNode *> &nodes() { return node_tab; }
+                static const etl::ivector<CanNode *> &nodes() { return node_tab; }
 
                 CAN_HandleTypeDef *getHcan() const { return hcan_; }
                 uint32_t           getId() const { return id_; }
@@ -97,7 +97,7 @@ class canNode
                 HAL_StatusTypeDef sendEx(const uint8_t *data, uint16_t len);
 
         private:
-                static etl::vector<canNode *, canCfg::kCanNodeSizeMax> node_tab;
+                static etl::vector<CanNode *, canCfg::kCanNodeSizeMax> node_tab;
 
                 CAN_HandleTypeDef *hcan_        = nullptr;
                 uint32_t           id_          = 0x00;

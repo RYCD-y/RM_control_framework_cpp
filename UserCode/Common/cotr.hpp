@@ -75,8 +75,11 @@ class Pid
                           float output_lpf_rc, float derivative_lpf_rc,
                           uint16_t ols_order, uint8_t improve);
 
+                //设置PID参数
                 void setGains(float kp, float ki, float kd);
+                //设置限幅/死区
                 void setLimits(float max_out, float integral_limit, float deadband);
+                //注册钩子
                 void setHooks(Hook func1, Hook func2);
 
                 /// 启用模糊规则（传 nullptr 用默认规则表）
@@ -85,7 +88,15 @@ class Pid
                                  float e_step, float ec_step);
                 void updateFuzzy(float measure, float ref);   // 需要启用模糊时周期调用
 
+
+                /**
+                 *
+                 * @param measure 当前值
+                 * @param ref 目标值
+                 * @return
+                 */
                 float calculate(float measure, float ref);
+
                 void  reset();
 
                 float    output() const { return output_; }

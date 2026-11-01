@@ -3,10 +3,10 @@
 /home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/private/pvoidvector.h:94:14:void** etl::pvoidvector::end()	16	static
 /home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/private/pvoidvector.h:660:14:void** etl::pvoidvector::erase(const_iterator, const_iterator)	40	static
 /home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/private/pvoidvector.h:784:14:void** etl::pvoidvector::to_iterator(const_iterator) const	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:54:25:canNode::~canNode()	40	static
-/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:54:25:virtual canNode::~canNode()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:78:36:CAN_HandleTypeDef* canNode::getHcan() const	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:80:36:uint32_t canNode::getFeedbackId() const	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:54:25:CanNode::~CanNode()	40	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:54:25:virtual CanNode::~CanNode()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:78:36:CAN_HandleTypeDef* CanNode::getHcan() const	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:80:36:uint32_t CanNode::getFeedbackId() const	16	static
 /home/ye/Projects/embedded/three_friction/UserCode/Common/utils.hpp:50:24:int16_t utils::be_i16(const uint8_t*)	16	static
 /home/ye/Projects/embedded/three_friction/UserCode/Common/utils.hpp:57:21:void utils::put_be_i16(uint8_t*, int16_t)	24	static
 /home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.hpp:57:25:constexpr float djiMotorSpec::ktOutput() const	16	static
@@ -15,23 +15,25 @@
 /home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.hpp:62:25:constexpr float djiMotorSpec::angleScale() const	16	static
 /home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:14:25:MotorBase::~MotorBase()	16	static
 /home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:14:25:virtual MotorBase::~MotorBase()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:8:19:virtual HAL_StatusTypeDef djiMotor::onFrame(const uint8_t*, uint16_t)	48	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:28:19:static HAL_StatusTypeDef djiMotor::groupInit(djiMotor*, djiMotor*, djiMotor*, djiMotor*)	72	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:67:19:virtual HAL_StatusTypeDef djiMotor::sendTorque(float)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:75:19:HAL_StatusTypeDef djiMotor::groupSendTorque()	40	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:91:9:uint8_t djiMotor::slot() const	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:96:9:int16_t djiMotor::torqueToRaw() const	40	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:10:19:virtual HAL_StatusTypeDef DjiMotor::onFrame(const uint8_t*, uint16_t)	48	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:32:19:static HAL_StatusTypeDef DjiMotor::groupInit(DjiMotor*, DjiMotor*, DjiMotor*, DjiMotor*)	72	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:71:19:virtual HAL_StatusTypeDef DjiMotor::sendTorque(float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:79:19:HAL_StatusTypeDef DjiMotor::groupSendTorque()	40	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:95:9:uint8_t DjiMotor::slot() const	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:100:9:int16_t DjiMotor::torqueToRaw() const	40	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:107:6:void DjiMotor::updateTotalAngle(int16_t)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:123:6:void DjiMotor::updateTotalAngleSpeed(float)	24	static
 /home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/memory.h:3368:6:T* etl::mem_move(const T*, const T*, T*) [with T = void*]	24	static
 /home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/iterator.h:279:77:constexpr typename etl::iterator_traits<TIterator>::difference_type etl::distance(TIterator, TIterator) [with TIterator = void* const*]	16	static
-/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/vector.h:1228:14:T* etl::ivector<T, typename etl::enable_if<etl::is_object_pointer<T>::value>::type>::begin() [with T = canNode*]	16	static
-/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/vector.h:1246:14:T* etl::ivector<T, typename etl::enable_if<etl::is_object_pointer<T>::value>::type>::end() [with T = canNode*]	16	static
-/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/algorithm.h:2381:29:constexpr TIterator etl::remove(TIterator, TIterator, const T&) [with TIterator = canNode**; T = canNode*]	32	static
-/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/vector.h:1629:14:T* etl::ivector<T, typename etl::enable_if<etl::is_object_pointer<T>::value>::type>::erase(const_iterator, const_iterator) [with T = canNode*]	24	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/vector.h:1228:14:T* etl::ivector<T, typename etl::enable_if<etl::is_object_pointer<T>::value>::type>::begin() [with T = CanNode*]	16	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/vector.h:1246:14:T* etl::ivector<T, typename etl::enable_if<etl::is_object_pointer<T>::value>::type>::end() [with T = CanNode*]	16	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/algorithm.h:2381:29:constexpr TIterator etl::remove(TIterator, TIterator, const T&) [with TIterator = CanNode**; T = CanNode*]	32	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/vector.h:1629:14:T* etl::ivector<T, typename etl::enable_if<etl::is_object_pointer<T>::value>::type>::erase(const_iterator, const_iterator) [with T = CanNode*]	24	static
 /usr/arm-none-eabi/include/c++/16.2.0/bits/stl_algo.h:3614:5:constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = float]	24	static
 /home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/iterator.h:272:77:constexpr typename etl::iterator_traits<TIterator>::difference_type etl::distance_helper(TIterator, TIterator, std::random_access_iterator_tag) [with TIterator = void* const*]	24	static
-/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/algorithm.h:528:43:constexpr TIterator etl::find(TIterator, TIterator, const T&) [with TIterator = canNode**; T = canNode*]	24	static
-/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/utility.h:57:55:constexpr typename etl::remove_reference<T>::type&& etl::move(T&&) [with T = canNode*&]	16	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/algorithm.h:528:43:constexpr TIterator etl::find(TIterator, TIterator, const T&) [with TIterator = CanNode**; T = CanNode*]	24	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/utility.h:57:55:constexpr typename etl::remove_reference<T>::type&& etl::move(T&&) [with T = CanNode*&]	16	static
 /usr/arm-none-eabi/include/c++/16.2.0/bits/stl_algobase.h:256:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = float]	16	static
 /usr/arm-none-eabi/include/c++/16.2.0/bits/stl_algobase.h:232:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = float]	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.hpp:136:7:djiMotor::~djiMotor()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.hpp:136:7:virtual djiMotor::~djiMotor()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.hpp:136:7:DjiMotor::~DjiMotor()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.hpp:136:7:virtual DjiMotor::~DjiMotor()	16	static

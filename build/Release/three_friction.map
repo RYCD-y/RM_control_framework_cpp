@@ -31,7 +31,7 @@ Archive member included to satisfy reference by file (symbol)
 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_atan2.o)
                               CMakeFiles/three_friction.dir/UserCode/Common/quaternion_ekf.cpp.obj (atan2f)
 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_sqrt.o)
-                              CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj (sqrtf)
+                              CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj (sqrtf)
 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_fabs.o)
                               /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-wf_acos.o) (fabsf)
 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_nan.o)
@@ -1749,6 +1749,43 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
  .data          0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
  .bss           0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+ .text          0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .data          0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .bss           0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .text._ZN9FuzzyRule4initEPA7_KfS2_S2_fffff
+                0x00000000       0x68 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .text._ZN9FuzzyRule6updateEff
+                0x00000000      0x290 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .text._ZN3Pid8setGainsEfff
+                0x00000000        0xe CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .text._ZN3Pid9setLimitsEfff
+                0x00000000        0xe CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .text._ZN3Pid8setHooksEPFvRS_ES2_
+                0x00000000        0x6 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .text._ZN3Pid11enableFuzzyEPA7_KfS2_S2_fffff
+                0x00000000       0x12 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .text._ZN3Pid11updateFuzzyEff
+                0x00000000        0xe CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .text._ZN3Pid5resetEv
+                0x00000000       0x28 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .text._ZN11Feedforward4initEfPKfftt
+                0x00000000       0x50 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .text._ZN11Feedforward9calculateEf
+                0x00000000       0xdc CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .text._ZN4Ldob4initEffPKfftt
+                0x00000000       0x58 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .text._ZN4Ldob9calculateEff
+                0x00000000      0x124 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .text._ZN22TrackingDifferentiator4initEff
+                0x00000000       0x16 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .text._ZN22TrackingDifferentiator9calculateEf
+                0x00000000      0x180 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .rodata._ZN12_GLOBAL__N_1L14kDefaultRuleKdE
+                0x00000000       0xc4 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .rodata._ZN12_GLOBAL__N_1L14kDefaultRuleKiE
+                0x00000000       0xc4 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .rodata._ZN12_GLOBAL__N_1L14kDefaultRuleKpE
+                0x00000000       0xc4 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
  .text          0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/Common/crc.cpp.obj
  .data          0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/Common/crc.cpp.obj
  .bss           0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/Common/crc.cpp.obj
@@ -1856,43 +1893,6 @@ Discarded input sections
                 0x00000000       0x2a CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
  .text._ZN20OrdinaryLeastSquares6smoothEff
                 0x00000000       0x48 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
- .text          0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
- .data          0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
- .bss           0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
- .text._ZN9FuzzyRule4initEPA7_KfS2_S2_fffff
-                0x00000000       0x68 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
- .text._ZN9FuzzyRule6updateEff
-                0x00000000      0x290 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
- .text._ZN3Pid8setGainsEfff
-                0x00000000        0xe CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
- .text._ZN3Pid9setLimitsEfff
-                0x00000000        0xe CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
- .text._ZN3Pid8setHooksEPFvRS_ES2_
-                0x00000000        0x6 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
- .text._ZN3Pid11enableFuzzyEPA7_KfS2_S2_fffff
-                0x00000000       0x12 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
- .text._ZN3Pid11updateFuzzyEff
-                0x00000000        0xe CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
- .text._ZN3Pid5resetEv
-                0x00000000       0x28 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
- .text._ZN11Feedforward4initEfPKfftt
-                0x00000000       0x50 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
- .text._ZN11Feedforward9calculateEf
-                0x00000000       0xdc CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
- .text._ZN4Ldob4initEffPKfftt
-                0x00000000       0x58 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
- .text._ZN4Ldob9calculateEff
-                0x00000000      0x124 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
- .text._ZN22TrackingDifferentiator4initEff
-                0x00000000       0x16 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
- .text._ZN22TrackingDifferentiator9calculateEf
-                0x00000000      0x180 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
- .rodata._ZN12_GLOBAL__N_1L14kDefaultRuleKdE
-                0x00000000       0xc4 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
- .rodata._ZN12_GLOBAL__N_1L14kDefaultRuleKiE
-                0x00000000       0xc4 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
- .rodata._ZN12_GLOBAL__N_1L14kDefaultRuleKpE
-                0x00000000       0xc4 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
  .text          0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/Common/quaternion_ekf.cpp.obj
  .data          0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/Common/quaternion_ekf.cpp.obj
  .bss           0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/Common/quaternion_ekf.cpp.obj
@@ -1926,6 +1926,8 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
  .data          0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
  .bss           0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+ .text._ZN4vofa4sendEhf
+                0x00000000       0x16 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
  .text._ZN4vofa10errorCountEv
                 0x00000000        0xc CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
  .group         0x00000000       0x14 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
@@ -1933,15 +1935,15 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
  .data          0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
  .bss           0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
- .text._ZN7canNodeD2Ev
+ .text._ZN7CanNodeD2Ev
                 0x00000000       0x44 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
- .text._ZN8djiMotorD2Ev
+ .text._ZN8DjiMotorD2Ev
                 0x00000000       0x24 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
- .text._ZN8djiMotorD0Ev
+ .text._ZN8DjiMotorD0Ev
                 0x00000000       0x1a CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
- .text._ZN7canNodeD0Ev
+ .text._ZN7CanNodeD0Ev
                 0x00000000       0x14 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
- .text._ZNK8djiMotor4slotEv
+ .text._ZNK8DjiMotor4slotEv
                 0x00000000        0xa CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
  .text          0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/DRV/motor/motor_base.cpp.obj
  .data          0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/DRV/motor/motor_base.cpp.obj
@@ -1957,13 +1959,13 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
  .data          0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
  .bss           0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
- .text._ZN3etl6vectorIP7canNodeLj32EED2Ev
+ .text._ZN3etl6vectorIP7CanNodeLj32EED2Ev
                 0x00000000        0x2 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
- .text._ZN7canNodeD2Ev
+ .text._ZN7CanNodeD2Ev
                 0x00000000       0x44 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
- .text._ZN7canNodeD0Ev
+ .text._ZN7CanNodeD0Ev
                 0x00000000       0x14 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
- .text._ZN7canNode6sendExEPKht
+ .text._ZN7CanNode6sendExEPKht
                 0x00000000       0x4a CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
  .group         0x00000000        0xc CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
  .text          0x00000000        0x0 CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
@@ -2959,11 +2961,11 @@ LOAD CMakeFiles/three_friction.dir/Src/sysmem.c.obj
 LOAD CMakeFiles/three_friction.dir/Src/syscalls.c.obj
 LOAD CMakeFiles/three_friction.dir/startup_stm32f407xx.s.obj
 LOAD CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+LOAD CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
 LOAD CMakeFiles/three_friction.dir/UserCode/Common/crc.cpp.obj
 LOAD CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
 LOAD CMakeFiles/three_friction.dir/UserCode/Common/kalman_filter.cpp.obj
 LOAD CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
-LOAD CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
 LOAD CMakeFiles/three_friction.dir/UserCode/Common/quaternion_ekf.cpp.obj
 LOAD CMakeFiles/three_friction.dir/UserCode/Common/utils.cpp.obj
 LOAD CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
@@ -3001,7 +3003,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
                 0x08000000                g_pfnVectors
                 0x08000188                        . = ALIGN (0x4)
 
-.text           0x08000190     0x93d4
+.text           0x08000190     0x9574
                 0x08000190                        . = ALIGN (0x4)
  *(.text)
  .text          0x08000190       0x30 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
@@ -4110,361 +4112,363 @@ LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
                 0x08007ece        0xe CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
                 0x08007ece                Pid::~Pid()
                 0x08007ece                Pid::~Pid()
- .text._ZN7canNodeD2Ev
+ .text._ZN7CanNodeD2Ev
                 0x08007edc       0x44 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x08007edc                canNode::~canNode()
-                0x08007edc                canNode::~canNode()
- .text._ZN8djiMotorD2Ev
+                0x08007edc                CanNode::~CanNode()
+                0x08007edc                CanNode::~CanNode()
+ .text._ZN8DjiMotorD2Ev
                 0x08007f20       0x24 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x08007f20                djiMotor::~djiMotor()
-                0x08007f20                djiMotor::~djiMotor()
-                0x08007f3c                non-virtual thunk to djiMotor::~djiMotor()
- .text._ZN7canNodeD0Ev
+                0x08007f20                DjiMotor::~DjiMotor()
+                0x08007f20                DjiMotor::~DjiMotor()
+                0x08007f3c                non-virtual thunk to DjiMotor::~DjiMotor()
+ .text._ZN7CanNodeD0Ev
                 0x08007f44       0x14 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x08007f44                canNode::~canNode()
- .text._ZN8djiMotorD0Ev
+                0x08007f44                CanNode::~CanNode()
+ .text._ZN8DjiMotorD0Ev
                 0x08007f58       0x1a CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x08007f58                djiMotor::~djiMotor()
-                0x08007f6c                non-virtual thunk to djiMotor::~djiMotor()
+                0x08007f58                DjiMotor::~DjiMotor()
+                0x08007f6c                non-virtual thunk to DjiMotor::~DjiMotor()
  *fill*         0x08007f72        0x2 
  .text._Z9debugTaskPv
-                0x08007f74      0x1bc CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x08007f74      0x28c CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
                 0x08007f74                debugTask(void*)
- .text._ZN3Dwt4initEm
-                0x08008130       0x7c CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
-                0x08008130                Dwt::init(unsigned long)
- .text._ZN3Dwt9cntUpdateEv
-                0x080081ac       0x24 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
-                0x080081ac                Dwt::cntUpdate()
- .text._ZN3Dwt6deltaTERm
-                0x080081d0       0x30 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
-                0x080081d0                Dwt::deltaT(unsigned long&)
- .text._ZN3Dwt13updateSysTimeEv
-                0x08008200       0x7c CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
-                0x08008200                Dwt::updateSysTime()
- .text._ZN3Dwt10timelineMsEv
-                0x0800827c       0x44 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
-                0x0800827c                Dwt::timelineMs()
- .text._ZN12KalmanFilter10releaseAllEv
-                0x080082c0       0xc6 CMakeFiles/three_friction.dir/UserCode/Common/kalman_filter.cpp.obj
-                0x080082c0                KalmanFilter::releaseAll()
- .text._ZN12KalmanFilterD2Ev
-                0x08008386        0xc CMakeFiles/three_friction.dir/UserCode/Common/kalman_filter.cpp.obj
-                0x08008386                KalmanFilter::~KalmanFilter()
-                0x08008386                KalmanFilter::~KalmanFilter()
- .text._ZN20OrdinaryLeastSquaresD2Ev
-                0x08008392       0x18 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
-                0x08008392                OrdinaryLeastSquares::~OrdinaryLeastSquares()
-                0x08008392                OrdinaryLeastSquares::~OrdinaryLeastSquares()
- .text._ZN20OrdinaryLeastSquares4initEt
-                0x080083aa       0x6c CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
-                0x080083aa                OrdinaryLeastSquares::init(unsigned short)
- .text._ZN20OrdinaryLeastSquares7advanceEff
-                0x08008416       0x5a CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
-                0x08008416                OrdinaryLeastSquares::advance(float, float)
- .text._ZN20OrdinaryLeastSquares10accumulateEv
-                0x08008470       0x70 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
-                0x08008470                OrdinaryLeastSquares::accumulate()
- .text._ZN20OrdinaryLeastSquares12computeSlopeEv
-                0x080084e0       0x34 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
-                0x080084e0                OrdinaryLeastSquares::computeSlope()
- .text._ZN20OrdinaryLeastSquares13computeStdDevEv
-                0x08008514       0x68 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
-                0x08008514                OrdinaryLeastSquares::computeStdDev()
- .text._ZN20OrdinaryLeastSquares10derivativeEff
-                0x0800857c       0x34 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
-                0x0800857c                OrdinaryLeastSquares::derivative(float, float)
  .text._ZN3Pid4initEffffffffffth
-                0x080085b0       0x56 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
-                0x080085b0                Pid::init(float, float, float, float, float, float, float, float, float, float, unsigned short, unsigned char)
+                0x08008200       0x56 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x08008200                Pid::init(float, float, float, float, float, float, float, float, float, float, unsigned short, unsigned char)
  .text._ZN3Pid17trapezoidIntegralEv
-                0x08008606       0x3a CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
-                0x08008606                Pid::trapezoidIntegral()
+                0x08008256       0x3a CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x08008256                Pid::trapezoidIntegral()
  .text._ZN3Pid23changingIntegrationRateEv
-                0x08008640       0x5a CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
-                0x08008640                Pid::changingIntegrationRate()
+                0x08008290       0x5a CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x08008290                Pid::changingIntegrationRate()
  .text._ZN3Pid13integralLimitEv
-                0x0800869a       0x72 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
-                0x0800869a                Pid::integralLimit()
+                0x080082ea       0x72 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x080082ea                Pid::integralLimit()
  .text._ZN3Pid23derivativeOnMeasurementEv
-                0x0800870c       0x58 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
-                0x0800870c                Pid::derivativeOnMeasurement()
+                0x0800835c       0x58 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x0800835c                Pid::derivativeOnMeasurement()
  .text._ZN3Pid16derivativeFilterEv
-                0x08008764       0x2e CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
-                0x08008764                Pid::derivativeFilter()
+                0x080083b4       0x2e CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x080083b4                Pid::derivativeFilter()
  .text._ZN3Pid12outputFilterEv
-                0x08008792       0x2e CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
-                0x08008792                Pid::outputFilter()
+                0x080083e2       0x2e CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x080083e2                Pid::outputFilter()
  .text._ZN3Pid11outputLimitEv
-                0x080087c0       0x2e CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
-                0x080087c0                Pid::outputLimit()
+                0x08008410       0x2e CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x08008410                Pid::outputLimit()
  .text._ZN3Pid15proportionLimitEv
-                0x080087ee       0x2e CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
-                0x080087ee                Pid::proportionLimit()
+                0x0800843e       0x2e CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x0800843e                Pid::proportionLimit()
  .text._ZN3Pid11errorHandleEv
-                0x0800881c       0x84 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
-                0x0800881c                Pid::errorHandle()
+                0x0800846c       0x80 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x0800846c                Pid::errorHandle()
  .text._ZN3Pid9calculateEff
-                0x080088a0      0x176 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
-                0x080088a0                Pid::calculate(float, float)
- *fill*         0x08008a16        0x2 
+                0x080084ec      0x176 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x080084ec                Pid::calculate(float, float)
+ *fill*         0x08008662        0x2 
+ .text._ZN3Dwt4initEm
+                0x08008664       0x7c CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+                0x08008664                Dwt::init(unsigned long)
+ .text._ZN3Dwt9cntUpdateEv
+                0x080086e0       0x24 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+                0x080086e0                Dwt::cntUpdate()
+ .text._ZN3Dwt6deltaTERm
+                0x08008704       0x30 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+                0x08008704                Dwt::deltaT(unsigned long&)
+ .text._ZN3Dwt13updateSysTimeEv
+                0x08008734       0x7c CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+                0x08008734                Dwt::updateSysTime()
+ .text._ZN3Dwt10timelineMsEv
+                0x080087b0       0x44 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+                0x080087b0                Dwt::timelineMs()
+ .text._ZN12KalmanFilter10releaseAllEv
+                0x080087f4       0xc6 CMakeFiles/three_friction.dir/UserCode/Common/kalman_filter.cpp.obj
+                0x080087f4                KalmanFilter::releaseAll()
+ .text._ZN12KalmanFilterD2Ev
+                0x080088ba        0xc CMakeFiles/three_friction.dir/UserCode/Common/kalman_filter.cpp.obj
+                0x080088ba                KalmanFilter::~KalmanFilter()
+                0x080088ba                KalmanFilter::~KalmanFilter()
+ .text._ZN20OrdinaryLeastSquaresD2Ev
+                0x080088c6       0x18 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
+                0x080088c6                OrdinaryLeastSquares::~OrdinaryLeastSquares()
+                0x080088c6                OrdinaryLeastSquares::~OrdinaryLeastSquares()
+ .text._ZN20OrdinaryLeastSquares4initEt
+                0x080088de       0x6c CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
+                0x080088de                OrdinaryLeastSquares::init(unsigned short)
+ .text._ZN20OrdinaryLeastSquares7advanceEff
+                0x0800894a       0x5a CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
+                0x0800894a                OrdinaryLeastSquares::advance(float, float)
+ .text._ZN20OrdinaryLeastSquares10accumulateEv
+                0x080089a4       0x70 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
+                0x080089a4                OrdinaryLeastSquares::accumulate()
+ .text._ZN20OrdinaryLeastSquares12computeSlopeEv
+                0x08008a14       0x34 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
+                0x08008a14                OrdinaryLeastSquares::computeSlope()
+ .text._ZN20OrdinaryLeastSquares13computeStdDevEv
+                0x08008a48       0x68 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
+                0x08008a48                OrdinaryLeastSquares::computeStdDev()
+ .text._ZN20OrdinaryLeastSquares10derivativeEff
+                0x08008ab0       0x34 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
+                0x08008ab0                OrdinaryLeastSquares::derivative(float, float)
  .text._ZN12_GLOBAL__N_1L17uartErrorCallbackEP20__UART_HandleTypeDef
-                0x08008a18       0x10 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+                0x08008ae4       0x10 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
  .text._ZN12_GLOBAL__N_1L15rxEventCallbackEP20__UART_HandleTypeDeft
-                0x08008a28       0x2c CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+                0x08008af4       0x2c CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
  .text._ZN4vofa4initEP20__UART_HandleTypeDef
-                0x08008a54       0x54 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
-                0x08008a54                vofa::init(__UART_HandleTypeDef*)
+                0x08008b20       0x54 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+                0x08008b20                vofa::init(__UART_HandleTypeDef*)
  .text._ZN4vofa3setEhf
-                0x08008aa8       0x14 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
-                0x08008aa8                vofa::set(unsigned char, float)
+                0x08008b74       0x14 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+                0x08008b74                vofa::set(unsigned char, float)
  .text._ZN4vofa5flushEv
-                0x08008abc       0x74 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
-                0x08008abc                vofa::flush()
- .text._ZN4vofa4sendEhf
-                0x08008b30       0x16 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
-                0x08008b30                vofa::send(unsigned char, float)
- *fill*         0x08008b46        0x2 
- .text._ZN8djiMotor7onFrameEPKht
-                0x08008b48       0x88 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x08008b48                djiMotor::onFrame(unsigned char const*, unsigned short)
- .text._ZThn12_N8djiMotor7onFrameEPKht
-                0x08008bd0        0x8 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x08008bd0                non-virtual thunk to djiMotor::onFrame(unsigned char const*, unsigned short)
- .text._ZN8djiMotor9groupInitEPS_S0_S0_S0_
-                0x08008bd8       0x7c CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x08008bd8                djiMotor::groupInit(djiMotor*, djiMotor*, djiMotor*, djiMotor*)
- .text._ZNK8djiMotor11torqueToRawEv
-                0x08008c54       0x4e CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x08008c54                djiMotor::torqueToRaw() const
- .text._ZN8djiMotor15groupSendTorqueEv
-                0x08008ca2       0x48 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x08008ca2                djiMotor::groupSendTorque()
- .text._ZN8djiMotor10sendTorqueEf
-                0x08008cea       0x10 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x08008cea                djiMotor::sendTorque(float)
- *fill*         0x08008cfa        0x2 
+                0x08008b88       0x74 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+                0x08008b88                vofa::flush()
+ .text._ZN8DjiMotor9groupInitEPS_S0_S0_S0_
+                0x08008bfc       0x7c CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x08008bfc                DjiMotor::groupInit(DjiMotor*, DjiMotor*, DjiMotor*, DjiMotor*)
+ .text._ZNK8DjiMotor11torqueToRawEv
+                0x08008c78       0x4e CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x08008c78                DjiMotor::torqueToRaw() const
+ .text._ZN8DjiMotor15groupSendTorqueEv
+                0x08008cc6       0x48 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x08008cc6                DjiMotor::groupSendTorque()
+ .text._ZN8DjiMotor10sendTorqueEf
+                0x08008d0e       0x10 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x08008d0e                DjiMotor::sendTorque(float)
+ *fill*         0x08008d1e        0x2 
+ .text._ZN8DjiMotor21updateTotalAngleSpeedEf
+                0x08008d20       0x7c CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x08008d20                DjiMotor::updateTotalAngleSpeed(float)
+ .text._ZN8DjiMotor16updateTotalAngleEs
+                0x08008d9c       0x68 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x08008d9c                DjiMotor::updateTotalAngle(short)
+ .text._ZN8DjiMotor7onFrameEPKht
+                0x08008e04       0x90 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x08008e04                DjiMotor::onFrame(unsigned char const*, unsigned short)
+ .text._ZThn12_N8DjiMotor7onFrameEPKht
+                0x08008e94        0x8 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x08008e94                non-virtual thunk to DjiMotor::onFrame(unsigned char const*, unsigned short)
  .text.ent_main
-                0x08008cfc       0x58 CMakeFiles/three_friction.dir/UserCode/ENT/ent_main.cpp.obj
-                0x08008cfc                ent_main
- .text._ZN7canNode7onFrameEPKht
-                0x08008d54        0x4 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08008d54                canNode::onFrame(unsigned char const*, unsigned short)
- .text._ZN7canNode4sendEPKht
-                0x08008d58       0x46 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08008d58                canNode::send(unsigned char const*, unsigned short)
- *fill*         0x08008d9e        0x2 
- .text._ZN7canNode10filterInitEP17CAN_HandleTypeDef
-                0x08008da0       0x4c CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08008da0                canNode::filterInit(CAN_HandleTypeDef*)
+                0x08008e9c       0x58 CMakeFiles/three_friction.dir/UserCode/ENT/ent_main.cpp.obj
+                0x08008e9c                ent_main
+ .text._ZN7CanNode7onFrameEPKht
+                0x08008ef4        0x4 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08008ef4                CanNode::onFrame(unsigned char const*, unsigned short)
+ .text._ZN7CanNode4sendEPKht
+                0x08008ef8       0x46 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08008ef8                CanNode::send(unsigned char const*, unsigned short)
+ *fill*         0x08008f3e        0x2 
+ .text._ZN7CanNode10filterInitEP17CAN_HandleTypeDef
+                0x08008f40       0x4c CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08008f40                CanNode::filterInit(CAN_HandleTypeDef*)
  .text.HAL_CAN_RxFifo0MsgPendingCallback
-                0x08008dec       0x78 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08008dec                HAL_CAN_RxFifo0MsgPendingCallback
- .text.startup._GLOBAL__sub_I__ZN7canNode8node_tabE
-                0x08008e64       0x14 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08008f8c       0x78 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08008f8c                HAL_CAN_RxFifo0MsgPendingCallback
+ .text.startup._GLOBAL__sub_I__ZN7CanNode8node_tabE
+                0x08009004       0x14 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
  .text._ZN3InsD2Ev
-                0x08008e78        0xc CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
-                0x08008e78                Ins::~Ins()
-                0x08008e78                Ins::~Ins()
+                0x08009018        0xc CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
+                0x08009018                Ins::~Ins()
+                0x08009018                Ins::~Ins()
  .text.startup._GLOBAL__sub_I_g_ins
-                0x08008e84       0x18 CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
+                0x08009024       0x18 CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
  .text.__aeabi_atexit
-                0x08008e9c        0xa /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(atexit_arm.o)
-                0x08008e9c                __aeabi_atexit
- .text._ZdlPvj  0x08008ea6        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(del_ops.o)
-                0x08008ea6                operator delete(void*, unsigned int)
- .text._ZdlPv   0x08008eaa        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(del_op.o)
-                0x08008eaa                operator delete(void*)
- *fill*         0x08008eae        0x2 
- .text.lroundf  0x08008eb0       0x58 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_lround.o)
-                0x08008eb0                lroundf
+                0x0800903c        0xa /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(atexit_arm.o)
+                0x0800903c                __aeabi_atexit
+ .text._ZdlPvj  0x08009046        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(del_ops.o)
+                0x08009046                operator delete(void*, unsigned int)
+ .text._ZdlPv   0x0800904a        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(del_op.o)
+                0x0800904a                operator delete(void*)
+ *fill*         0x0800904e        0x2 
+ .text.lroundf  0x08009050       0x58 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_lround.o)
+                0x08009050                lroundf
  .text.__udivmoddi4
-                0x08008f08      0x2b8 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
-                0x08008f08                __udivmoddi4
- .text.malloc   0x080091c0       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-malloc.o)
-                0x080091c0                malloc
- .text.free     0x080091d0       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-malloc.o)
-                0x080091d0                free
+                0x080090a8      0x2b8 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x080090a8                __udivmoddi4
+ .text.malloc   0x08009360       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-malloc.o)
+                0x08009360                malloc
+ .text.free     0x08009370       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-malloc.o)
+                0x08009370                free
  .text.sbrk_aligned
-                0x080091e0       0x44 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mallocr.o)
+                0x08009380       0x44 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mallocr.o)
  .text._malloc_r
-                0x08009224      0x100 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mallocr.o)
-                0x08009224                _malloc_r
+                0x080093c4      0x100 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mallocr.o)
+                0x080093c4                _malloc_r
  .text.__malloc_lock
-                0x08009324        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mlock.o)
-                0x08009324                __malloc_lock
+                0x080094c4        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mlock.o)
+                0x080094c4                __malloc_lock
  .text.__malloc_unlock
-                0x08009330        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mlock.o)
-                0x08009330                __malloc_unlock
+                0x080094d0        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mlock.o)
+                0x080094d0                __malloc_unlock
  .text.__cxa_atexit
-                0x0800933c       0x1c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-cxa_atexit.o)
-                0x0800933c                __cxa_atexit
- .text.memset   0x08009358       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
-                0x08009358                memset
- .text._sbrk_r  0x08009368       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-sbrkr.o)
-                0x08009368                _sbrk_r
- .text.__errno  0x08009388        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
-                0x08009388                __errno
+                0x080094dc       0x1c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-cxa_atexit.o)
+                0x080094dc                __cxa_atexit
+ .text.memset   0x080094f8       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+                0x080094f8                memset
+ .text._sbrk_r  0x08009508       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-sbrkr.o)
+                0x08009508                _sbrk_r
+ .text.__errno  0x08009528        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
+                0x08009528                __errno
  .text.__libc_init_array
-                0x08009394       0x48 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
-                0x08009394                __libc_init_array
+                0x08009534       0x48 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+                0x08009534                __libc_init_array
  .text.__retarget_lock_acquire_recursive
-                0x080093dc        0x2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lock.o)
-                0x080093dc                __retarget_lock_acquire_recursive
+                0x0800957c        0x2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lock.o)
+                0x0800957c                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x080093de        0x2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lock.o)
-                0x080093de                __retarget_lock_release_recursive
- .text.memcpy   0x080093e0       0x1c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memcpy-stub.o)
-                0x080093e0                memcpy
+                0x0800957e        0x2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lock.o)
+                0x0800957e                __retarget_lock_release_recursive
+ .text.memcpy   0x08009580       0x1c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memcpy-stub.o)
+                0x08009580                memcpy
  .text.__register_exitproc
-                0x080093fc       0xb8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__atexit.o)
-                0x080093fc                __register_exitproc
- .text._free_r  0x080094b4       0x98 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-freer.o)
-                0x080094b4                _free_r
+                0x0800959c       0xb8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__atexit.o)
+                0x0800959c                __register_exitproc
+ .text._free_r  0x08009654       0x98 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-freer.o)
+                0x08009654                _free_r
  *(.glue_7)
- .glue_7        0x0800954c        0x0 linker stubs
+ .glue_7        0x080096ec        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0800954c        0x0 linker stubs
+ .glue_7t       0x080096ec        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0800954c        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x080096ec        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x0800954c        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crti.o
-                0x0800954c                _init
- .init          0x08009550        0x8 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x080096ec        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crti.o
+                0x080096ec                _init
+ .init          0x080096f0        0x8 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x08009558        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crti.o
-                0x08009558                _fini
- .fini          0x0800955c        0x8 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
-                0x08009564                        . = ALIGN (0x4)
-                0x08009564                        _etext = .
+ .fini          0x080096f8        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crti.o
+                0x080096f8                _fini
+ .fini          0x080096fc        0x8 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
+                0x08009704                        . = ALIGN (0x4)
+                0x08009704                        _etext = .
 
-.vfp11_veneer   0x08009564        0x0
- .vfp11_veneer  0x08009564        0x0 linker stubs
+.vfp11_veneer   0x08009704        0x0
+ .vfp11_veneer  0x08009704        0x0 linker stubs
 
-.v4_bx          0x08009564        0x0
- .v4_bx         0x08009564        0x0 linker stubs
+.v4_bx          0x08009704        0x0
+ .v4_bx         0x08009704        0x0 linker stubs
 
-.iplt           0x08009564        0x0
- .iplt          0x08009564        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x08009704        0x0
+ .iplt          0x08009704        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x08009564      0x130
-                0x08009564                        . = ALIGN (0x4)
+.rodata         0x08009704      0x130
+                0x08009704                        . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x08009564       0x1c CMakeFiles/three_friction.dir/Src/freertos.c.obj
- .rodata        0x08009580        0x4 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+ .rodata        0x08009704       0x1c CMakeFiles/three_friction.dir/Src/freertos.c.obj
+ .rodata        0x08009720        0x4 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
  *(.rodata*)
  .rodata.APBPrescTable
-                0x08009584        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Src/system_stm32f4xx.c.obj
-                0x08009584                APBPrescTable
+                0x08009724        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Src/system_stm32f4xx.c.obj
+                0x08009724                APBPrescTable
  .rodata.AHBPrescTable
-                0x0800958c       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Src/system_stm32f4xx.c.obj
-                0x0800958c                AHBPrescTable
+                0x0800972c       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Src/system_stm32f4xx.c.obj
+                0x0800972c                AHBPrescTable
  .rodata.flagBitshiftOffset.0
-                0x0800959c        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x0800973c        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .rodata.vTaskStartScheduler.str1.1
-                0x080095a4       0x74 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x08009744       0x74 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
                                   0x5 (size before relaxing)
  .rodata.prvCheckForValidListAndQueue.str1.1
-                0x08009618        0x0 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x080097b8        0x0 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
                                   0x5 (size before relaxing)
  .rodata.xTimerCreateTimerTask.str1.1
-                0x08009618        0x0 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x080097b8        0x0 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
                                   0x8 (size before relaxing)
  .rodata.str1.1
-                0x08009618        0x0 CMakeFiles/three_friction.dir/Src/freertos.c.obj
+                0x080097b8        0x0 CMakeFiles/three_friction.dir/Src/freertos.c.obj
                                   0xc (size before relaxing)
  .rodata.USBD_FS_ManufacturerStrDescriptor.str1.1
-                0x08009618        0x0 CMakeFiles/three_friction.dir/Src/usbd_desc.c.obj
+                0x080097b8        0x0 CMakeFiles/three_friction.dir/Src/usbd_desc.c.obj
                                  0x13 (size before relaxing)
  .rodata.USBD_FS_ProductStrDescriptor.str1.1
-                0x08009618        0x0 CMakeFiles/three_friction.dir/Src/usbd_desc.c.obj
+                0x080097b8        0x0 CMakeFiles/three_friction.dir/Src/usbd_desc.c.obj
                                  0x16 (size before relaxing)
  .rodata.USBD_FS_ConfigStrDescriptor.str1.1
-                0x08009618        0x0 CMakeFiles/three_friction.dir/Src/usbd_desc.c.obj
+                0x080097b8        0x0 CMakeFiles/three_friction.dir/Src/usbd_desc.c.obj
                                   0xb (size before relaxing)
  .rodata.USBD_FS_InterfaceStrDescriptor.str1.1
-                0x08009618        0x0 CMakeFiles/three_friction.dir/Src/usbd_desc.c.obj
+                0x080097b8        0x0 CMakeFiles/three_friction.dir/Src/usbd_desc.c.obj
                                   0xe (size before relaxing)
  .rodata._ZTV9MotorBase
-                0x08009618       0x14 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x08009618                vtable for MotorBase
+                0x080097b8       0x14 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x080097b8                vtable for MotorBase
  .rodata.str1.1
-                0x0800962c        0x0 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x080097cc        0x0 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
                                   0xe (size before relaxing)
  .rodata.kGM6020_Voltage
-                0x0800962c       0x24 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x0800962c                kGM6020_Voltage
- .rodata._ZTV8djiMotor
-                0x08009650       0x2c CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x08009650                vtable for djiMotor
+                0x080097cc       0x24 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x080097cc                kGM6020_Voltage
+ .rodata._ZTV8DjiMotor
+                0x080097f0       0x2c CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x080097f0                vtable for DjiMotor
  .rodata.ent_main.str1.1
-                0x0800967c        0x0 CMakeFiles/three_friction.dir/UserCode/ENT/ent_main.cpp.obj
+                0x0800981c        0x0 CMakeFiles/three_friction.dir/UserCode/ENT/ent_main.cpp.obj
                                   0x6 (size before relaxing)
- .rodata._ZTV7canNode
-                0x0800967c       0x14 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x0800967c                vtable for canNode
+ .rodata._ZTV7CanNode
+                0x0800981c       0x14 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x0800981c                vtable for CanNode
  .rodata.__on_exit_args
-                0x08009690        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-on_exit_args.o)
-                0x08009690                __on_exit_args
-                0x08009694                        . = ALIGN (0x4)
+                0x08009830        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-on_exit_args.o)
+                0x08009830                __on_exit_args
+                0x08009834                        . = ALIGN (0x4)
 
-.ARM.extab      0x08009694        0x0
-                0x08009694                        . = ALIGN (0x4)
+.ARM.extab      0x08009834        0x0
+                0x08009834                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08009694                        . = ALIGN (0x4)
+                0x08009834                        . = ALIGN (0x4)
 
-.ARM            0x08009694        0x8
-                0x08009694                        . = ALIGN (0x4)
-                0x08009694                        __exidx_start = .
+.ARM            0x08009834        0x8
+                0x08009834                        . = ALIGN (0x4)
+                0x08009834                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x08009694        0x8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-strlen.o)
+ .ARM.exidx     0x08009834        0x8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-strlen.o)
  .ARM.exidx.text.__udivmoddi4
-                0x0800969c        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x0800983c        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
                                   0x8 (size before relaxing)
-                0x0800969c                        __exidx_end = .
-                0x0800969c                        . = ALIGN (0x4)
+                0x0800983c                        __exidx_end = .
+                0x0800983c                        . = ALIGN (0x4)
 
-.preinit_array  0x0800969c        0x0
-                0x0800969c                        . = ALIGN (0x4)
-                0x0800969c                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0800983c        0x0
+                0x0800983c                        . = ALIGN (0x4)
+                0x0800983c                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0800969c                        PROVIDE (__preinit_array_end = .)
-                0x0800969c                        . = ALIGN (0x4)
+                0x0800983c                        PROVIDE (__preinit_array_end = .)
+                0x0800983c                        . = ALIGN (0x4)
 
-.init_array     0x0800969c        0xc
-                0x0800969c                        . = ALIGN (0x4)
-                0x0800969c                        PROVIDE (__init_array_start = .)
+.init_array     0x0800983c        0xc
+                0x0800983c                        . = ALIGN (0x4)
+                0x0800983c                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0800969c        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
- .init_array    0x080096a0        0x4 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
- .init_array    0x080096a4        0x4 CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
-                0x080096a8                        PROVIDE (__init_array_end = .)
-                0x080096a8                        . = ALIGN (0x4)
+ .init_array    0x0800983c        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+ .init_array    0x08009840        0x4 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+ .init_array    0x08009844        0x4 CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
+                0x08009848                        PROVIDE (__init_array_end = .)
+                0x08009848                        . = ALIGN (0x4)
 
-.fini_array     0x080096a8        0x4
-                0x080096a8                        . = ALIGN (0x4)
-                0x080096a8                        PROVIDE (__fini_array_start = .)
+.fini_array     0x08009848        0x4
+                0x08009848                        . = ALIGN (0x4)
+                0x08009848                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x080096a8        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
-                0x080096ac                        PROVIDE (__fini_array_end = .)
-                0x080096ac                        . = ALIGN (0x4)
-                0x080096ac                        _siccmram = LOADADDR (.ccmram)
+ .fini_array    0x08009848        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+                0x0800984c                        PROVIDE (__fini_array_end = .)
+                0x0800984c                        . = ALIGN (0x4)
+                0x0800984c                        _siccmram = LOADADDR (.ccmram)
 
-.rel.dyn        0x080096ac        0x0
- .rel.iplt      0x080096ac        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x0800984c        0x0
+ .rel.iplt      0x0800984c        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
 
-.ccmram         0x10000000        0x0 load address 0x080096ac
+.ccmram         0x10000000        0x0 load address 0x0800984c
                 0x10000000                        . = ALIGN (0x4)
                 0x10000000                        _sccmram = .
  *(.ccmram)
  *(.ccmram*)
                 0x10000000                        . = ALIGN (0x4)
                 0x10000000                        _eccmram = .
-                0x080096ac                        _sidata = LOADADDR (.data)
+                0x0800984c                        _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x4e4 load address 0x080096ac
+.data           0x20000000      0x5d4 load address 0x0800984c
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -4509,33 +4513,35 @@ LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
  .data.USBD_Interface_fops_FS
                 0x200000ec       0x14 CMakeFiles/three_friction.dir/Src/usbd_cdc_if.c.obj
                 0x200000ec                USBD_Interface_fops_FS
- .data._ZZ9debugTaskPvE9pid_speed
+ .data._ZZ9debugTaskPvE9pid_angle
                 0x20000100       0xf0 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+ .data._ZZ9debugTaskPvE9pid_speed
+                0x200001f0       0xf0 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
  .data._ZN12_GLOBAL__N_1L14s_tx_time_lastE
-                0x200001f0        0x4 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
- *fill*         0x200001f4        0x4 
- .data.g_ins    0x200001f8      0x298 CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
-                0x200001f8                g_ins
+                0x200002e0        0x4 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+ *fill*         0x200002e4        0x4 
+ .data.g_ins    0x200002e8      0x298 CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
+                0x200002e8                g_ins
  .data._impure_ptr
-                0x20000490        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
-                0x20000490                _impure_ptr
+                0x20000580        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
+                0x20000580                _impure_ptr
  .data._impure_data
-                0x20000494       0x4c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
-                0x20000494                _impure_data
+                0x20000584       0x4c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
+                0x20000584                _impure_data
  .data.__atexit_recursive_mutex
-                0x200004e0        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__call_atexit.o)
-                0x200004e0                __atexit_recursive_mutex
+                0x200005d0        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__call_atexit.o)
+                0x200005d0                __atexit_recursive_mutex
  *(.RamFunc)
  *(.RamFunc*)
-                0x200004e4                        . = ALIGN (0x4)
+                0x200005d4                        . = ALIGN (0x4)
 
-.igot.plt       0x200004e4        0x0 load address 0x08009b90
- .igot.plt      0x200004e4        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+.igot.plt       0x200005d4        0x0 load address 0x08009e20
+ .igot.plt      0x200005d4        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
 
-.tdata          0x200004e4        0x0 load address 0x08009b90
+.tdata          0x200005d4        0x0 load address 0x08009e20
  *(.tdata .tdata.* .gnu.linkonce.td.*)
-                0x200004e4                        . = ALIGN (0x4)
-                0x200004e4                        _edata = .
+                0x200005d4                        . = ALIGN (0x4)
+                0x200005d4                        _edata = .
                 [!provide]                        PROVIDE (__data_end = .)
                 [!provide]                        PROVIDE (__tdata_end = .)
                 [!provide]                        PROVIDE (__tdata_start = ADDR (.tdata))
@@ -4549,11 +4555,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
                 [!provide]                        PROVIDE (__data_source_end = __tdata_source_end)
                 [!provide]                        PROVIDE (__data_source_size = (__data_source_end - __data_source))
 
-.tbss           0x200004e4        0x0 load address 0x08009b90
-                0x200004e4                        _sbss = .
-                0x200004e4                        __bss_start__ = _sbss
+.tbss           0x200005d4        0x0 load address 0x08009e20
+                0x200005d4                        _sbss = .
+                0x200005d4                        __bss_start__ = _sbss
  *(.tbss .tbss.*)
-                0x200004e4                        . = ALIGN (0x4)
+                0x200005d4                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__tbss_end = .)
                 [!provide]                        PROVIDE (__tbss_start = ADDR (.tbss))
                 [!provide]                        PROVIDE (__tbss_size = (__tbss_end - __tbss_start))
@@ -4566,271 +4572,278 @@ LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
                 [!provide]                        PROVIDE (__arm32_tls_tcb_offset = MAX (0x8, __tls_align))
                 [!provide]                        PROVIDE (__arm64_tls_tcb_offset = MAX (0x10, __tls_align))
 
-.bss            0x200004e8     0x925c load address 0x08009b90
+.bss            0x200005d8     0x9284 load address 0x08009e20
  *(.bss)
  *(.bss*)
  .bss.completed.1
-                0x200004e8        0x1 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
- *fill*         0x200004e9        0x3 
- .bss.object.0  0x200004ec       0x18 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
- .bss.uwTick    0x20000504        0x4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x20000504                uwTick
- .bss.cfgidx.0  0x20000508        0x1 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
- *fill*         0x20000509        0x3 
+                0x200005d8        0x1 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+ *fill*         0x200005d9        0x3 
+ .bss.object.0  0x200005dc       0x18 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+ .bss.uwTick    0x200005f4        0x4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x200005f4                uwTick
+ .bss.cfgidx.0  0x200005f8        0x1 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+ *fill*         0x200005f9        0x3 
  .bss.xQueueRegistry
-                0x2000050c       0x40 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
-                0x2000050c                xQueueRegistry
+                0x200005fc       0x40 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+                0x200005fc                xQueueRegistry
  .bss.uxSchedulerSuspended
-                0x2000054c        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x2000063c        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .bss.xNextTaskUnblockTime
-                0x20000550        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x20000640        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .bss.uxTaskNumber
-                0x20000554        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x20000644        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .bss.xNumOfOverflows
-                0x20000558        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x20000648        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .bss.xYieldPending
-                0x2000055c        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x2000064c        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .bss.xPendedTicks
-                0x20000560        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x20000650        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .bss.xSchedulerRunning
-                0x20000564        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x20000654        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .bss.uxTopReadyPriority
-                0x20000568        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x20000658        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .bss.xTickCount
-                0x2000056c        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x2000065c        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .bss.uxCurrentNumberOfTasks
-                0x20000570        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x20000660        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .bss.xSuspendedTaskList
-                0x20000574       0x14 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x20000664       0x14 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .bss.uxDeletedTasksWaitingCleanUp
-                0x20000588        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x20000678        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .bss.xTasksWaitingTermination
-                0x2000058c       0x14 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x2000067c       0x14 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .bss.xPendingReadyList
-                0x200005a0       0x14 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x20000690       0x14 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .bss.pxOverflowDelayedTaskList
-                0x200005b4        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x200006a4        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .bss.pxDelayedTaskList
-                0x200005b8        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x200006a8        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .bss.xDelayedTaskList2
-                0x200005bc       0x14 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x200006ac       0x14 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .bss.xDelayedTaskList1
-                0x200005d0       0x14 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x200006c0       0x14 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .bss.pxReadyTasksLists
-                0x200005e4       0x8c cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x200006d4       0x8c cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
  .bss.pxCurrentTCB
-                0x20000670        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
-                0x20000670                pxCurrentTCB
+                0x20000760        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+                0x20000760                pxCurrentTCB
  .bss.xStaticTimerQueue.0
-                0x20000674       0x48 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x20000764       0x48 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
  .bss.ucStaticTimerQueueStorage.1
-                0x200006bc       0xa0 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x200007ac       0xa0 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
  .bss.xLastTime.2
-                0x2000075c        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x2000084c        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
  .bss.xTimerTaskHandle
-                0x20000760        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x20000850        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
  .bss.xTimerQueue
-                0x20000764        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x20000854        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
  .bss.pxOverflowTimerList
-                0x20000768        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x20000858        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
  .bss.pxCurrentTimerList
-                0x2000076c        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x2000085c        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
  .bss.xActiveTimerList2
-                0x20000770       0x14 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x20000860       0x14 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
  .bss.xActiveTimerList1
-                0x20000784       0x14 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+                0x20000874       0x14 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
  .bss.xBlockAllocatedBit
-                0x20000798        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+                0x20000888        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
  .bss.xNumberOfSuccessfulFrees
-                0x2000079c        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+                0x2000088c        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
  .bss.xNumberOfSuccessfulAllocations
-                0x200007a0        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+                0x20000890        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
  .bss.xMinimumEverFreeBytesRemaining
-                0x200007a4        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+                0x20000894        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
  .bss.xFreeBytesRemaining
-                0x200007a8        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
- .bss.pxEnd     0x200007ac        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
- .bss.xStart    0x200007b0        0x8 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
- .bss.ucHeap    0x200007b8     0x6000 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+                0x20000898        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+ .bss.pxEnd     0x2000089c        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+ .bss.xStart    0x200008a0        0x8 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+ .bss.ucHeap    0x200008a8     0x6000 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
  .bss.ulMaxPRIGROUPValue
-                0x200067b8        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+                0x200068a8        0x4 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
  .bss.ucMaxSysCallPriority
-                0x200067bc        0x1 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
- *fill*         0x200067bd        0x3 
+                0x200068ac        0x1 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+ *fill*         0x200068ad        0x3 
  .bss.xTimerStack
-                0x200067c0      0x400 CMakeFiles/three_friction.dir/Src/freertos.c.obj
+                0x200068b0      0x400 CMakeFiles/three_friction.dir/Src/freertos.c.obj
  .bss.xTimerTaskTCBBuffer
-                0x20006bc0       0x64 CMakeFiles/three_friction.dir/Src/freertos.c.obj
+                0x20006cb0       0x64 CMakeFiles/three_friction.dir/Src/freertos.c.obj
  .bss.xIdleStack
-                0x20006c24      0x200 CMakeFiles/three_friction.dir/Src/freertos.c.obj
+                0x20006d14      0x200 CMakeFiles/three_friction.dir/Src/freertos.c.obj
  .bss.xIdleTaskTCBBuffer
-                0x20006e24       0x64 CMakeFiles/three_friction.dir/Src/freertos.c.obj
+                0x20006f14       0x64 CMakeFiles/three_friction.dir/Src/freertos.c.obj
  .bss.defaultTaskHandle
-                0x20006e88        0x4 CMakeFiles/three_friction.dir/Src/freertos.c.obj
-                0x20006e88                defaultTaskHandle
- .bss.hadc3     0x20006e8c       0x48 CMakeFiles/three_friction.dir/Src/adc.c.obj
-                0x20006e8c                hadc3
- .bss.hadc1     0x20006ed4       0x48 CMakeFiles/three_friction.dir/Src/adc.c.obj
-                0x20006ed4                hadc1
+                0x20006f78        0x4 CMakeFiles/three_friction.dir/Src/freertos.c.obj
+                0x20006f78                defaultTaskHandle
+ .bss.hadc3     0x20006f7c       0x48 CMakeFiles/three_friction.dir/Src/adc.c.obj
+                0x20006f7c                hadc3
+ .bss.hadc1     0x20006fc4       0x48 CMakeFiles/three_friction.dir/Src/adc.c.obj
+                0x20006fc4                hadc1
  .bss.HAL_RCC_CAN1_CLK_ENABLED
-                0x20006f1c        0x4 CMakeFiles/three_friction.dir/Src/can.c.obj
- .bss.hcan2     0x20006f20       0x28 CMakeFiles/three_friction.dir/Src/can.c.obj
-                0x20006f20                hcan2
- .bss.hcan1     0x20006f48       0x28 CMakeFiles/three_friction.dir/Src/can.c.obj
-                0x20006f48                hcan1
- .bss.hi2c3     0x20006f70       0x54 CMakeFiles/three_friction.dir/Src/i2c.c.obj
-                0x20006f70                hi2c3
+                0x2000700c        0x4 CMakeFiles/three_friction.dir/Src/can.c.obj
+ .bss.hcan2     0x20007010       0x28 CMakeFiles/three_friction.dir/Src/can.c.obj
+                0x20007010                hcan2
+ .bss.hcan1     0x20007038       0x28 CMakeFiles/three_friction.dir/Src/can.c.obj
+                0x20007038                hcan1
+ .bss.hi2c3     0x20007060       0x54 CMakeFiles/three_friction.dir/Src/i2c.c.obj
+                0x20007060                hi2c3
  .bss.hdma_spi1_tx
-                0x20006fc4       0x60 CMakeFiles/three_friction.dir/Src/spi.c.obj
-                0x20006fc4                hdma_spi1_tx
+                0x200070b4       0x60 CMakeFiles/three_friction.dir/Src/spi.c.obj
+                0x200070b4                hdma_spi1_tx
  .bss.hdma_spi1_rx
-                0x20007024       0x60 CMakeFiles/three_friction.dir/Src/spi.c.obj
-                0x20007024                hdma_spi1_rx
- .bss.hspi1     0x20007084       0x58 CMakeFiles/three_friction.dir/Src/spi.c.obj
-                0x20007084                hspi1
+                0x20007114       0x60 CMakeFiles/three_friction.dir/Src/spi.c.obj
+                0x20007114                hdma_spi1_rx
+ .bss.hspi1     0x20007174       0x58 CMakeFiles/three_friction.dir/Src/spi.c.obj
+                0x20007174                hspi1
  .bss.hdma_tim5_ch1
-                0x200070dc       0x60 CMakeFiles/three_friction.dir/Src/tim.c.obj
-                0x200070dc                hdma_tim5_ch1
- .bss.htim10    0x2000713c       0x48 CMakeFiles/three_friction.dir/Src/tim.c.obj
-                0x2000713c                htim10
- .bss.htim8     0x20007184       0x48 CMakeFiles/three_friction.dir/Src/tim.c.obj
-                0x20007184                htim8
- .bss.htim6     0x200071cc       0x48 CMakeFiles/three_friction.dir/Src/tim.c.obj
-                0x200071cc                htim6
- .bss.htim5     0x20007214       0x48 CMakeFiles/three_friction.dir/Src/tim.c.obj
-                0x20007214                htim5
- .bss.htim4     0x2000725c       0x48 CMakeFiles/three_friction.dir/Src/tim.c.obj
-                0x2000725c                htim4
- .bss.htim3     0x200072a4       0x48 CMakeFiles/three_friction.dir/Src/tim.c.obj
-                0x200072a4                htim3
- .bss.htim1     0x200072ec       0x48 CMakeFiles/three_friction.dir/Src/tim.c.obj
-                0x200072ec                htim1
+                0x200071cc       0x60 CMakeFiles/three_friction.dir/Src/tim.c.obj
+                0x200071cc                hdma_tim5_ch1
+ .bss.htim10    0x2000722c       0x48 CMakeFiles/three_friction.dir/Src/tim.c.obj
+                0x2000722c                htim10
+ .bss.htim8     0x20007274       0x48 CMakeFiles/three_friction.dir/Src/tim.c.obj
+                0x20007274                htim8
+ .bss.htim6     0x200072bc       0x48 CMakeFiles/three_friction.dir/Src/tim.c.obj
+                0x200072bc                htim6
+ .bss.htim5     0x20007304       0x48 CMakeFiles/three_friction.dir/Src/tim.c.obj
+                0x20007304                htim5
+ .bss.htim4     0x2000734c       0x48 CMakeFiles/three_friction.dir/Src/tim.c.obj
+                0x2000734c                htim4
+ .bss.htim3     0x20007394       0x48 CMakeFiles/three_friction.dir/Src/tim.c.obj
+                0x20007394                htim3
+ .bss.htim1     0x200073dc       0x48 CMakeFiles/three_friction.dir/Src/tim.c.obj
+                0x200073dc                htim1
  .bss.hdma_usart6_tx
-                0x20007334       0x60 CMakeFiles/three_friction.dir/Src/usart.c.obj
-                0x20007334                hdma_usart6_tx
+                0x20007424       0x60 CMakeFiles/three_friction.dir/Src/usart.c.obj
+                0x20007424                hdma_usart6_tx
  .bss.hdma_usart6_rx
-                0x20007394       0x60 CMakeFiles/three_friction.dir/Src/usart.c.obj
-                0x20007394                hdma_usart6_rx
+                0x20007484       0x60 CMakeFiles/three_friction.dir/Src/usart.c.obj
+                0x20007484                hdma_usart6_rx
  .bss.hdma_usart3_rx
-                0x200073f4       0x60 CMakeFiles/three_friction.dir/Src/usart.c.obj
-                0x200073f4                hdma_usart3_rx
+                0x200074e4       0x60 CMakeFiles/three_friction.dir/Src/usart.c.obj
+                0x200074e4                hdma_usart3_rx
  .bss.hdma_usart1_tx
-                0x20007454       0x60 CMakeFiles/three_friction.dir/Src/usart.c.obj
-                0x20007454                hdma_usart1_tx
+                0x20007544       0x60 CMakeFiles/three_friction.dir/Src/usart.c.obj
+                0x20007544                hdma_usart1_tx
  .bss.hdma_usart1_rx
-                0x200074b4       0x60 CMakeFiles/three_friction.dir/Src/usart.c.obj
-                0x200074b4                hdma_usart1_rx
- .bss.huart6    0x20007514       0x78 CMakeFiles/three_friction.dir/Src/usart.c.obj
-                0x20007514                huart6
- .bss.huart3    0x2000758c       0x78 CMakeFiles/three_friction.dir/Src/usart.c.obj
-                0x2000758c                huart3
- .bss.huart1    0x20007604       0x78 CMakeFiles/three_friction.dir/Src/usart.c.obj
-                0x20007604                huart1
+                0x200075a4       0x60 CMakeFiles/three_friction.dir/Src/usart.c.obj
+                0x200075a4                hdma_usart1_rx
+ .bss.huart6    0x20007604       0x78 CMakeFiles/three_friction.dir/Src/usart.c.obj
+                0x20007604                huart6
+ .bss.huart3    0x2000767c       0x78 CMakeFiles/three_friction.dir/Src/usart.c.obj
+                0x2000767c                huart3
+ .bss.huart1    0x200076f4       0x78 CMakeFiles/three_friction.dir/Src/usart.c.obj
+                0x200076f4                huart1
  .bss.hUsbDeviceFS
-                0x2000767c      0x2dc CMakeFiles/three_friction.dir/Src/usb_device.c.obj
-                0x2000767c                hUsbDeviceFS
- .bss.mem.0     0x20007958      0x220 CMakeFiles/three_friction.dir/Src/usbd_conf.c.obj
+                0x2000776c      0x2dc CMakeFiles/three_friction.dir/Src/usb_device.c.obj
+                0x2000776c                hUsbDeviceFS
+ .bss.mem.0     0x20007a48      0x220 CMakeFiles/three_friction.dir/Src/usbd_conf.c.obj
  .bss.hpcd_USB_OTG_FS
-                0x20007b78      0x4e4 CMakeFiles/three_friction.dir/Src/usbd_conf.c.obj
-                0x20007b78                hpcd_USB_OTG_FS
+                0x20007c68      0x4e4 CMakeFiles/three_friction.dir/Src/usbd_conf.c.obj
+                0x20007c68                hpcd_USB_OTG_FS
  .bss.USBD_StrDesc
-                0x2000805c      0x200 CMakeFiles/three_friction.dir/Src/usbd_desc.c.obj
-                0x2000805c                USBD_StrDesc
+                0x2000814c      0x200 CMakeFiles/three_friction.dir/Src/usbd_desc.c.obj
+                0x2000814c                USBD_StrDesc
  .bss.UserTxBufferFS
-                0x2000825c      0x800 CMakeFiles/three_friction.dir/Src/usbd_cdc_if.c.obj
-                0x2000825c                UserTxBufferFS
+                0x2000834c      0x800 CMakeFiles/three_friction.dir/Src/usbd_cdc_if.c.obj
+                0x2000834c                UserTxBufferFS
  .bss.UserRxBufferFS
-                0x20008a5c      0x800 CMakeFiles/three_friction.dir/Src/usbd_cdc_if.c.obj
-                0x20008a5c                UserRxBufferFS
- .bss.htim7     0x2000925c       0x48 CMakeFiles/three_friction.dir/Src/stm32f4xx_hal_timebase_tim.c.obj
-                0x2000925c                htim7
+                0x20008b4c      0x800 CMakeFiles/three_friction.dir/Src/usbd_cdc_if.c.obj
+                0x20008b4c                UserRxBufferFS
+ .bss.htim7     0x2000934c       0x48 CMakeFiles/three_friction.dir/Src/stm32f4xx_hal_timebase_tim.c.obj
+                0x2000934c                htim7
  .bss.__sbrk_heap_end
-                0x200092a4        0x4 CMakeFiles/three_friction.dir/Src/sysmem.c.obj
+                0x20009394        0x4 CMakeFiles/three_friction.dir/Src/sysmem.c.obj
+ .bss._ZZ9debugTaskPvE1j
+                0x20009398        0x4 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+ .bss._ZZ9debugTaskPvE1i
+                0x2000939c        0x4 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+ .bss._ZZ9debugTaskPvE12target_angle
+                0x200093a0        0x4 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+ .bss._ZGVZ9debugTaskPvE9pid_angle
+                0x200093a4        0x4 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
  .bss._ZGVZ9debugTaskPvE9pid_speed
-                0x200092a8        0x4 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x200093a8        0x4 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
  .bss._ZGVZ9debugTaskPvE2m1
-                0x200092ac        0x4 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x200093ac        0x4 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
  .bss._ZZ9debugTaskPvE2m1
-                0x200092b0       0x64 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x200093b0       0x80 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
  .bss._ZN3Dwt9sys_time_E
-                0x20009314        0x8 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
-                0x20009314                Dwt::sys_time_
- *fill*         0x2000931c        0x4 
+                0x20009430        0x8 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+                0x20009430                Dwt::sys_time_
  .bss._ZN3Dwt9cyccnt64_E
-                0x20009320        0x8 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
-                0x20009320                Dwt::cyccnt64_
+                0x20009438        0x8 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+                0x20009438                Dwt::cyccnt64_
  .bss._ZN3Dwt12cyccnt_last_E
-                0x20009328        0x4 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
-                0x20009328                Dwt::cyccnt_last_
+                0x20009440        0x4 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+                0x20009440                Dwt::cyccnt_last_
  .bss._ZN3Dwt19cyccnt_round_count_E
-                0x2000932c        0x4 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
-                0x2000932c                Dwt::cyccnt_round_count_
+                0x20009444        0x4 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+                0x20009444                Dwt::cyccnt_round_count_
  .bss._ZN3Dwt15cpu_freq_hz_us_E
-                0x20009330        0x4 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
-                0x20009330                Dwt::cpu_freq_hz_us_
+                0x20009448        0x4 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+                0x20009448                Dwt::cpu_freq_hz_us_
  .bss._ZN3Dwt15cpu_freq_hz_ms_E
-                0x20009334        0x4 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
-                0x20009334                Dwt::cpu_freq_hz_ms_
+                0x2000944c        0x4 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+                0x2000944c                Dwt::cpu_freq_hz_ms_
  .bss._ZN3Dwt12cpu_freq_hz_E
-                0x20009338        0x4 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
-                0x20009338                Dwt::cpu_freq_hz_
+                0x20009450        0x4 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+                0x20009450                Dwt::cpu_freq_hz_
  .bss._ZN12_GLOBAL__N_1L13s_error_countE
-                0x2000933c        0x4 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+                0x20009454        0x4 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
  .bss._ZN12_GLOBAL__N_1L9s_messageE
-                0x20009340       0x34 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+                0x20009458       0x34 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
  .bss._ZN12_GLOBAL__N_1L9s_rx_dataE
-                0x20009374       0x30 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+                0x2000948c       0x30 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
  .bss._ZN12_GLOBAL__N_1L9s_tx_dataE
-                0x200093a4       0x30 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+                0x200094bc       0x30 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
  .bss._ZN12_GLOBAL__N_1L7s_huartE
-                0x200093d4        0x4 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
- .bss._ZN7canNode8node_tabE
-                0x200093d8       0x8c CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x200093d8                canNode::node_tab
+                0x200094ec        0x4 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+ .bss._ZN7CanNode8node_tabE
+                0x200094f0       0x8c CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x200094f0                CanNode::node_tab
  .bss.__malloc_sbrk_start
-                0x20009464        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mallocr.o)
-                0x20009464                __malloc_sbrk_start
+                0x2000957c        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mallocr.o)
+                0x2000957c                __malloc_sbrk_start
  .bss.__malloc_free_list
-                0x20009468        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mallocr.o)
-                0x20009468                __malloc_free_list
- .bss.__sf      0x2000946c      0x138 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
-                0x2000946c                __sf
- .bss.errno     0x200095a4        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-reent.o)
-                0x200095a4                errno
+                0x20009580        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mallocr.o)
+                0x20009580                __malloc_free_list
+ .bss.__sf      0x20009584      0x138 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+                0x20009584                __sf
+ .bss.errno     0x200096bc        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-reent.o)
+                0x200096bc                errno
  .bss.__lock___malloc_recursive_mutex
-                0x200095a8        0x1 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lock.o)
-                0x200095a8                __lock___malloc_recursive_mutex
+                0x200096c0        0x1 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lock.o)
+                0x200096c0                __lock___malloc_recursive_mutex
  .bss.__lock___atexit_recursive_mutex
-                0x200095a9        0x1 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lock.o)
-                0x200095a9                __lock___atexit_recursive_mutex
- *fill*         0x200095aa        0x2 
+                0x200096c1        0x1 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lock.o)
+                0x200096c1                __lock___atexit_recursive_mutex
+ *fill*         0x200096c2        0x2 
  .bss.__atexit0
-                0x200095ac       0x8c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__atexit.o)
-                0x200095ac                __atexit0
- .bss.__atexit  0x20009638        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__call_atexit.o)
-                0x20009638                __atexit
+                0x200096c4       0x8c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__atexit.o)
+                0x200096c4                __atexit0
+ .bss.__atexit  0x20009750        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__call_atexit.o)
+                0x20009750                __atexit
  .bss._on_exit_args_instance
-                0x2000963c      0x108 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-on_exit_args.o)
+                0x20009754      0x108 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-on_exit_args.o)
  *(COMMON)
-                0x20009744                        . = ALIGN (0x4)
-                0x20009744                        _ebss = .
-                0x20009744                        __bss_end__ = _ebss
+                0x2000985c                        . = ALIGN (0x4)
+                0x2000985c                        _ebss = .
+                0x2000985c                        __bss_end__ = _ebss
                 [!provide]                        PROVIDE (__bss_end = .)
                 [!provide]                        PROVIDE (__non_tls_bss_start = ADDR (.bss))
                 [!provide]                        PROVIDE (__bss_start = __tbss_start)
                 [!provide]                        PROVIDE (__bss_size = (__bss_end - __bss_start))
 
 ._user_heap_stack
-                0x20009744     0x4004 load address 0x08009b90
-                0x20009748                        . = ALIGN (0x8)
- *fill*         0x20009744        0x4 
+                0x2000985c     0x4004 load address 0x08009e20
+                0x20009860                        . = ALIGN (0x8)
+ *fill*         0x2000985c        0x4 
                 [!provide]                        PROVIDE (end = .)
-                0x20009748                        PROVIDE (_end = .)
-                0x2000b748                        . = (. + _Min_Heap_Size)
- *fill*         0x20009748     0x2000 
-                0x2000d748                        . = (. + _Min_Stack_Size)
- *fill*         0x2000b748     0x2000 
-                0x2000d748                        . = ALIGN (0x8)
+                0x20009860                        PROVIDE (_end = .)
+                0x2000b860                        . = (. + _Min_Heap_Size)
+ *fill*         0x20009860     0x2000 
+                0x2000d860                        . = (. + _Min_Stack_Size)
+ *fill*         0x2000b860     0x2000 
+                0x2000d860                        . = ALIGN (0x8)
 
 /DISCARD/
  libc.a:*(*)
@@ -4940,13 +4953,13 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000099b       0x34 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
  .ARM.attributes
-                0x000009cf       0x34 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+                0x000009cf       0x34 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
  .ARM.attributes
-                0x00000a03       0x34 CMakeFiles/three_friction.dir/UserCode/Common/kalman_filter.cpp.obj
+                0x00000a03       0x34 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
  .ARM.attributes
-                0x00000a37       0x34 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
+                0x00000a37       0x34 CMakeFiles/three_friction.dir/UserCode/Common/kalman_filter.cpp.obj
  .ARM.attributes
-                0x00000a6b       0x34 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
+                0x00000a6b       0x34 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
  .ARM.attributes
                 0x00000a9f       0x34 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
  .ARM.attributes
@@ -5103,13 +5116,13 @@ LOAD linker stubs
                                  0x1f (size before relaxing)
  .comment       0x0000003c        0x0 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
                                  0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                                 0x1f (size before relaxing)
  .comment       0x0000003c        0x0 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
                                  0x1f (size before relaxing)
  .comment       0x0000003c        0x0 CMakeFiles/three_friction.dir/UserCode/Common/kalman_filter.cpp.obj
                                  0x1f (size before relaxing)
  .comment       0x0000003c        0x0 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
-                                 0x1f (size before relaxing)
- .comment       0x0000003c        0x0 CMakeFiles/three_friction.dir/UserCode/Common/pid.cpp.obj
                                  0x1f (size before relaxing)
  .comment       0x0000003c        0x0 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
                                  0x1f (size before relaxing)

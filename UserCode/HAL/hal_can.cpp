@@ -4,10 +4,10 @@
 
 #include "hal_can.hpp"
 
-etl::vector<canNode *, canCfg::kCanNodeSizeMax> canNode::node_tab;
+etl::vector<CanNode *, canCfg::kCanNodeSizeMax> CanNode::node_tab;
 
 
-HAL_StatusTypeDef canNode::send(const uint8_t *data, uint16_t len)
+HAL_StatusTypeDef CanNode::send(const uint8_t *data, uint16_t len)
 {
         if (hcan_ == nullptr || data == nullptr) { return HAL_ERROR; }
         if (len > 8U) { len = 8U; } // 经典 CAN 单帧上限
@@ -25,7 +25,7 @@ HAL_StatusTypeDef canNode::send(const uint8_t *data, uint16_t len)
         return HAL_CAN_AddTxMessage(hcan_, &tx_header, const_cast<uint8_t *>(data), &mailbox);
 }
 
-HAL_StatusTypeDef canNode::sendEx(const uint8_t *data, uint16_t len)
+HAL_StatusTypeDef CanNode::sendEx(const uint8_t *data, uint16_t len)
 {
         if (hcan_ == nullptr || data == nullptr) { return HAL_ERROR; }
         if (len > 8U) { len = 8U; }
@@ -41,13 +41,13 @@ HAL_StatusTypeDef canNode::sendEx(const uint8_t *data, uint16_t len)
         return HAL_CAN_AddTxMessage(hcan_, &tx_header, const_cast<uint8_t *>(data), &mailbox);
 }
 
-HAL_StatusTypeDef canNode::onFrame(const uint8_t *data, uint16_t len)
+HAL_StatusTypeDef CanNode::onFrame(const uint8_t *data, uint16_t len)
 {
         return HAL_ERROR;
 }
 
 
-HAL_StatusTypeDef canNode::filterInit(CAN_HandleTypeDef *hcan)
+HAL_StatusTypeDef CanNode::filterInit(CAN_HandleTypeDef *hcan)
 {
         if (hcan == nullptr) { return HAL_ERROR; }
 
@@ -94,7 +94,7 @@ extern "C" void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 
                 const uint32_t id = (hdr.IDE == CAN_ID_EXT) ? hdr.ExtId : hdr.StdId;
 
-                for (canNode *n : canNode::nodes())
+                for (CanNode *n : CanNode::nodes())
                 {
                         if (n == nullptr || n->getHcan() != hcan) { continue; }
                         if ((id & n->getIdMask()) == (n->getFeedbackId() & n->getIdMask()))

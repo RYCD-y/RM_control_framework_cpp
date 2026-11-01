@@ -226,9 +226,7 @@ CMAKE_STRIP:FILEPATH=/usr/sbin/arm-none-eabi-strip
 //Path to a program.
 CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 
-//Path to a CMake toolchain file, read early in the CMake run,
-// that specifies the compilers, toolchain utilities, and target-platform
-// information used when cross-compiling.
+//The CMake toolchain file
 CMAKE_TOOLCHAIN_FILE:FILEPATH=/home/ye/Projects/embedded/three_friction/cmake/gcc-arm-none-eabi.cmake
 
 //If this value is on, makefiles will be generated without the
@@ -277,7 +275,7 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=4
 //Minor version of cmake used to create the current loaded cache
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=4
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=4
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=5
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=/usr/sbin/cmake
 //Path to cpack program executable.

@@ -2162,3 +2162,886 @@ events:
       CMAKE_SYSTEM_PROGRAM_PATH:
         - "/bin"
 ...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:213 (message)"
+      - "CMakeLists.txt:33 (project)"
+    message: |
+      The target system is: Generic -  - arm
+      The host system is: Linux - 7.2.11-zen1-1-zen - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:67 (_cmake_find_compiler_path)"
+      - "CMakeLists.txt:33 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-gcc"
+    candidate_directories:
+      - "/home/ye/.nix-profile/bin/"
+      - "/etc/profiles/per-user/ye/bin/"
+      - "/home/ye/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/opt/cuda/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/clion/bin/ninja/linux/x64/"
+    searched_directories:
+      - "/home/ye/.nix-profile/bin/arm-none-eabi-gcc"
+      - "/etc/profiles/per-user/ye/bin/arm-none-eabi-gcc"
+      - "/home/ye/.local/bin/arm-none-eabi-gcc"
+      - "/usr/local/sbin/arm-none-eabi-gcc"
+      - "/usr/local/bin/arm-none-eabi-gcc"
+    found: "/usr/sbin/arm-none-eabi-gcc"
+    search_context:
+      ENV{PATH}:
+        - "/home/ye/.nix-profile/bin"
+        - "/etc/profiles/per-user/ye/bin"
+        - "/home/ye/.local/bin"
+        - "/home/ye/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/opt/cuda/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/opt/clion/bin/ninja/linux/x64"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:33 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/usr/share/cmake/Modules/"
+    found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/ye/.nix-profile/bin"
+        - "/etc/profiles/per-user/ye/bin"
+        - "/home/ye/.local/bin"
+        - "/home/ye/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/opt/cuda/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/opt/clion/bin/ninja/linux/x64"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:33 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/sbin/arm-none-eabi-gcc 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fstack-usage;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fstack-usage
+      Id flags:  
+      
+      The output was:
+      1
+      /usr/arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-exit.o): in function `exit':
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/stdlib/exit.c:65:(.text.exit+0x14): undefined reference to `_exit'
+      /usr/arm-none-eabi/bin/ld: (_exit): Unknown destination type (ARM/Thumb) in /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-exit.o)
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/stdlib/exit.c:65:(.text.exit+0x14): dangerous relocation: unsupported relocation
+      /usr/arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-closer.o): in function `_close_r':
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/reent/closer.c:47:(.text._close_r+0xc): undefined reference to `_close'
+      /usr/arm-none-eabi/bin/ld: (_close): Unknown destination type (ARM/Thumb) in /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-closer.o)
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/reent/closer.c:47:(.text._close_r+0xc): dangerous relocation: unsupported relocation
+      /usr/arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lseekr.o): in function `_lseek_r':
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/reent/lseekr.c:49:(.text._lseek_r+0x12): undefined reference to `_lseek'
+      /usr/arm-none-eabi/bin/ld: (_lseek): Unknown destination type (ARM/Thumb) in /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lseekr.o)
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/reent/lseekr.c:49:(.text._lseek_r+0x12): dangerous relocation: unsupported relocation
+      /usr/arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-readr.o): in function `_read_r':
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/reent/readr.c:49:(.text._read_r+0x12): undefined reference to `_read'
+      /usr/arm-none-eabi/bin/ld: (_read): Unknown destination type (ARM/Thumb) in /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-readr.o)
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/reent/readr.c:49:(.text._read_r+0x12): dangerous relocation: unsupported relocation
+      /usr/arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-writer.o): in function `_write_r':
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/reent/writer.c:49:(.text._write_r+0x12): undefined reference to `_write'
+      /usr/arm-none-eabi/bin/ld: (_write): Unknown destination type (ARM/Thumb) in /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-writer.o)
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/reent/writer.c:49:(.text._write_r+0x12): dangerous relocation: unsupported relocation
+      /usr/arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/reent/sbrkr.c:51:(.text._sbrk_r+0xc): undefined reference to `_sbrk'
+      /usr/arm-none-eabi/bin/ld: (_sbrk): Unknown destination type (ARM/Thumb) in /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sbrkr.o)
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/reent/sbrkr.c:51:(.text._sbrk_r+0xc): dangerous relocation: unsupported relocation
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:33 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/usr/share/cmake/Modules/"
+    found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/ye/.nix-profile/bin"
+        - "/etc/profiles/per-user/ye/bin"
+        - "/home/ye/.local/bin"
+        - "/home/ye/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/opt/cuda/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/opt/clion/bin/ninja/linux/x64"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:33 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/sbin/arm-none-eabi-gcc 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fstack-usage;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fstack-usage
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.su"
+      
+      The C compiler identification is GNU, found in:
+        /home/ye/Projects/embedded/three_friction/build/Debug/CMakeFiles/4.4.5/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:57 (__resolve_tool_path)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:33 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-g++"
+    candidate_directories:
+      - "/usr/sbin/"
+      - "/home/ye/.nix-profile/bin/"
+      - "/etc/profiles/per-user/ye/bin/"
+      - "/home/ye/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/opt/cuda/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/clion/bin/ninja/linux/x64/"
+    found: "/usr/sbin/arm-none-eabi-g++"
+    search_context:
+      ENV{PATH}:
+        - "/home/ye/.nix-profile/bin"
+        - "/etc/profiles/per-user/ye/bin"
+        - "/home/ye/.local/bin"
+        - "/home/ye/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/opt/cuda/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/opt/clion/bin/ninja/linux/x64"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:71 (_cmake_find_compiler_path)"
+      - "CMakeLists.txt:33 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-g++"
+    candidate_directories:
+      - "/home/ye/.nix-profile/bin/"
+      - "/etc/profiles/per-user/ye/bin/"
+      - "/home/ye/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/opt/cuda/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/clion/bin/ninja/linux/x64/"
+    searched_directories:
+      - "/home/ye/.nix-profile/bin/arm-none-eabi-g++"
+      - "/etc/profiles/per-user/ye/bin/arm-none-eabi-g++"
+      - "/home/ye/.local/bin/arm-none-eabi-g++"
+      - "/usr/local/sbin/arm-none-eabi-g++"
+      - "/usr/local/bin/arm-none-eabi-g++"
+    found: "/usr/sbin/arm-none-eabi-g++"
+    search_context:
+      ENV{PATH}:
+        - "/home/ye/.nix-profile/bin"
+        - "/etc/profiles/per-user/ye/bin"
+        - "/home/ye/.local/bin"
+        - "/home/ye/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/opt/cuda/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/opt/clion/bin/ninja/linux/x64"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:33 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/usr/share/cmake/Modules/"
+    found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/ye/.nix-profile/bin"
+        - "/etc/profiles/per-user/ye/bin"
+        - "/home/ye/.local/bin"
+        - "/home/ye/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/opt/cuda/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/opt/clion/bin/ninja/linux/x64"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:33 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/sbin/arm-none-eabi-g++ 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fstack-usage;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fstack-usage;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Id flags:  
+      
+      The output was:
+      1
+      /usr/arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-exit.o): in function `exit':
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/stdlib/exit.c:65:(.text.exit+0x14): undefined reference to `_exit'
+      /usr/arm-none-eabi/bin/ld: (_exit): Unknown destination type (ARM/Thumb) in /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-exit.o)
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/stdlib/exit.c:65:(.text.exit+0x14): dangerous relocation: unsupported relocation
+      /usr/arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-closer.o): in function `_close_r':
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/reent/closer.c:47:(.text._close_r+0xc): undefined reference to `_close'
+      /usr/arm-none-eabi/bin/ld: (_close): Unknown destination type (ARM/Thumb) in /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-closer.o)
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/reent/closer.c:47:(.text._close_r+0xc): dangerous relocation: unsupported relocation
+      /usr/arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lseekr.o): in function `_lseek_r':
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/reent/lseekr.c:49:(.text._lseek_r+0x12): undefined reference to `_lseek'
+      /usr/arm-none-eabi/bin/ld: (_lseek): Unknown destination type (ARM/Thumb) in /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lseekr.o)
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/reent/lseekr.c:49:(.text._lseek_r+0x12): dangerous relocation: unsupported relocation
+      /usr/arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-readr.o): in function `_read_r':
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/reent/readr.c:49:(.text._read_r+0x12): undefined reference to `_read'
+      /usr/arm-none-eabi/bin/ld: (_read): Unknown destination type (ARM/Thumb) in /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-readr.o)
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/reent/readr.c:49:(.text._read_r+0x12): dangerous relocation: unsupported relocation
+      /usr/arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-writer.o): in function `_write_r':
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/reent/writer.c:49:(.text._write_r+0x12): undefined reference to `_write'
+      /usr/arm-none-eabi/bin/ld: (_write): Unknown destination type (ARM/Thumb) in /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-writer.o)
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/reent/writer.c:49:(.text._write_r+0x12): dangerous relocation: unsupported relocation
+      /usr/arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/reent/sbrkr.c:51:(.text._sbrk_r+0xc): undefined reference to `_sbrk'
+      /usr/arm-none-eabi/bin/ld: (_sbrk): Unknown destination type (ARM/Thumb) in /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sbrkr.o)
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib-4.6.0.20260123/newlib/libc/reent/sbrkr.c:51:(.text._sbrk_r+0xc): dangerous relocation: unsupported relocation
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:33 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/usr/share/cmake/Modules/"
+    found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/ye/.nix-profile/bin"
+        - "/etc/profiles/per-user/ye/bin"
+        - "/home/ye/.local/bin"
+        - "/home/ye/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/opt/cuda/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/opt/clion/bin/ninja/linux/x64"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:33 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/sbin/arm-none-eabi-g++ 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fstack-usage;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fstack-usage;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.su"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/ye/Projects/embedded/three_friction/build/Debug/CMakeFiles/4.4.5/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:33 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/ye/Projects/embedded/three_friction/build/Debug/CMakeFiles/CMakeScratch/TryCompile-M4GNmc"
+      binary: "/home/ye/Projects/embedded/three_friction/build/Debug/CMakeFiles/CMakeScratch/TryCompile-M4GNmc"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g3"
+      CMAKE_EXE_LINKER_FLAGS: "-mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -T \"/home/ye/Projects/embedded/three_friction/STM32F407xx_FLASH.ld\" --specs=nano.specs -Wl,-Map=three_friction.map -Wl,--gc-sections -Wl,--print-memory-usage"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: '/home/ye/Projects/embedded/three_friction/build/Debug/CMakeFiles/CMakeScratch/TryCompile-M4GNmc'
+        
+        Run Build Command(s): /usr/sbin/ninja -v cmTC_1fef8
+        [1/2] /usr/sbin/arm-none-eabi-gcc   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage  -std=gnu11 -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_1fef8.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/sbin/arm-none-eabi-gcc
+        Target: arm-none-eabi
+        Configured with: /build/arm-none-eabi-gcc/src/gcc-16.2.0/configure --target=arm-none-eabi --prefix=/usr --with-sysroot=/usr/arm-none-eabi --with-native-system-header-dir=/include --libexecdir=/usr/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/usr/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect-function --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='Arch Repository' --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/arm-none-eabi-gcc/-/issues --with-multilib-list=rmprofile
+        Thread model: single
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.2.0 (Arch Repository) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_1fef8.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_1fef8.dir/'
+         /usr/lib/gcc/arm-none-eabi/16.2.0/cc1 -quiet -v -imultilib thumb/v7e-m+fp/hard -D__USES_INITFINI__ /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_1fef8.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -mlibarch=armv7e-m+fp -march=armv7e-m+fp -Wall -std=gnu11 -version -fdiagnostics-color=always -fstack-usage -fdata-sections -ffunction-sections -fstack-usage -o /tmp/ccuAzZKM.s
+        GNU C11 (Arch Repository) version 16.2.0 (arm-none-eabi)
+        	compiled by GNU C version 16.2.1 20260810, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.28-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/arm-none-eabi/usr/local/include"
+        ignoring duplicate directory "/usr/arm-none-eabi/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/arm-none-eabi/16.2.0/include
+         /usr/lib/gcc/arm-none-eabi/16.2.0/include-fixed
+         /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include
+        End of search list.
+        Compiler executable checksum: 49f3054e89f24d08d571ce2a49dd47f3
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_1fef8.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_1fef8.dir/'
+         /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/bin/as -v -march=armv7e-m+fp -mfloat-abi=hard -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_1fef8.dir/CMakeCCompilerABI.c.obj /tmp/ccuAzZKM.s
+        GNU assembler version 2.47 (arm-none-eabi) using BFD version (GNU Binutils) 2.47.20260726
+        COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/:/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/:/usr/arm-none-eabi/lib/thumb/v7e-m+fp/hard/:/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_1fef8.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_1fef8.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /usr/sbin/cmake -E rm -f libcmTC_1fef8.a && /usr/sbin/arm-none-eabi-ar qc libcmTC_1fef8.a  CMakeFiles/cmTC_1fef8.dir/CMakeCCompilerABI.c.obj && /usr/sbin/arm-none-eabi-ranlib libcmTC_1fef8.a && :
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:33 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/arm-none-eabi/16.2.0/include]
+          add: [/usr/lib/gcc/arm-none-eabi/16.2.0/include-fixed]
+          add: [/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/arm-none-eabi/16.2.0/include] ==> [/usr/lib/gcc/arm-none-eabi/16.2.0/include]
+        collapse include dir [/usr/lib/gcc/arm-none-eabi/16.2.0/include-fixed] ==> [/usr/lib/gcc/arm-none-eabi/16.2.0/include-fixed]
+        collapse include dir [/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include] ==> [/usr/arm-none-eabi/include]
+        implicit include dirs: [/usr/lib/gcc/arm-none-eabi/16.2.0/include;/usr/lib/gcc/arm-none-eabi/16.2.0/include-fixed;/usr/arm-none-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:33 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-none-eabi-g\\+\\+|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(arm-none-eabi-g\\+\\+|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
+        ignore line: [Change Dir: '/home/ye/Projects/embedded/three_friction/build/Debug/CMakeFiles/CMakeScratch/TryCompile-M4GNmc']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/sbin/ninja -v cmTC_1fef8]
+        ignore line: [[1/2] /usr/sbin/arm-none-eabi-gcc   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage  -std=gnu11 -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_1fef8.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/sbin/arm-none-eabi-gcc]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /build/arm-none-eabi-gcc/src/gcc-16.2.0/configure --target=arm-none-eabi --prefix=/usr --with-sysroot=/usr/arm-none-eabi --with-native-system-header-dir=/include --libexecdir=/usr/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/usr/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect-function --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='Arch Repository' --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/arm-none-eabi-gcc/-/issues --with-multilib-list=rmprofile]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.2.0 (Arch Repository) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_1fef8.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_1fef8.dir/']
+        ignore line: [ /usr/lib/gcc/arm-none-eabi/16.2.0/cc1 -quiet -v -imultilib thumb/v7e-m+fp/hard -D__USES_INITFINI__ /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_1fef8.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -mlibarch=armv7e-m+fp -march=armv7e-m+fp -Wall -std=gnu11 -version -fdiagnostics-color=always -fstack-usage -fdata-sections -ffunction-sections -fstack-usage -o /tmp/ccuAzZKM.s]
+        ignore line: [GNU C11 (Arch Repository) version 16.2.0 (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 16.2.1 20260810  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.28-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/arm-none-eabi/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/usr/arm-none-eabi/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/arm-none-eabi/16.2.0/include]
+        ignore line: [ /usr/lib/gcc/arm-none-eabi/16.2.0/include-fixed]
+        ignore line: [ /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 49f3054e89f24d08d571ce2a49dd47f3]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_1fef8.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_1fef8.dir/']
+        ignore line: [ /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/bin/as -v -march=armv7e-m+fp -mfloat-abi=hard -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_1fef8.dir/CMakeCCompilerABI.c.obj /tmp/ccuAzZKM.s]
+        ignore line: [GNU assembler version 2.47 (arm-none-eabi) using BFD version (GNU Binutils) 2.47.20260726]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/:/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/:/usr/arm-none-eabi/lib/thumb/v7e-m+fp/hard/:/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_1fef8.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_1fef8.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /usr/sbin/cmake -E rm -f libcmTC_1fef8.a && /usr/sbin/arm-none-eabi-ar qc libcmTC_1fef8.a  CMakeFiles/cmTC_1fef8.dir/CMakeCCompilerABI.c.obj && /usr/sbin/arm-none-eabi-ranlib libcmTC_1fef8.a && :]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:33 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/ye/Projects/embedded/three_friction/build/Debug/CMakeFiles/CMakeScratch/TryCompile-wTKmDm"
+      binary: "/home/ye/Projects/embedded/three_friction/build/Debug/CMakeFiles/CMakeScratch/TryCompile-wTKmDm"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -fno-rtti -fno-exceptions -fno-threadsafe-statics"
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g3"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "-mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -T \"/home/ye/Projects/embedded/three_friction/STM32F407xx_FLASH.ld\" --specs=nano.specs -Wl,-Map=three_friction.map -Wl,--gc-sections -Wl,--print-memory-usage"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: '/home/ye/Projects/embedded/three_friction/build/Debug/CMakeFiles/CMakeScratch/TryCompile-wTKmDm'
+        
+        Run Build Command(s): /usr/sbin/ninja -v cmTC_6b24c
+        [1/2] /usr/sbin/arm-none-eabi-g++   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -fno-rtti -fno-exceptions -fno-threadsafe-statics  -std=c++17 -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_6b24c.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/sbin/arm-none-eabi-g++
+        Target: arm-none-eabi
+        Configured with: /build/arm-none-eabi-gcc/src/gcc-16.2.0/configure --target=arm-none-eabi --prefix=/usr --with-sysroot=/usr/arm-none-eabi --with-native-system-header-dir=/include --libexecdir=/usr/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/usr/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect-function --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='Arch Repository' --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/arm-none-eabi-gcc/-/issues --with-multilib-list=rmprofile
+        Thread model: single
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.2.0 (Arch Repository) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-std=c++17' '-v' '-o' 'CMakeFiles/cmTC_6b24c.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_6b24c.dir/'
+         /usr/lib/gcc/arm-none-eabi/16.2.0/cc1plus -quiet -v -imultilib thumb/v7e-m+fp/hard -D__USES_INITFINI__ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_6b24c.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -mlibarch=armv7e-m+fp -march=armv7e-m+fp -Wall -std=c++17 -version -fdiagnostics-color=always -fstack-usage -fdata-sections -ffunction-sections -fstack-usage -fno-rtti -fno-exceptions -fno-threadsafe-statics -o /tmp/cclrombU.s
+        GNU C++17 (Arch Repository) version 16.2.0 (arm-none-eabi)
+        	compiled by GNU C version 16.2.1 20260810, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.28-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/arm-none-eabi/usr/local/include"
+        ignoring duplicate directory "/usr/arm-none-eabi/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include/c++/16.2.0
+         /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include/c++/16.2.0/arm-none-eabi/thumb/v7e-m+fp/hard
+         /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include/c++/16.2.0/backward
+         /usr/lib/gcc/arm-none-eabi/16.2.0/include
+         /usr/lib/gcc/arm-none-eabi/16.2.0/include-fixed
+         /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include
+        End of search list.
+        Compiler executable checksum: 4566a498c750cef49ed2e041f51a1bfc
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-std=c++17' '-v' '-o' 'CMakeFiles/cmTC_6b24c.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_6b24c.dir/'
+         /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/bin/as -v -march=armv7e-m+fp -mfloat-abi=hard -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_6b24c.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cclrombU.s
+        GNU assembler version 2.47 (arm-none-eabi) using BFD version (GNU Binutils) 2.47.20260726
+        COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/:/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/:/usr/arm-none-eabi/lib/thumb/v7e-m+fp/hard/:/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-std=c++17' '-v' '-o' 'CMakeFiles/cmTC_6b24c.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_6b24c.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /usr/sbin/cmake -E rm -f libcmTC_6b24c.a && /usr/sbin/arm-none-eabi-ar qc libcmTC_6b24c.a  CMakeFiles/cmTC_6b24c.dir/CMakeCXXCompilerABI.cpp.obj && /usr/sbin/arm-none-eabi-ranlib libcmTC_6b24c.a && :
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:33 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include/c++/16.2.0]
+          add: [/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include/c++/16.2.0/arm-none-eabi/thumb/v7e-m+fp/hard]
+          add: [/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include/c++/16.2.0/backward]
+          add: [/usr/lib/gcc/arm-none-eabi/16.2.0/include]
+          add: [/usr/lib/gcc/arm-none-eabi/16.2.0/include-fixed]
+          add: [/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include/c++/16.2.0] ==> [/usr/arm-none-eabi/include/c++/16.2.0]
+        collapse include dir [/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include/c++/16.2.0/arm-none-eabi/thumb/v7e-m+fp/hard] ==> [/usr/arm-none-eabi/include/c++/16.2.0/arm-none-eabi/thumb/v7e-m+fp/hard]
+        collapse include dir [/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include/c++/16.2.0/backward] ==> [/usr/arm-none-eabi/include/c++/16.2.0/backward]
+        collapse include dir [/usr/lib/gcc/arm-none-eabi/16.2.0/include] ==> [/usr/lib/gcc/arm-none-eabi/16.2.0/include]
+        collapse include dir [/usr/lib/gcc/arm-none-eabi/16.2.0/include-fixed] ==> [/usr/lib/gcc/arm-none-eabi/16.2.0/include-fixed]
+        collapse include dir [/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include] ==> [/usr/arm-none-eabi/include]
+        implicit include dirs: [/usr/arm-none-eabi/include/c++/16.2.0;/usr/arm-none-eabi/include/c++/16.2.0/arm-none-eabi/thumb/v7e-m+fp/hard;/usr/arm-none-eabi/include/c++/16.2.0/backward;/usr/lib/gcc/arm-none-eabi/16.2.0/include;/usr/lib/gcc/arm-none-eabi/16.2.0/include-fixed;/usr/arm-none-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:33 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-none-eabi-g\\+\\+|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(arm-none-eabi-g\\+\\+|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
+        ignore line: [Change Dir: '/home/ye/Projects/embedded/three_friction/build/Debug/CMakeFiles/CMakeScratch/TryCompile-wTKmDm']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/sbin/ninja -v cmTC_6b24c]
+        link line: [[1/2] /usr/sbin/arm-none-eabi-g++   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -fno-rtti -fno-exceptions -fno-threadsafe-statics  -std=c++17 -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_6b24c.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp] ==> linker [[1/2] /usr/sbin/arm-none-eabi-g++]
+        ignore line: [[1/2] /usr/sbin/arm-none-eabi-g++   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -fno-rtti -fno-exceptions -fno-threadsafe-statics  -std=c++17 -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_6b24c.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/sbin/arm-none-eabi-g++]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /build/arm-none-eabi-gcc/src/gcc-16.2.0/configure --target=arm-none-eabi --prefix=/usr --with-sysroot=/usr/arm-none-eabi --with-native-system-header-dir=/include --libexecdir=/usr/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/usr/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect-function --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='Arch Repository' --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/arm-none-eabi-gcc/-/issues --with-multilib-list=rmprofile]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.2.0 (Arch Repository) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-std=c++17' '-v' '-o' 'CMakeFiles/cmTC_6b24c.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_6b24c.dir/']
+        ignore line: [ /usr/lib/gcc/arm-none-eabi/16.2.0/cc1plus -quiet -v -imultilib thumb/v7e-m+fp/hard -D__USES_INITFINI__ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_6b24c.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -mlibarch=armv7e-m+fp -march=armv7e-m+fp -Wall -std=c++17 -version -fdiagnostics-color=always -fstack-usage -fdata-sections -ffunction-sections -fstack-usage -fno-rtti -fno-exceptions -fno-threadsafe-statics -o /tmp/cclrombU.s]
+        ignore line: [GNU C++17 (Arch Repository) version 16.2.0 (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 16.2.1 20260810  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.28-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/arm-none-eabi/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/usr/arm-none-eabi/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include/c++/16.2.0]
+        ignore line: [ /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include/c++/16.2.0/arm-none-eabi/thumb/v7e-m+fp/hard]
+        ignore line: [ /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include/c++/16.2.0/backward]
+        ignore line: [ /usr/lib/gcc/arm-none-eabi/16.2.0/include]
+        ignore line: [ /usr/lib/gcc/arm-none-eabi/16.2.0/include-fixed]
+        ignore line: [ /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 4566a498c750cef49ed2e041f51a1bfc]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-std=c++17' '-v' '-o' 'CMakeFiles/cmTC_6b24c.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_6b24c.dir/']
+        ignore line: [ /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/bin/as -v -march=armv7e-m+fp -mfloat-abi=hard -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_6b24c.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cclrombU.s]
+        ignore line: [GNU assembler version 2.47 (arm-none-eabi) using BFD version (GNU Binutils) 2.47.20260726]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/:/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/:/usr/arm-none-eabi/lib/thumb/v7e-m+fp/hard/:/usr/lib/gcc/arm-none-eabi/16.2.0/:/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fstack-usage' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fstack-usage' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-std=c++17' '-v' '-o' 'CMakeFiles/cmTC_6b24c.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp' '-dumpdir' 'CMakeFiles/cmTC_6b24c.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /usr/sbin/cmake -E rm -f libcmTC_6b24c.a && /usr/sbin/arm-none-eabi-ar qc libcmTC_6b24c.a  CMakeFiles/cmTC_6b24c.dir/CMakeCXXCompilerABI.cpp.obj && /usr/sbin/arm-none-eabi-ranlib libcmTC_6b24c.a && :]
+        ignore line: []
+        ignore line: []
+        linker tool for 'CXX': [1/2] /usr/sbin/arm-none-eabi-g++ 
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:33 (project)"
+    message: |
+      Running the CXX compiler's linker: "[1/2] /usr/sbin/arm-none-eabi-g++" "-v"
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:33 (project)"
+    message: |
+      Running the CXX compiler's linker: "[1/2] /usr/sbin/arm-none-eabi-g++" "-V"
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:33 (project)"
+    message: |
+      Running the CXX compiler's linker: "[1/2] /usr/sbin/arm-none-eabi-g++" "--version"
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:64 (_cmake_find_compiler_path)"
+      - "CMakeLists.txt:37 (enable_language)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-gcc"
+    candidate_directories:
+      - "/home/ye/.nix-profile/bin/"
+      - "/etc/profiles/per-user/ye/bin/"
+      - "/home/ye/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/opt/cuda/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/clion/bin/ninja/linux/x64/"
+    searched_directories:
+      - "/home/ye/.nix-profile/bin/arm-none-eabi-gcc"
+      - "/etc/profiles/per-user/ye/bin/arm-none-eabi-gcc"
+      - "/home/ye/.local/bin/arm-none-eabi-gcc"
+      - "/usr/local/sbin/arm-none-eabi-gcc"
+      - "/usr/local/bin/arm-none-eabi-gcc"
+    found: "/usr/sbin/arm-none-eabi-gcc"
+    search_context:
+      ENV{PATH}:
+        - "/home/ye/.nix-profile/bin"
+        - "/etc/profiles/per-user/ye/bin"
+        - "/home/ye/.local/bin"
+        - "/home/ye/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/opt/cuda/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/opt/clion/bin/ninja/linux/x64"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1328 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:174 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:37 (enable_language)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-none-eabi-gcc (Arch Repository) 16.2.0
+      Copyright (C) 2026 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+...
