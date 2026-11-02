@@ -335,12 +335,16 @@ void Pid::proportionLimit()
 
 void Pid::errorHandle()
 {
-        if (output_ < max_out_ * 0.001f || std::fabs(ref_) < 0.0001f) { return; }
+        // ① 输出必须接近饱和：正常调节和加速过程中 PID 不会长时间顶满输出
+        if (std::fabs(output_) < max_out_ * kBlockedOutRatio) { error_count_ = 0; return; }
 
-        if ((std::fabs(ref_ - measure_) / std::fabs(ref_)) > 0.95f) { error_count_++; }
-        else { error_count_ = 0; }
+        // ② 实际转速必须"没转起来"：加速时转速会迅速越过这个阈值，
+        //    所以目标突变/阶跃只会累计几个周期就被清零，不会误判成堵转
+        if (std::fabs(measure_) > kBlockedSpeedMax) { error_count_ = 0; return; }
 
-        if (error_count_ > 500U) { error_type_ = MotorBlocked; }
+        error_count_++;
+
+        if (error_count_ > kBlockedCount) { error_type_ = MotorBlocked; }
 }
 
 /* ═══════════════════════ Feedforward ═══════════════════════ */

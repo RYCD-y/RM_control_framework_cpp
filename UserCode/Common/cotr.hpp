@@ -136,6 +136,11 @@ class Pid
                 uint8_t  error_type_ = ErrorNone;
                 uint64_t error_count_ = 0;
 
+                // ── 堵转判定参数 ──
+                static constexpr uint32_t kBlockedCount    = 250U;   // 连续周期数（1 kHz 下 ≈ 0.25 s）
+                static constexpr float    kBlockedOutRatio = 0.95f;  // 输出达到 max_out 的多少算"顶满"
+                static constexpr float    kBlockedSpeedMax = 10.0f;  // 低于此转速视为"没转起来"（rpm）
+
                 bool      fuzzy_enabled_ = false;
                 FuzzyRule fuzzy_;
                 OrdinaryLeastSquares ols_;
