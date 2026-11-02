@@ -3,8 +3,8 @@
 //
 #include "srv_ins.hpp"
 
-#include <math.h>
-#include <string.h>
+#include <cmath>
+#include <cstring>
 
 #include "arm_math.h"
 #include "dwt.hpp"
@@ -14,7 +14,7 @@ Ins g_ins;
 /* ═══════════════════════ 初始化 ═══════════════════════ */
 void Ins::init()
 {
-        mount_ = MountParam{};                    // scale=1、角度=0、dirty=true
+        mount_ = MountParam{}; // scale=1、角度=0、dirty=true
         buildRotationMatrix();
 
         // v2: IMU_QuaternionEKF_Init(10.0f, 0.001f, 10000000, 1, 0)
@@ -22,11 +22,11 @@ void Ins::init()
 
         accel_lpf_ = 0.0085f;
 
-        dt_            = 0.0f;
-        time_          = 0.0f;
-        count_         = 0;
-        sample_count_  = 0;
-        initialized_   = true;
+        dt_           = 0.0f;
+        time_         = 0.0f;
+        count_        = 0;
+        sample_count_ = 0;
+        initialized_  = true;
 }
 
 /* ═══════════════════════ 任务接入 ═══════════════════════ */
@@ -70,7 +70,7 @@ void Ins::step(float dt, const float gyro[3], const float accel[3])
 {
         if (!initialized_) { init(); }
 
-        dt_ = dt;
+        dt_   = dt;
         time_ += dt_;
 
         gyro_[InsX]  = gyro[InsX];
@@ -94,15 +94,17 @@ void Ins::step(float dt, const float gyro[3], const float accel[3])
         const float *q = ekf_.quaternion();
 
         // 机体系基向量转到导航系（输入必须是固定的 xb/yb/zb，不能拿上一帧结果再变换）
-        static constexpr float kAxisBody[3][3] = { { 1.0f, 0.0f, 0.0f },
-                                                   { 0.0f, 1.0f, 0.0f },
-                                                   { 0.0f, 0.0f, 1.0f } };
+        static constexpr float kAxisBody[3][3] = {
+                {1.0f, 0.0f, 0.0f},
+                {0.0f, 1.0f, 0.0f},
+                {0.0f, 0.0f, 1.0f}
+        };
         bodyToEarth(kAxisBody[0], xn_, q);
         bodyToEarth(kAxisBody[1], yn_, q);
         bodyToEarth(kAxisBody[2], zn_, q);
 
         // 重力从导航系转到机体系，再算运动加速度
-        const float gravity[3]  = { 0.0f, 0.0f, 9.81f };
+        const float gravity[3]   = {0.0f, 0.0f, 9.81f};
         float       gravity_b[3] = {};
         earthToBody(gravity, gravity_b, q);
 
@@ -208,11 +210,11 @@ void Ins::quaternionUpdate(float q[4], float gx, float gy, float gz, float dt)
 
 void Ins::quaternionToEuler(const float q[4], float &yaw, float &pitch, float &roll)
 {
-        yaw   = atan2f(2.0f * (q[0] * q[3] + q[1] * q[2]),
-                       2.0f * (q[0] * q[0] + q[1] * q[1]) - 1.0f) * kRadToDeg;
+        yaw = atan2f(2.0f * (q[0] * q[3] + q[1] * q[2]),
+                     2.0f * (q[0] * q[0] + q[1] * q[1]) - 1.0f) * kRadToDeg;
         pitch = atan2f(2.0f * (q[0] * q[1] + q[2] * q[3]),
                        2.0f * (q[0] * q[0] + q[3] * q[3]) - 1.0f) * kRadToDeg;
-        roll  = asinf(2.0f * (q[0] * q[2] - q[1] * q[3])) * kRadToDeg;
+        roll = asinf(2.0f * (q[0] * q[2] - q[1] * q[3])) * kRadToDeg;
 }
 
 void Ins::eulerToQuaternion(float yaw, float pitch, float roll, float q[4])

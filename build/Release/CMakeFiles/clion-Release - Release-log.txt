@@ -1,19 +1,5 @@
 cmake -DCMAKE_BUILD_TYPE=Release --preset Release -S /home/ye/Projects/embedded/three_friction -B /home/ye/Projects/embedded/three_friction/build/Release
--- The C compiler identification is GNU 16.2.0
--- The CXX compiler identification is GNU 16.2.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/sbin/arm-none-eabi-gcc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/sbin/arm-none-eabi-g++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
 Build type: Release
--- The ASM compiler identification is GNU
--- Found assembler: /usr/sbin/arm-none-eabi-gcc
--- Configuring done (0.3s)
+-- Configuring done (0.0s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/ye/Projects/embedded/three_friction/build/Release

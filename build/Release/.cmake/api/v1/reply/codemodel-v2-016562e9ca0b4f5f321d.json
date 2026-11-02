@@ -7,7 +7,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "stm32cubemx::@768a070a0fe75716b479",
-					"jsonFile" : "target-stm32cubemx-Debug-24d00a2d6164b7025450.json",
+					"jsonFile" : "target-stm32cubemx-Release-24d00a2d6164b7025450.json",
 					"name" : "stm32cubemx",
 					"projectIndex" : 0
 				}
@@ -20,7 +20,7 @@
 					[
 						1
 					],
-					"jsonFile" : "directory-.-Debug-b23a0b23c080df4d29ba.json",
+					"jsonFile" : "directory-.-Release-b23a0b23c080df4d29ba.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.22"
@@ -38,7 +38,7 @@
 						0
 					],
 					"build" : "cmake/stm32cubemx",
-					"jsonFile" : "directory-cmake.stm32cubemx-Debug-6d71a4d457c1aee65da0.json",
+					"jsonFile" : "directory-cmake.stm32cubemx-Release-6d71a4d457c1aee65da0.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.22"
@@ -54,7 +54,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "Release",
 			"projects" : 
 			[
 				{
@@ -82,28 +82,28 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "FreeRTOS::@768a070a0fe75716b479",
-					"jsonFile" : "target-FreeRTOS-Debug-16496917d112953e55f1.json",
+					"jsonFile" : "target-FreeRTOS-Release-5a4ae7e9a840b61b1997.json",
 					"name" : "FreeRTOS",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "STM32_Drivers::@768a070a0fe75716b479",
-					"jsonFile" : "target-STM32_Drivers-Debug-87abc107a15e7a0480da.json",
+					"jsonFile" : "target-STM32_Drivers-Release-bf6a9cf5043b686654d7.json",
 					"name" : "STM32_Drivers",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "USB_Device_Library::@768a070a0fe75716b479",
-					"jsonFile" : "target-USB_Device_Library-Debug-aca6ea8854908e1ea47b.json",
+					"jsonFile" : "target-USB_Device_Library-Release-778a9dbbd0b11683292c.json",
 					"name" : "USB_Device_Library",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "three_friction::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-three_friction-Debug-934ce6f41f82f725a709.json",
+					"jsonFile" : "target-three_friction-Release-8ddefd299de37fa79359.json",
 					"name" : "three_friction",
 					"projectIndex" : 0
 				}
@@ -113,7 +113,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/ye/Projects/embedded/three_friction/build/Debug",
+		"build" : "/home/ye/Projects/embedded/three_friction/build/Release",
 		"source" : "/home/ye/Projects/embedded/three_friction"
 	},
 	"version" : 

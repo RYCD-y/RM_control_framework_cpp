@@ -1,6 +1,8 @@
 /home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.hpp:47:7:Pid::~Pid()	8	static
+/home/ye/Projects/embedded/three_friction/UserCode/APP/debug.cpp:62:40:void __tcf_ZZ9debugTaskPvE18friction_pid_speed(void*)	16	static
 /home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:54:25:CanNode::~CanNode()	16	static
 /home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.hpp:136:7:DjiMotor::~DjiMotor()	8	static
 /home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:54:25:virtual CanNode::~CanNode()	8	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.hpp:144:17:DjiMotor::DjiMotor(CAN_HandleTypeDef*, uint32_t, uint32_t, const djiMotorSpec&)	24	static
 /home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.hpp:136:7:virtual DjiMotor::~DjiMotor()	8	static
-/home/ye/Projects/embedded/three_friction/UserCode/APP/debug.cpp:52:6:void debugTask(void*)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/APP/debug.cpp:18:6:void debugTask(void*)	64	static

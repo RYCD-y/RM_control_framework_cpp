@@ -6,9 +6,15 @@
 
 #include "debug.hpp"
 #include "dwt.hpp"
+#include "ent_devices.hpp"
 #include "hal_can.hpp"
+#include "tim.h"
 #include "usart.h"
 #include "vofa.hpp"
+
+// 全局外设对象：构造只绑定句柄，不碰硬件
+Led    led(&htim5);
+Buzzer buzzer(&htim4, TIM_CHANNEL_3);
 
 void ent_main(void)
 {
@@ -28,6 +34,15 @@ void ent_main(void)
 
         // VOFA 调试串口：必须在 MX_USART6_UART_Init 之后、任务并发之前初始化
         vofa::init(&huart6);
+
+        // LED（TIM5, ARR=255）：启动 PWM
+        led.init();
+
+        // 蜂鸣器（TIM4 CH3）：启动 PWM + 创建音效播放任务（内部完成）
+        (void) buzzer.init("Buzzer");
+
+        led.set(0, 255, 0);                                     // 绿灯：启动完成
+        buzzer.setSoundEffect(Buzzer::SoundEffect::SystemStart);
 
 
 

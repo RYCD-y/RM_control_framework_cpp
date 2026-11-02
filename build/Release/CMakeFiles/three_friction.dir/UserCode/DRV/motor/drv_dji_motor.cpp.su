@@ -7,6 +7,6 @@
 /home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:100:9:int16_t DjiMotor::torqueToRaw() const	8	static
 /home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:79:19:HAL_StatusTypeDef DjiMotor::groupSendTorque()	32	static
 /home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:71:19:virtual HAL_StatusTypeDef DjiMotor::sendTorque(float)	0	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:124:6:void DjiMotor::updateTotalAngleSpeed(float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:123:6:void DjiMotor::updateTotalAngleSpeed(float)	16	static
 /home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:107:6:void DjiMotor::updateTotalAngle(int16_t)	0	static
 /home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp:10:19:virtual HAL_StatusTypeDef DjiMotor::onFrame(const uint8_t*, uint16_t)	8	static

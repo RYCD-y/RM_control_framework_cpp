@@ -40,6 +40,7 @@ class Ins
                 // TODO: IMU 驱动接入前，Body 数据由外部灌入；update() 留空
                 void update();
                 void step(float dt, const float gyro[3], const float accel[3]);
+                void task(void *argument);
 
                 // ── 安装误差修正 ──
                 void setMountParam(float yaw, float pitch, float roll);
