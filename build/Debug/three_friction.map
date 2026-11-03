@@ -12852,7 +12852,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
                 0x08000000                g_pfnVectors
                 0x08000188                        . = ALIGN (0x4)
 
-.text           0x08000190    0x13f08
+.text           0x08000190    0x13efc
                 0x08000190                        . = ALIGN (0x4)
  *(.text)
  .text          0x08000190       0x30 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
@@ -14169,640 +14169,640 @@ LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
  .text.__tcf_ZZ9debugTaskPvE18friction_pid_speed
                 0x0800fd68       0x28 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
  .text._Z9debugTaskPv
-                0x0800fd90      0x528 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x0800fd90      0x51c CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
                 0x0800fd90                debugTask(void*)
  .text._ZN3etl8mem_moveIPvEEPT_PKS2_S5_S3_
-                0x080102b8       0x26 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x080102b8                void** etl::mem_move<void*>(void* const*, void* const*, void**)
+                0x080102ac       0x26 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x080102ac                void** etl::mem_move<void*>(void* const*, void* const*, void**)
  .text._ZN3etl8distanceIPKPvEENS_15iterator_traitsIT_vE15difference_typeES5_S5_
-                0x080102de       0x1e CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x080102de                etl::iterator_traits<void* const*, void>::difference_type etl::distance<void* const*>(void* const*, void* const*)
+                0x080102d2       0x1e CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x080102d2                etl::iterator_traits<void* const*, void>::difference_type etl::distance<void* const*>(void* const*, void* const*)
  .text._ZN3etl7ivectorIP7CanNodevE9push_backERKS2_
-                0x080102fc       0x24 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x080102fc                etl::ivector<CanNode*, void>::push_back(CanNode* const&)
+                0x080102f0       0x24 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x080102f0                etl::ivector<CanNode*, void>::push_back(CanNode* const&)
  .text._ZN3etl7ivectorIP7CanNodevE5beginEv
-                0x08010320       0x1a CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x08010320                etl::ivector<CanNode*, void>::begin()
+                0x08010314       0x1a CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x08010314                etl::ivector<CanNode*, void>::begin()
  .text._ZN3etl7ivectorIP7CanNodevE3endEv
-                0x0801033a       0x1a CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x0801033a                etl::ivector<CanNode*, void>::end()
+                0x0801032e       0x1a CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x0801032e                etl::ivector<CanNode*, void>::end()
  .text._ZN3etl6removeIPP7CanNodeS2_EET_S4_S4_RKT0_
-                0x08010354       0x66 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x08010354                CanNode** etl::remove<CanNode**, CanNode*>(CanNode**, CanNode**, CanNode* const&)
+                0x08010348       0x66 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x08010348                CanNode** etl::remove<CanNode**, CanNode*>(CanNode**, CanNode**, CanNode* const&)
  .text._ZN3etl7ivectorIP7CanNodevE5eraseEPKS2_S5_
-                0x080103ba       0x22 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x080103ba                etl::ivector<CanNode*, void>::erase(CanNode* const*, CanNode* const*)
+                0x080103ae       0x22 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x080103ae                etl::ivector<CanNode*, void>::erase(CanNode* const*, CanNode* const*)
  .text._ZSt5clampIfERKT_S2_S2_S2_
-                0x080103dc       0x64 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x080103dc                float const& std::clamp<float>(float const&, float const&, float const&)
+                0x080103d0       0x64 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x080103d0                float const& std::clamp<float>(float const&, float const&, float const&)
  .text._ZN3etl15distance_helperIPKPvEENS_15iterator_traitsIT_vE15difference_typeES5_S5_St26random_access_iterator_tag
-                0x08010440       0x1e CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x08010440                etl::iterator_traits<void* const*, void>::difference_type etl::distance_helper<void* const*>(void* const*, void* const*, std::random_access_iterator_tag)
+                0x08010434       0x1e CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x08010434                etl::iterator_traits<void* const*, void>::difference_type etl::distance_helper<void* const*>(void* const*, void* const*, std::random_access_iterator_tag)
  .text._ZN3etl7ivectorIP7CanNodevE11to_void_ptrERKS2_
-                0x0801045e       0x16 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x0801045e                etl::ivector<CanNode*, void>::to_void_ptr(CanNode* const&)
+                0x08010452       0x16 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x08010452                etl::ivector<CanNode*, void>::to_void_ptr(CanNode* const&)
  .text._ZN3etl4findIPP7CanNodeS2_EET_S4_S4_RKT0_
-                0x08010474       0x38 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x08010474                CanNode** etl::find<CanNode**, CanNode*>(CanNode**, CanNode**, CanNode* const&)
+                0x08010468       0x38 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x08010468                CanNode** etl::find<CanNode**, CanNode*>(CanNode**, CanNode**, CanNode* const&)
  .text._ZN3etl4moveIRP7CanNodeEEONS_16remove_referenceIT_E4typeEOS5_
-                0x080104ac       0x14 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x080104ac                etl::remove_reference<CanNode*&>::type&& etl::move<CanNode*&>(CanNode*&)
+                0x080104a0       0x14 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x080104a0                etl::remove_reference<CanNode*&>::type&& etl::move<CanNode*&>(CanNode*&)
  .text._ZSt3maxIfERKT_S2_S2_
-                0x080104c0       0x30 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x080104c0                float const& std::max<float>(float const&, float const&)
+                0x080104b4       0x30 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x080104b4                float const& std::max<float>(float const&, float const&)
  .text._ZSt3minIfERKT_S2_S2_
-                0x080104f0       0x30 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x080104f0                float const& std::min<float>(float const&, float const&)
+                0x080104e4       0x30 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x080104e4                float const& std::min<float>(float const&, float const&)
  .text._ZNK9FuzzyRule7kpFuzzyEv
-                0x08010520       0x1c CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
-                0x08010520                FuzzyRule::kpFuzzy() const
+                0x08010514       0x1c CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x08010514                FuzzyRule::kpFuzzy() const
  .text._ZNK9FuzzyRule7kiFuzzyEv
-                0x0801053c       0x1c CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
-                0x0801053c                FuzzyRule::kiFuzzy() const
+                0x08010530       0x1c CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x08010530                FuzzyRule::kiFuzzy() const
  .text._ZNK9FuzzyRule7kdFuzzyEv
-                0x08010558       0x1c CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
-                0x08010558                FuzzyRule::kdFuzzy() const
+                0x0801054c       0x1c CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x0801054c                FuzzyRule::kdFuzzy() const
  .text._ZN3Pid4initEffffffffffth
-                0x08010574       0xce CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
-                0x08010574                Pid::init(float, float, float, float, float, float, float, float, float, float, unsigned short, unsigned char)
+                0x08010568       0xce CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x08010568                Pid::init(float, float, float, float, float, float, float, float, float, float, unsigned short, unsigned char)
  .text._ZN3Pid9calculateEff
-                0x08010642      0x344 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
-                0x08010642                Pid::calculate(float, float)
+                0x08010636      0x344 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x08010636                Pid::calculate(float, float)
  .text._ZN3Pid5resetEv
-                0x08010986       0x80 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
-                0x08010986                Pid::reset()
+                0x0801097a       0x80 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x0801097a                Pid::reset()
  .text._ZN3Pid17trapezoidIntegralEv
-                0x08010a06       0xa0 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
-                0x08010a06                Pid::trapezoidIntegral()
+                0x080109fa       0xa0 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x080109fa                Pid::trapezoidIntegral()
  .text._ZN3Pid23changingIntegrationRateEv
-                0x08010aa6       0xe0 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
-                0x08010aa6                Pid::changingIntegrationRate()
+                0x08010a9a       0xe0 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x08010a9a                Pid::changingIntegrationRate()
  .text._ZN3Pid13integralLimitEv
-                0x08010b86       0xe0 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
-                0x08010b86                Pid::integralLimit()
+                0x08010b7a       0xe0 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x08010b7a                Pid::integralLimit()
  .text._ZN3Pid23derivativeOnMeasurementEv
-                0x08010c66      0x12a CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
-                0x08010c66                Pid::derivativeOnMeasurement()
+                0x08010c5a      0x12a CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x08010c5a                Pid::derivativeOnMeasurement()
  .text._ZN3Pid16derivativeFilterEv
-                0x08010d90       0x64 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
-                0x08010d90                Pid::derivativeFilter()
+                0x08010d84       0x64 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x08010d84                Pid::derivativeFilter()
  .text._ZN3Pid12outputFilterEv
-                0x08010df4       0x64 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
-                0x08010df4                Pid::outputFilter()
+                0x08010de8       0x64 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x08010de8                Pid::outputFilter()
  .text._ZN3Pid11outputLimitEv
-                0x08010e58       0x5c CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
-                0x08010e58                Pid::outputLimit()
+                0x08010e4c       0x5c CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x08010e4c                Pid::outputLimit()
  .text._ZN3Pid15proportionLimitEv
-                0x08010eb4       0x5c CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
-                0x08010eb4                Pid::proportionLimit()
+                0x08010ea8       0x5c CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x08010ea8                Pid::proportionLimit()
  .text._ZN3Pid11errorHandleEv
-                0x08010f10       0xb8 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
-                0x08010f10                Pid::errorHandle()
+                0x08010f04       0xb8 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+                0x08010f04                Pid::errorHandle()
  .text._ZN3Dwt4initEm
-                0x08010fc8       0xb8 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
-                0x08010fc8                Dwt::init(unsigned long)
+                0x08010fbc       0xb8 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+                0x08010fbc                Dwt::init(unsigned long)
  .text._ZN3Dwt9cntUpdateEv
-                0x08011080       0x3c CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
-                0x08011080                Dwt::cntUpdate()
+                0x08011074       0x3c CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+                0x08011074                Dwt::cntUpdate()
  .text._ZN3Dwt6deltaTERm
-                0x080110bc       0x54 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
-                0x080110bc                Dwt::deltaT(unsigned long&)
+                0x080110b0       0x54 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+                0x080110b0                Dwt::deltaT(unsigned long&)
  .text._ZN3Dwt13updateSysTimeEv
-                0x08011110      0x1bc CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
-                0x08011110                Dwt::updateSysTime()
+                0x08011104      0x1bc CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+                0x08011104                Dwt::updateSysTime()
  .text._ZN3Dwt10timelineMsEv
-                0x080112cc       0x58 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
-                0x080112cc                Dwt::timelineMs()
+                0x080112c0       0x58 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+                0x080112c0                Dwt::timelineMs()
  .text._ZN12KalmanFilterD2Ev
-                0x08011324       0x18 CMakeFiles/three_friction.dir/UserCode/Common/kalman_filter.cpp.obj
-                0x08011324                KalmanFilter::~KalmanFilter()
-                0x08011324                KalmanFilter::~KalmanFilter()
+                0x08011318       0x18 CMakeFiles/three_friction.dir/UserCode/Common/kalman_filter.cpp.obj
+                0x08011318                KalmanFilter::~KalmanFilter()
+                0x08011318                KalmanFilter::~KalmanFilter()
  .text._ZN12KalmanFilter10releaseAllEv
-                0x0801133c      0x104 CMakeFiles/three_friction.dir/UserCode/Common/kalman_filter.cpp.obj
-                0x0801133c                KalmanFilter::releaseAll()
+                0x08011330      0x104 CMakeFiles/three_friction.dir/UserCode/Common/kalman_filter.cpp.obj
+                0x08011330                KalmanFilter::releaseAll()
  .text._ZL8olsAllocj
-                0x08011440       0x18 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
+                0x08011434       0x18 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
  .text._ZN20OrdinaryLeastSquaresD2Ev
-                0x08011458       0x42 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
-                0x08011458                OrdinaryLeastSquares::~OrdinaryLeastSquares()
-                0x08011458                OrdinaryLeastSquares::~OrdinaryLeastSquares()
+                0x0801144c       0x42 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
+                0x0801144c                OrdinaryLeastSquares::~OrdinaryLeastSquares()
+                0x0801144c                OrdinaryLeastSquares::~OrdinaryLeastSquares()
  .text._ZN20OrdinaryLeastSquares4initEt
-                0x0801149a       0xc8 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
-                0x0801149a                OrdinaryLeastSquares::init(unsigned short)
+                0x0801148e       0xc8 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
+                0x0801148e                OrdinaryLeastSquares::init(unsigned short)
  .text._ZN20OrdinaryLeastSquares7advanceEff
-                0x08011562       0xda CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
-                0x08011562                OrdinaryLeastSquares::advance(float, float)
+                0x08011556       0xda CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
+                0x08011556                OrdinaryLeastSquares::advance(float, float)
  .text._ZN20OrdinaryLeastSquares10accumulateEv
-                0x0801163c       0xf0 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
-                0x0801163c                OrdinaryLeastSquares::accumulate()
+                0x08011630       0xf0 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
+                0x08011630                OrdinaryLeastSquares::accumulate()
  .text._ZN20OrdinaryLeastSquares12computeSlopeEv
-                0x0801172c       0x78 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
-                0x0801172c                OrdinaryLeastSquares::computeSlope()
+                0x08011720       0x78 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
+                0x08011720                OrdinaryLeastSquares::computeSlope()
  .text._ZN20OrdinaryLeastSquares13computeStdDevEv
-                0x080117a4       0xa4 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
-                0x080117a4                OrdinaryLeastSquares::computeStdDev()
+                0x08011798       0xa4 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
+                0x08011798                OrdinaryLeastSquares::computeStdDev()
  .text._ZN20OrdinaryLeastSquares10derivativeEff
-                0x08011848       0x60 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
-                0x08011848                OrdinaryLeastSquares::derivative(float, float)
+                0x0801183c       0x60 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
+                0x0801183c                OrdinaryLeastSquares::derivative(float, float)
  .text._ZN12_GLOBAL__N_1L15rxEventCallbackEP20__UART_HandleTypeDeft
-                0x080118a8       0x4c CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+                0x0801189c       0x4c CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
  .text._ZN12_GLOBAL__N_1L17uartErrorCallbackEP20__UART_HandleTypeDef
-                0x080118f4       0x20 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+                0x080118e8       0x20 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
  .text._ZN4vofa4initEP20__UART_HandleTypeDef
-                0x08011914       0x78 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
-                0x08011914                vofa::init(__UART_HandleTypeDef*)
+                0x08011908       0x78 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+                0x08011908                vofa::init(__UART_HandleTypeDef*)
  .text._ZN4vofa3setEhf
-                0x0801198c       0x30 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
-                0x0801198c                vofa::set(unsigned char, float)
+                0x08011980       0x30 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+                0x08011980                vofa::set(unsigned char, float)
  .text._ZN4vofa5flushEv
-                0x080119bc       0x9c CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
-                0x080119bc                vofa::flush()
+                0x080119b0       0x9c CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+                0x080119b0                vofa::flush()
  .text._ZN6BuzzerC2EP17TIM_HandleTypeDefmm
-                0x08011a58       0x32 CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
-                0x08011a58                Buzzer::Buzzer(TIM_HandleTypeDef*, unsigned long, unsigned long)
-                0x08011a58                Buzzer::Buzzer(TIM_HandleTypeDef*, unsigned long, unsigned long)
- *fill*         0x08011a8a        0x2 
+                0x08011a4c       0x32 CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
+                0x08011a4c                Buzzer::Buzzer(TIM_HandleTypeDef*, unsigned long, unsigned long)
+                0x08011a4c                Buzzer::Buzzer(TIM_HandleTypeDef*, unsigned long, unsigned long)
+ *fill*         0x08011a7e        0x2 
  .text._ZN6Buzzer4initEPKc
-                0x08011a8c       0x60 CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
-                0x08011a8c                Buzzer::init(char const*)
+                0x08011a80       0x60 CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
+                0x08011a80                Buzzer::init(char const*)
  .text._ZN6Buzzer5startEv
-                0x08011aec       0x2a CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
-                0x08011aec                Buzzer::start()
+                0x08011ae0       0x2a CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
+                0x08011ae0                Buzzer::start()
  .text._ZN6Buzzer4stopEv
-                0x08011b16       0x2a CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
-                0x08011b16                Buzzer::stop()
+                0x08011b0a       0x2a CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
+                0x08011b0a                Buzzer::stop()
  .text._ZN6Buzzer14setSoundEffectENS_11SoundEffectE
-                0x08011b40       0x1c CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
-                0x08011b40                Buzzer::setSoundEffect(Buzzer::SoundEffect)
+                0x08011b34       0x1c CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
+                0x08011b34                Buzzer::setSoundEffect(Buzzer::SoundEffect)
  .text._ZN6Buzzer7setToneENS_4ToneE
-                0x08011b5c       0xd8 CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
-                0x08011b5c                Buzzer::setTone(Buzzer::Tone)
+                0x08011b50       0xd8 CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
+                0x08011b50                Buzzer::setTone(Buzzer::Tone)
  .text._ZN6Buzzer9taskEntryEPv
-                0x08011c34       0x16 CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
-                0x08011c34                Buzzer::taskEntry(void*)
+                0x08011c28       0x16 CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
+                0x08011c28                Buzzer::taskEntry(void*)
  .text._ZN6Buzzer3runEv
-                0x08011c4a       0x1c CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
-                0x08011c4a                Buzzer::run()
+                0x08011c3e       0x1c CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
+                0x08011c3e                Buzzer::run()
  .text._ZN6Buzzer15playSoundEffectEv
-                0x08011c66      0x320 CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
-                0x08011c66                Buzzer::playSoundEffect()
+                0x08011c5a      0x320 CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
+                0x08011c5a                Buzzer::playSoundEffect()
  .text._ZN3LedC2EP17TIM_HandleTypeDefmmm
-                0x08011f86       0x44 CMakeFiles/three_friction.dir/UserCode/DRV/led/drv_led.cpp.obj
-                0x08011f86                Led::Led(TIM_HandleTypeDef*, unsigned long, unsigned long, unsigned long)
-                0x08011f86                Led::Led(TIM_HandleTypeDef*, unsigned long, unsigned long, unsigned long)
+                0x08011f7a       0x44 CMakeFiles/three_friction.dir/UserCode/DRV/led/drv_led.cpp.obj
+                0x08011f7a                Led::Led(TIM_HandleTypeDef*, unsigned long, unsigned long, unsigned long)
+                0x08011f7a                Led::Led(TIM_HandleTypeDef*, unsigned long, unsigned long, unsigned long)
  .text._ZN3Led4initEv
-                0x08011fca       0x4a CMakeFiles/three_friction.dir/UserCode/DRV/led/drv_led.cpp.obj
-                0x08011fca                Led::init()
+                0x08011fbe       0x4a CMakeFiles/three_friction.dir/UserCode/DRV/led/drv_led.cpp.obj
+                0x08011fbe                Led::init()
  .text._ZN3Led3setEhhh
-                0x08012014      0x12a CMakeFiles/three_friction.dir/UserCode/DRV/led/drv_led.cpp.obj
-                0x08012014                Led::set(unsigned char, unsigned char, unsigned char)
+                0x08012008      0x12a CMakeFiles/three_friction.dir/UserCode/DRV/led/drv_led.cpp.obj
+                0x08012008                Led::set(unsigned char, unsigned char, unsigned char)
  .text._ZSt6lroundf
-                0x0801213e       0x1c CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x0801213e                std::lround(float)
+                0x08012132       0x1c CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x08012132                std::lround(float)
  .text._ZNK7CanNode7getHcanEv
-                0x0801215a       0x16 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x0801215a                CanNode::getHcan() const
+                0x0801214e       0x16 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x0801214e                CanNode::getHcan() const
  .text._ZNK7CanNode13getFeedbackIdEv
-                0x08012170       0x16 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x08012170                CanNode::getFeedbackId() const
+                0x08012164       0x16 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x08012164                CanNode::getFeedbackId() const
  .text._ZN5utils6be_i16EPKh
-                0x08012186       0x26 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x08012186                utils::be_i16(unsigned char const*)
+                0x0801217a       0x26 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x0801217a                utils::be_i16(unsigned char const*)
  .text._ZN5utils10put_be_i16EPhs
-                0x080121ac       0x30 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x080121ac                utils::put_be_i16(unsigned char*, short)
+                0x080121a0       0x30 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x080121a0                utils::put_be_i16(unsigned char*, short)
  .text._ZNK12djiMotorSpec10speedScaleEv
-                0x080121dc       0x26 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x080121dc                djiMotorSpec::speedScale() const
- *fill*         0x08012202        0x2 
+                0x080121d0       0x26 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x080121d0                djiMotorSpec::speedScale() const
+ *fill*         0x080121f6        0x2 
  .text._ZNK12djiMotorSpec10angleScaleEv
-                0x08012204       0x2c CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x08012204                djiMotorSpec::angleScale() const
+                0x080121f8       0x2c CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x080121f8                djiMotorSpec::angleScale() const
  .text._ZN8DjiMotor7onFrameEPKht
-                0x08012230       0xfe CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x08012230                DjiMotor::onFrame(unsigned char const*, unsigned short)
+                0x08012224       0xfe CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x08012224                DjiMotor::onFrame(unsigned char const*, unsigned short)
  .text._ZThn12_N8DjiMotor7onFrameEPKht
-                0x0801232e        0x8 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x0801232e                non-virtual thunk to DjiMotor::onFrame(unsigned char const*, unsigned short)
+                0x08012322        0x8 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x08012322                non-virtual thunk to DjiMotor::onFrame(unsigned char const*, unsigned short)
  .text._ZN8DjiMotor9groupInitEPS_S0_S0_S0_
-                0x08012336      0x122 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x08012336                DjiMotor::groupInit(DjiMotor*, DjiMotor*, DjiMotor*, DjiMotor*)
+                0x0801232a      0x122 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x0801232a                DjiMotor::groupInit(DjiMotor*, DjiMotor*, DjiMotor*, DjiMotor*)
  .text._ZN8DjiMotor10sendTorqueEf
-                0x08012458       0x36 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x08012458                DjiMotor::sendTorque(float)
+                0x0801244c       0x36 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x0801244c                DjiMotor::sendTorque(float)
  .text._ZN8DjiMotor15groupSendTorqueEv
-                0x0801248e       0x76 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x0801248e                DjiMotor::groupSendTorque()
+                0x08012482       0x76 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x08012482                DjiMotor::groupSendTorque()
  .text._ZNK8DjiMotor4slotEv
-                0x08012504       0x28 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x08012504                DjiMotor::slot() const
+                0x080124f8       0x28 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x080124f8                DjiMotor::slot() const
  .text._ZNK8DjiMotor11torqueToRawEv
-                0x0801252c       0x74 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x0801252c                DjiMotor::torqueToRaw() const
+                0x08012520       0x74 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x08012520                DjiMotor::torqueToRaw() const
  .text._ZN8DjiMotor16updateTotalAngleEs
-                0x080125a0       0xb4 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x080125a0                DjiMotor::updateTotalAngle(short)
+                0x08012594       0xb4 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x08012594                DjiMotor::updateTotalAngle(short)
  .text._ZN8DjiMotor21updateTotalAngleSpeedEf
-                0x08012654       0xc8 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x08012654                DjiMotor::updateTotalAngleSpeed(float)
+                0x08012648       0xc8 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x08012648                DjiMotor::updateTotalAngleSpeed(float)
  .text.ent_main
-                0x0801271c       0xa8 CMakeFiles/three_friction.dir/UserCode/ENT/ent_main.cpp.obj
-                0x0801271c                ent_main
+                0x08012710       0xa8 CMakeFiles/three_friction.dir/UserCode/ENT/ent_main.cpp.obj
+                0x08012710                ent_main
  .text._Z41__static_initialization_and_destruction_0v
-                0x080127c4       0x38 CMakeFiles/three_friction.dir/UserCode/ENT/ent_main.cpp.obj
+                0x080127b8       0x38 CMakeFiles/three_friction.dir/UserCode/ENT/ent_main.cpp.obj
  .text._GLOBAL__sub_I_led
-                0x080127fc        0xa CMakeFiles/three_friction.dir/UserCode/ENT/ent_main.cpp.obj
+                0x080127f0        0xa CMakeFiles/three_friction.dir/UserCode/ENT/ent_main.cpp.obj
  .text._ZN3etl11vector_baseC2Ej
-                0x08012806       0x1c CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08012806                etl::vector_base::vector_base(unsigned int)
-                0x08012806                etl::vector_base::vector_base(unsigned int)
+                0x080127fa       0x1c CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x080127fa                etl::vector_base::vector_base(unsigned int)
+                0x080127fa                etl::vector_base::vector_base(unsigned int)
  .text._ZN3etl11vector_baseD2Ev
-                0x08012822       0x14 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08012822                etl::vector_base::~vector_base()
-                0x08012822                etl::vector_base::~vector_base()
+                0x08012816       0x14 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08012816                etl::vector_base::~vector_base()
+                0x08012816                etl::vector_base::~vector_base()
  .text._ZNK3etl11pvoidvector5beginEv
-                0x08012836       0x16 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08012836                etl::pvoidvector::begin() const
+                0x0801282a       0x16 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x0801282a                etl::pvoidvector::begin() const
  .text._ZNK3etl11pvoidvector3endEv
-                0x0801284c       0x16 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x0801284c                etl::pvoidvector::end() const
+                0x08012840       0x16 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08012840                etl::pvoidvector::end() const
  .text._ZN3etl11pvoidvector5clearEv
-                0x08012862       0x16 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08012862                etl::pvoidvector::clear()
+                0x08012856       0x16 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08012856                etl::pvoidvector::clear()
  .text._ZN3etl11pvoidvectorC2EPPvj
-                0x08012878       0x2c CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08012878                etl::pvoidvector::pvoidvector(void**, unsigned int)
-                0x08012878                etl::pvoidvector::pvoidvector(void**, unsigned int)
+                0x0801286c       0x2c CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x0801286c                etl::pvoidvector::pvoidvector(void**, unsigned int)
+                0x0801286c                etl::pvoidvector::pvoidvector(void**, unsigned int)
  .text._ZN3etl11pvoidvector10initialiseEv
-                0x080128a4       0x1a CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x080128a4                etl::pvoidvector::initialise()
- *fill*         0x080128be        0x2 
+                0x08012898       0x1a CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08012898                etl::pvoidvector::initialise()
+ *fill*         0x080128b2        0x2 
  .text._ZN7CanNode5nodesEv
-                0x080128c0       0x14 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x080128c0                CanNode::nodes()
+                0x080128b4       0x14 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x080128b4                CanNode::nodes()
  .text._ZNK7CanNode9getIdMaskEv
-                0x080128d4       0x16 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x080128d4                CanNode::getIdMask() const
+                0x080128c8       0x16 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x080128c8                CanNode::getIdMask() const
  .text._ZN7CanNode4sendEPKht
-                0x080128ea       0x7e CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x080128ea                CanNode::send(unsigned char const*, unsigned short)
+                0x080128de       0x7e CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x080128de                CanNode::send(unsigned char const*, unsigned short)
  .text._ZN7CanNode7onFrameEPKht
-                0x08012968       0x1a CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08012968                CanNode::onFrame(unsigned char const*, unsigned short)
- *fill*         0x08012982        0x2 
+                0x0801295c       0x1a CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x0801295c                CanNode::onFrame(unsigned char const*, unsigned short)
+ *fill*         0x08012976        0x2 
  .text._ZN7CanNode10filterInitEP17CAN_HandleTypeDef
-                0x08012984       0x98 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08012984                CanNode::filterInit(CAN_HandleTypeDef*)
+                0x08012978       0x98 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08012978                CanNode::filterInit(CAN_HandleTypeDef*)
  .text.HAL_CAN_RxFifo0MsgPendingCallback
-                0x08012a1c      0x10c CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08012a1c                HAL_CAN_RxFifo0MsgPendingCallback
+                0x08012a10      0x10c CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08012a10                HAL_CAN_RxFifo0MsgPendingCallback
  .text._ZN3etl11pvoidvectorD2Ev
-                0x08012b28       0x1a CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08012b28                etl::pvoidvector::~pvoidvector()
-                0x08012b28                etl::pvoidvector::~pvoidvector()
+                0x08012b1c       0x1a CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08012b1c                etl::pvoidvector::~pvoidvector()
+                0x08012b1c                etl::pvoidvector::~pvoidvector()
  .text._ZN3etl7ivectorIP7CanNodevED2Ev
-                0x08012b42       0x1a CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08012b42                etl::ivector<CanNode*, void>::~ivector()
-                0x08012b42                etl::ivector<CanNode*, void>::~ivector()
+                0x08012b36       0x1a CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08012b36                etl::ivector<CanNode*, void>::~ivector()
+                0x08012b36                etl::ivector<CanNode*, void>::~ivector()
  .text._ZN3etl6vectorIP7CanNodeLj32EEC2Ev
-                0x08012b5c       0x28 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08012b5c                etl::vector<CanNode*, 32u>::vector()
-                0x08012b5c                etl::vector<CanNode*, 32u>::vector()
+                0x08012b50       0x28 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08012b50                etl::vector<CanNode*, 32u>::vector()
+                0x08012b50                etl::vector<CanNode*, 32u>::vector()
  .text._ZNK3etl7ivectorIP7CanNodevE5beginEv
-                0x08012b84       0x1a CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08012b84                etl::ivector<CanNode*, void>::begin() const
+                0x08012b78       0x1a CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08012b78                etl::ivector<CanNode*, void>::begin() const
  .text._ZNK3etl7ivectorIP7CanNodevE3endEv
-                0x08012b9e       0x1a CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08012b9e                etl::ivector<CanNode*, void>::end() const
+                0x08012b92       0x1a CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08012b92                etl::ivector<CanNode*, void>::end() const
  .text._ZN3etl7ivectorIP7CanNodevEC2EPS2_j
-                0x08012bb8       0x2a CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08012bb8                etl::ivector<CanNode*, void>::ivector(CanNode**, unsigned int)
-                0x08012bb8                etl::ivector<CanNode*, void>::ivector(CanNode**, unsigned int)
+                0x08012bac       0x2a CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08012bac                etl::ivector<CanNode*, void>::ivector(CanNode**, unsigned int)
+                0x08012bac                etl::ivector<CanNode*, void>::ivector(CanNode**, unsigned int)
  .text._ZN3etl7ivectorIP7CanNodevE10initialiseEv
-                0x08012be2       0x18 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08012be2                etl::ivector<CanNode*, void>::initialise()
+                0x08012bd6       0x18 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08012bd6                etl::ivector<CanNode*, void>::initialise()
  .text._ZN3etl7ivectorIP7CanNodevE12to_void_pptrEPS2_
-                0x08012bfa       0x14 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08012bfa                etl::ivector<CanNode*, void>::to_void_pptr(CanNode**)
- *fill*         0x08012c0e        0x2 
+                0x08012bee       0x14 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08012bee                etl::ivector<CanNode*, void>::to_void_pptr(CanNode**)
+ *fill*         0x08012c02        0x2 
  .text._Z41__static_initialization_and_destruction_0v
-                0x08012c10       0x24 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08012c04       0x24 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
  .text._ZN3etl6vectorIP7CanNodeLj32EED2Ev
-                0x08012c34       0x22 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08012c34                etl::vector<CanNode*, 32u>::~vector()
-                0x08012c34                etl::vector<CanNode*, 32u>::~vector()
+                0x08012c28       0x22 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08012c28                etl::vector<CanNode*, 32u>::~vector()
+                0x08012c28                etl::vector<CanNode*, 32u>::~vector()
  .text._ZN3etl7ivectorIP7CanNodevE5clearEv
-                0x08012c56       0x18 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x08012c56                etl::ivector<CanNode*, void>::clear()
+                0x08012c4a       0x18 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08012c4a                etl::ivector<CanNode*, void>::clear()
  .text._GLOBAL__sub_I__ZN7CanNode8node_tabE
-                0x08012c6e        0xa CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x08012c62        0xa CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
  .text._ZN13QuaternionEkfD2Ev
-                0x08012c78       0x1a CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
-                0x08012c78                QuaternionEkf::~QuaternionEkf()
-                0x08012c78                QuaternionEkf::~QuaternionEkf()
+                0x08012c6c       0x1a CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
+                0x08012c6c                QuaternionEkf::~QuaternionEkf()
+                0x08012c6c                QuaternionEkf::~QuaternionEkf()
  .text._ZN3InsD2Ev
-                0x08012c92       0x1a CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
-                0x08012c92                Ins::~Ins()
-                0x08012c92                Ins::~Ins()
+                0x08012c86       0x1a CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
+                0x08012c86                Ins::~Ins()
+                0x08012c86                Ins::~Ins()
  .text._Z41__static_initialization_and_destruction_0v
-                0x08012cac       0x20 CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
+                0x08012ca0       0x20 CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
  .text._GLOBAL__sub_I_g_ins
-                0x08012ccc        0xa CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
+                0x08012cc0        0xa CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
  .text.__aeabi_atexit
-                0x08012cd6        0xa /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(atexit_arm.o)
-                0x08012cd6                __aeabi_atexit
- .text._ZdlPvj  0x08012ce0        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(del_ops.o)
-                0x08012ce0                operator delete(void*, unsigned int)
+                0x08012cca        0xa /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(atexit_arm.o)
+                0x08012cca                __aeabi_atexit
+ .text._ZdlPvj  0x08012cd4        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(del_ops.o)
+                0x08012cd4                operator delete(void*, unsigned int)
  .text.unlikely._ZSt21__glibcxx_assert_failPKciS0_S0_
-                0x08012ce4       0x40 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(assert_fail.o)
-                0x08012ce4                std::__glibcxx_assert_fail(char const*, int, char const*, char const*)
- .text._ZdlPv   0x08012d24        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(del_op.o)
-                0x08012d24                operator delete(void*)
- .text.lroundf  0x08012d28       0x58 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_lround.o)
-                0x08012d28                lroundf
+                0x08012cd8       0x40 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(assert_fail.o)
+                0x08012cd8                std::__glibcxx_assert_fail(char const*, int, char const*, char const*)
+ .text._ZdlPv   0x08012d18        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(del_op.o)
+                0x08012d18                operator delete(void*)
+ .text.lroundf  0x08012d1c       0x58 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-sf_lround.o)
+                0x08012d1c                lroundf
  .text.__udivmoddi4
-                0x08012d80      0x2b8 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
-                0x08012d80                __udivmoddi4
- .text.abort    0x08013038        0xe /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-abort.o)
-                0x08013038                abort
- *fill*         0x08013046        0x2 
- .text.malloc   0x08013048       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-malloc.o)
-                0x08013048                malloc
- .text.free     0x08013058       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-malloc.o)
-                0x08013058                free
+                0x08012d74      0x2b8 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x08012d74                __udivmoddi4
+ .text.abort    0x0801302c        0xe /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-abort.o)
+                0x0801302c                abort
+ *fill*         0x0801303a        0x2 
+ .text.malloc   0x0801303c       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-malloc.o)
+                0x0801303c                malloc
+ .text.free     0x0801304c       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-malloc.o)
+                0x0801304c                free
  .text.sbrk_aligned
-                0x08013068       0x44 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mallocr.o)
+                0x0801305c       0x44 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mallocr.o)
  .text._malloc_r
-                0x080130ac      0x100 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mallocr.o)
-                0x080130ac                _malloc_r
+                0x080130a0      0x100 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mallocr.o)
+                0x080130a0                _malloc_r
  .text.__malloc_lock
-                0x080131ac        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mlock.o)
-                0x080131ac                __malloc_lock
+                0x080131a0        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mlock.o)
+                0x080131a0                __malloc_lock
  .text.__malloc_unlock
-                0x080131b8        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mlock.o)
-                0x080131b8                __malloc_unlock
+                0x080131ac        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mlock.o)
+                0x080131ac                __malloc_unlock
  .text.__cxa_atexit
-                0x080131c4       0x1c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-cxa_atexit.o)
-                0x080131c4                __cxa_atexit
- .text.std      0x080131e0       0x6c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+                0x080131b8       0x1c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-cxa_atexit.o)
+                0x080131b8                __cxa_atexit
+ .text.std      0x080131d4       0x6c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
  .text.stdio_exit_handler
-                0x0801324c       0x18 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+                0x08013240       0x18 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
  .text.cleanup_stdio
-                0x08013264       0x40 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+                0x08013258       0x40 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
  .text.global_stdio_init.part.0
-                0x080132a4       0x40 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+                0x08013298       0x40 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
  .text.__sfp_lock_acquire
-                0x080132e4        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
-                0x080132e4                __sfp_lock_acquire
+                0x080132d8        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+                0x080132d8                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x080132f0        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
-                0x080132f0                __sfp_lock_release
- .text.__sinit  0x080132fc       0x30 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
-                0x080132fc                __sinit
- .text.fprintf  0x0801332c       0x24 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fprintf.o)
-                0x0801332c                fprintf
-                0x0801332c                fiprintf
+                0x080132e4        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+                0x080132e4                __sfp_lock_release
+ .text.__sinit  0x080132f0       0x30 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+                0x080132f0                __sinit
+ .text.fprintf  0x08013320       0x24 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fprintf.o)
+                0x08013320                fprintf
+                0x08013320                fiprintf
  .text._fwalk_sglue
-                0x08013350       0x3a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fwalk.o)
-                0x08013350                _fwalk_sglue
- .text.__sread  0x0801338a       0x22 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-stdio.o)
-                0x0801338a                __sread
+                0x08013344       0x3a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fwalk.o)
+                0x08013344                _fwalk_sglue
+ .text.__sread  0x0801337e       0x22 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-stdio.o)
+                0x0801337e                __sread
  .text.__swrite
-                0x080133ac       0x38 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-stdio.o)
-                0x080133ac                __swrite
- .text.__sseek  0x080133e4       0x26 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-stdio.o)
-                0x080133e4                __sseek
+                0x080133a0       0x38 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-stdio.o)
+                0x080133a0                __swrite
+ .text.__sseek  0x080133d8       0x26 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-stdio.o)
+                0x080133d8                __sseek
  .text.__sclose
-                0x0801340a        0x8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-stdio.o)
-                0x0801340a                __sclose
- .text.memmove  0x08013412       0x32 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memmove.o)
-                0x08013412                memmove
- .text.memset   0x08013444       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
-                0x08013444                memset
+                0x080133fe        0x8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-stdio.o)
+                0x080133fe                __sclose
+ .text.memmove  0x08013406       0x32 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memmove.o)
+                0x08013406                memmove
+ .text.memset   0x08013438       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+                0x08013438                memset
  .text._raise_r
-                0x08013454       0x52 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-signal.o)
-                0x08013454                _raise_r
- *fill*         0x080134a6        0x2 
- .text.raise    0x080134a8       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-signal.o)
-                0x080134a8                raise
+                0x08013448       0x52 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-signal.o)
+                0x08013448                _raise_r
+ *fill*         0x0801349a        0x2 
+ .text.raise    0x0801349c       0x10 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-signal.o)
+                0x0801349c                raise
  .text._close_r
-                0x080134b8       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-closer.o)
-                0x080134b8                _close_r
+                0x080134ac       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-closer.o)
+                0x080134ac                _close_r
  .text._lseek_r
-                0x080134d8       0x24 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lseekr.o)
-                0x080134d8                _lseek_r
- .text._read_r  0x080134fc       0x24 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-readr.o)
-                0x080134fc                _read_r
- .text._kill_r  0x08013520       0x24 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-signalr.o)
-                0x08013520                _kill_r
+                0x080134cc       0x24 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lseekr.o)
+                0x080134cc                _lseek_r
+ .text._read_r  0x080134f0       0x24 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-readr.o)
+                0x080134f0                _read_r
+ .text._kill_r  0x08013514       0x24 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-signalr.o)
+                0x08013514                _kill_r
  .text._getpid_r
-                0x08013544        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-signalr.o)
-                0x08013544                _getpid_r
- .text._sbrk_r  0x08013548       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-sbrkr.o)
-                0x08013548                _sbrk_r
+                0x08013538        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-signalr.o)
+                0x08013538                _getpid_r
+ .text._sbrk_r  0x0801353c       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-sbrkr.o)
+                0x0801353c                _sbrk_r
  .text._write_r
-                0x08013568       0x24 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-writer.o)
-                0x08013568                _write_r
- .text.__errno  0x0801358c        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
-                0x0801358c                __errno
+                0x0801355c       0x24 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-writer.o)
+                0x0801355c                _write_r
+ .text.__errno  0x08013580        0xc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
+                0x08013580                __errno
  .text.__libc_init_array
-                0x08013598       0x48 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
-                0x08013598                __libc_init_array
+                0x0801358c       0x48 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+                0x0801358c                __libc_init_array
  .text.__retarget_lock_init_recursive
-                0x080135e0        0x2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lock.o)
-                0x080135e0                __retarget_lock_init_recursive
+                0x080135d4        0x2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lock.o)
+                0x080135d4                __retarget_lock_init_recursive
  .text.__retarget_lock_acquire_recursive
-                0x080135e2        0x2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lock.o)
-                0x080135e2                __retarget_lock_acquire_recursive
+                0x080135d6        0x2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lock.o)
+                0x080135d6                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x080135e4        0x2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lock.o)
-                0x080135e4                __retarget_lock_release_recursive
- .text.memcpy   0x080135e6       0x1c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memcpy-stub.o)
-                0x080135e6                memcpy
- *fill*         0x08013602        0x2 
+                0x080135d8        0x2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lock.o)
+                0x080135d8                __retarget_lock_release_recursive
+ .text.memcpy   0x080135da       0x1c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memcpy-stub.o)
+                0x080135da                memcpy
+ *fill*         0x080135f6        0x2 
  .text.__register_exitproc
-                0x08013604       0xb8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__atexit.o)
-                0x08013604                __register_exitproc
- .text._free_r  0x080136bc       0x98 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-freer.o)
-                0x080136bc                _free_r
+                0x080135f8       0xb8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__atexit.o)
+                0x080135f8                __register_exitproc
+ .text._free_r  0x080136b0       0x98 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-freer.o)
+                0x080136b0                _free_r
  .text.__sfputc_r
-                0x08013754       0x28 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf.o)
+                0x08013748       0x28 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x0801377c       0x24 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf.o)
-                0x0801377c                __sfputs_r
+                0x08013770       0x24 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf.o)
+                0x08013770                __sfputs_r
  .text._vfprintf_r
-                0x080137a0      0x22c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf.o)
-                0x080137a0                _vfiprintf_r
-                0x080137a0                _vfprintf_r
+                0x08013794      0x22c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf.o)
+                0x08013794                _vfiprintf_r
+                0x08013794                _vfprintf_r
  .text._printf_common
-                0x080139cc       0xd4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf_i.o)
-                0x080139cc                _printf_common
+                0x080139c0       0xd4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x080139c0                _printf_common
  .text._printf_i
-                0x08013aa0      0x258 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf_i.o)
-                0x08013aa0                _printf_i
+                0x08013a94      0x258 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x08013a94                _printf_i
  .text.__sflush_r
-                0x08013cf8      0x10c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fflush.o)
-                0x08013cf8                __sflush_r
+                0x08013cec      0x10c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fflush.o)
+                0x08013cec                __sflush_r
  .text._fflush_r
-                0x08013e04       0x50 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fflush.o)
-                0x08013e04                _fflush_r
+                0x08013df8       0x50 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fflush.o)
+                0x08013df8                _fflush_r
  .text.__swbuf_r
-                0x08013e54       0x7e /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-wbuf.o)
-                0x08013e54                __swbuf_r
- *fill*         0x08013ed2        0x2 
+                0x08013e48       0x7e /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-wbuf.o)
+                0x08013e48                __swbuf_r
+ *fill*         0x08013ec6        0x2 
  .text.__swsetup_r
-                0x08013ed4       0xa8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-wsetup.o)
-                0x08013ed4                __swsetup_r
+                0x08013ec8       0xa8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-wsetup.o)
+                0x08013ec8                __swsetup_r
  .text.__swhatbuf_r
-                0x08013f7c       0x4c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-makebuf.o)
-                0x08013f7c                __swhatbuf_r
+                0x08013f70       0x4c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-makebuf.o)
+                0x08013f70                __swhatbuf_r
  .text.__smakebuf_r
-                0x08013fc8       0x72 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-makebuf.o)
-                0x08013fc8                __smakebuf_r
- *fill*         0x0801403a        0x2 
+                0x08013fbc       0x72 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-makebuf.o)
+                0x08013fbc                __smakebuf_r
+ *fill*         0x0801402e        0x2 
  .text._fstat_r
-                0x0801403c       0x24 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fstatr.o)
-                0x0801403c                _fstat_r
+                0x08014030       0x24 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fstatr.o)
+                0x08014030                _fstat_r
  .text._isatty_r
-                0x08014060       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-isattyr.o)
-                0x08014060                _isatty_r
+                0x08014054       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-isattyr.o)
+                0x08014054                _isatty_r
  *(.glue_7)
- .glue_7        0x08014080        0x0 linker stubs
+ .glue_7        0x08014074        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08014080        0x0 linker stubs
+ .glue_7t       0x08014074        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08014080        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x08014074        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x08014080        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crti.o
-                0x08014080                _init
- .init          0x08014084        0x8 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x08014074        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crti.o
+                0x08014074                _init
+ .init          0x08014078        0x8 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x0801408c        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crti.o
-                0x0801408c                _fini
- .fini          0x08014090        0x8 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
-                0x08014098                        . = ALIGN (0x4)
-                0x08014098                        _etext = .
+ .fini          0x08014080        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crti.o
+                0x08014080                _fini
+ .fini          0x08014084        0x8 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
+                0x0801408c                        . = ALIGN (0x4)
+                0x0801408c                        _etext = .
 
-.vfp11_veneer   0x08014098        0x0
- .vfp11_veneer  0x08014098        0x0 linker stubs
+.vfp11_veneer   0x0801408c        0x0
+ .vfp11_veneer  0x0801408c        0x0 linker stubs
 
-.v4_bx          0x08014098        0x0
- .v4_bx         0x08014098        0x0 linker stubs
+.v4_bx          0x0801408c        0x0
+ .v4_bx         0x0801408c        0x0 linker stubs
 
-.iplt           0x08014098        0x0
- .iplt          0x08014098        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x0801408c        0x0
+ .iplt          0x0801408c        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x08014098      0x2c0
-                0x08014098                        . = ALIGN (0x4)
+.rodata         0x0801408c      0x2c0
+                0x0801408c                        . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x08014098        0x5 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
- *fill*         0x0801409d        0x3 
- .rodata        0x080140a0        0xd cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
- *fill*         0x080140ad        0x3 
- .rodata        0x080140b0       0x28 CMakeFiles/three_friction.dir/Src/freertos.c.obj
- .rodata        0x080140d8       0x46 CMakeFiles/three_friction.dir/Src/usbd_desc.c.obj
- *fill*         0x0801411e        0x2 
- .rodata        0x08014120       0xe2 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
- *fill*         0x08014202        0x2 
- .rodata        0x08014204        0xe CMakeFiles/three_friction.dir/UserCode/ENT/ent_main.cpp.obj
+ .rodata        0x0801408c        0x5 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+ *fill*         0x08014091        0x3 
+ .rodata        0x08014094        0xd cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+ *fill*         0x080140a1        0x3 
+ .rodata        0x080140a4       0x28 CMakeFiles/three_friction.dir/Src/freertos.c.obj
+ .rodata        0x080140cc       0x46 CMakeFiles/three_friction.dir/Src/usbd_desc.c.obj
+ *fill*         0x08014112        0x2 
+ .rodata        0x08014114       0xe2 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+ *fill*         0x080141f6        0x2 
+ .rodata        0x080141f8        0xe CMakeFiles/three_friction.dir/UserCode/ENT/ent_main.cpp.obj
  *(.rodata*)
- *fill*         0x08014212        0x2 
+ *fill*         0x08014206        0x2 
  .rodata.AHBPrescTable
-                0x08014214       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Src/system_stm32f4xx.c.obj
-                0x08014214                AHBPrescTable
+                0x08014208       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Src/system_stm32f4xx.c.obj
+                0x08014208                AHBPrescTable
  .rodata.APBPrescTable
-                0x08014224        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Src/system_stm32f4xx.c.obj
-                0x08014224                APBPrescTable
+                0x08014218        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Src/system_stm32f4xx.c.obj
+                0x08014218                APBPrescTable
  .rodata.flagBitshiftOffset.0
-                0x0801422c        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x08014220        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .rodata.kC610_M2006_Direct
-                0x08014234       0x24 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x08014234                kC610_M2006_Direct
+                0x08014228       0x24 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x08014228                kC610_M2006_Direct
  .rodata._ZTV9MotorBase
-                0x08014258       0x14 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                0x08014258                vtable for MotorBase
+                0x0801424c       0x14 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+                0x0801424c                vtable for MotorBase
  .rodata._ZZN4vofa4initEP20__UART_HandleTypeDefE5kTail
-                0x0801426c        0x4 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+                0x08014260        0x4 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
  .rodata._ZN12_GLOBAL__N_1L11kToneFreqHzE
-                0x08014270       0x2c CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
+                0x08014264       0x2c CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
  .rodata._ZTV8DjiMotor
-                0x0801429c       0x2c CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
-                0x0801429c                vtable for DjiMotor
+                0x08014290       0x2c CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+                0x08014290                vtable for DjiMotor
  .rodata._ZTV7CanNode
-                0x080142c8       0x14 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
-                0x080142c8                vtable for CanNode
+                0x080142bc       0x14 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+                0x080142bc                vtable for CanNode
  .rodata._ZSt21__glibcxx_assert_failPKciS0_S0_.str1.1
-                0x080142dc       0x78 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(assert_fail.o)
+                0x080142d0       0x78 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(assert_fail.o)
                                  0x45 (size before relaxing)
  .rodata.__on_exit_args
-                0x08014354        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-on_exit_args.o)
-                0x08014354                __on_exit_args
+                0x08014348        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-on_exit_args.o)
+                0x08014348                __on_exit_args
  .rodata._vfprintf_r.str1.1
-                0x08014358        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf.o)
+                0x0801434c        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf.o)
                                  0x11 (size before relaxing)
  .rodata._printf_i.str1.1
-                0x08014358        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x0801434c        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf_i.o)
                                  0x22 (size before relaxing)
-                0x08014358                        . = ALIGN (0x4)
+                0x0801434c                        . = ALIGN (0x4)
 
-.ARM.extab      0x08014358        0x0
-                0x08014358                        . = ALIGN (0x4)
+.ARM.extab      0x0801434c        0x0
+                0x0801434c                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08014358                        . = ALIGN (0x4)
+                0x0801434c                        . = ALIGN (0x4)
 
-.ARM            0x08014358        0x8
-                0x08014358                        . = ALIGN (0x4)
-                0x08014358                        __exidx_start = .
+.ARM            0x0801434c        0x8
+                0x0801434c                        . = ALIGN (0x4)
+                0x0801434c                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x08014358        0x8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memchr.o)
+ .ARM.exidx     0x0801434c        0x8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memchr.o)
  .ARM.exidx.text.__udivmoddi4
-                0x08014360        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x08014354        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
                                   0x8 (size before relaxing)
-                0x08014360                        __exidx_end = .
-                0x08014360                        . = ALIGN (0x4)
+                0x08014354                        __exidx_end = .
+                0x08014354                        . = ALIGN (0x4)
 
-.preinit_array  0x08014360        0x0
-                0x08014360                        . = ALIGN (0x4)
-                0x08014360                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08014354        0x0
+                0x08014354                        . = ALIGN (0x4)
+                0x08014354                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08014360                        PROVIDE (__preinit_array_end = .)
-                0x08014360                        . = ALIGN (0x4)
+                0x08014354                        PROVIDE (__preinit_array_end = .)
+                0x08014354                        . = ALIGN (0x4)
 
-.init_array     0x08014360       0x10
-                0x08014360                        . = ALIGN (0x4)
-                0x08014360                        PROVIDE (__init_array_start = .)
+.init_array     0x08014354       0x10
+                0x08014354                        . = ALIGN (0x4)
+                0x08014354                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x08014360        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
- .init_array    0x08014364        0x4 CMakeFiles/three_friction.dir/UserCode/ENT/ent_main.cpp.obj
- .init_array    0x08014368        0x4 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
- .init_array    0x0801436c        0x4 CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
-                0x08014370                        PROVIDE (__init_array_end = .)
-                0x08014370                        . = ALIGN (0x4)
+ .init_array    0x08014354        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+ .init_array    0x08014358        0x4 CMakeFiles/three_friction.dir/UserCode/ENT/ent_main.cpp.obj
+ .init_array    0x0801435c        0x4 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+ .init_array    0x08014360        0x4 CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
+                0x08014364                        PROVIDE (__init_array_end = .)
+                0x08014364                        . = ALIGN (0x4)
 
-.fini_array     0x08014370        0x4
-                0x08014370                        . = ALIGN (0x4)
-                0x08014370                        PROVIDE (__fini_array_start = .)
+.fini_array     0x08014364        0x4
+                0x08014364                        . = ALIGN (0x4)
+                0x08014364                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08014370        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
-                0x08014374                        PROVIDE (__fini_array_end = .)
-                0x08014374                        . = ALIGN (0x4)
-                0x08014374                        _siccmram = LOADADDR (.ccmram)
+ .fini_array    0x08014364        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08014368                        PROVIDE (__fini_array_end = .)
+                0x08014368                        . = ALIGN (0x4)
+                0x08014368                        _siccmram = LOADADDR (.ccmram)
 
-.rel.dyn        0x08014374        0x0
- .rel.iplt      0x08014374        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x08014368        0x0
+ .rel.iplt      0x08014368        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
 
-.ccmram         0x10000000        0x0 load address 0x08014374
+.ccmram         0x10000000        0x0 load address 0x08014368
                 0x10000000                        . = ALIGN (0x4)
                 0x10000000                        _sccmram = .
  *(.ccmram)
  *(.ccmram*)
                 0x10000000                        . = ALIGN (0x4)
                 0x10000000                        _eccmram = .
-                0x08014374                        _sidata = LOADADDR (.data)
+                0x08014368                        _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x8b8 load address 0x08014374
+.data           0x20000000      0x8b8 load address 0x08014368
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -14880,10 +14880,10 @@ LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
  *(.RamFunc*)
                 0x200008b8                        . = ALIGN (0x4)
 
-.igot.plt       0x200008b8        0x0 load address 0x08014c2c
+.igot.plt       0x200008b8        0x0 load address 0x08014c20
  .igot.plt      0x200008b8        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtbegin.o
 
-.tdata          0x200008b8        0x0 load address 0x08014c2c
+.tdata          0x200008b8        0x0 load address 0x08014c20
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x200008b8                        . = ALIGN (0x4)
                 0x200008b8                        _edata = .
@@ -14900,7 +14900,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
                 [!provide]                        PROVIDE (__data_source_end = __tdata_source_end)
                 [!provide]                        PROVIDE (__data_source_size = (__data_source_end - __data_source))
 
-.tbss           0x200008b8        0x0 load address 0x08014c2c
+.tbss           0x200008b8        0x0 load address 0x08014c20
                 0x200008b8                        _sbss = .
                 0x200008b8                        __bss_start__ = _sbss
  *(.tbss .tbss.*)
@@ -14917,7 +14917,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
                 [!provide]                        PROVIDE (__arm32_tls_tcb_offset = MAX (0x8, __tls_align))
                 [!provide]                        PROVIDE (__arm64_tls_tcb_offset = MAX (0x10, __tls_align))
 
-.bss            0x200008b8     0x9460 load address 0x08014c2c
+.bss            0x200008b8     0x9460 load address 0x08014c20
  *(.bss)
  *(.bss*)
  .bss.completed.1
@@ -15209,7 +15209,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/crtn.o
                 [!provide]                        PROVIDE (__bss_size = (__bss_end - __bss_start))
 
 ._user_heap_stack
-                0x20009d18     0x4000 load address 0x08014c2c
+                0x20009d18     0x4000 load address 0x08014c20
                 0x20009d18                        . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
                 0x20009d18                        PROVIDE (_end = .)
@@ -15643,7 +15643,7 @@ LOAD linker stubs
  .comment       0x0000003c        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-isattyr.o)
                                  0x1f (size before relaxing)
 
-.debug_info     0x00000000    0x624ab
+.debug_info     0x00000000    0x624ba
  .debug_info    0x00000000      0x512 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Src/system_stm32f4xx.c.obj
  .debug_info    0x00000512     0x299d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .debug_info    0x00002eaf     0x14db cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
@@ -15691,64 +15691,64 @@ LOAD linker stubs
  .debug_info    0x00029630      0x168 CMakeFiles/three_friction.dir/Src/sysmem.c.obj
  .debug_info    0x00029798      0x6b4 CMakeFiles/three_friction.dir/Src/syscalls.c.obj
  .debug_info    0x00029e4c       0x30 CMakeFiles/three_friction.dir/startup_stm32f407xx.s.obj
- .debug_info    0x00029e7c     0x7756 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
- .debug_info    0x000315d2     0x27c6 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
- .debug_info    0x00033d98      0x677 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
- .debug_info    0x0003440f     0x2f17 CMakeFiles/three_friction.dir/UserCode/Common/kalman_filter.cpp.obj
- .debug_info    0x00037326      0x7ec CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
- .debug_info    0x00037b12      0xc27 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
- .debug_info    0x00038739      0xd7b CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
- .debug_info    0x000394b4      0x8f9 CMakeFiles/three_friction.dir/UserCode/DRV/led/drv_led.cpp.obj
- .debug_info    0x00039dad     0x6e0f CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
- .debug_info    0x00040bbc     0x5238 CMakeFiles/three_friction.dir/UserCode/ENT/ent_main.cpp.obj
- .debug_info    0x00045df4     0x6c88 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
- .debug_info    0x0004ca7c     0x3a9d CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
- .debug_info    0x00050519      0x14c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(atexit_arm.o)
- .debug_info    0x00050665       0xb4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(del_ops.o)
- .debug_info    0x00050719     0x10a5 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(assert_fail.o)
- .debug_info    0x000517be      0x5b6 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(del_op.o)
- .debug_info    0x00051d74       0x24 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
- .debug_info    0x00051d98      0x6fc /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
- .debug_info    0x00052494       0x3c /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
- .debug_info    0x000524d0       0xdd /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-abort.o)
- .debug_info    0x000525ad      0x7a5 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-malloc.o)
- .debug_info    0x00052d52      0x9c1 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mallocr.o)
- .debug_info    0x00053713      0x770 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mlock.o)
- .debug_info    0x00053e83      0x216 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-cxa_atexit.o)
- .debug_info    0x00054099      0xfbf /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .debug_info    0x00055058      0x86c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fprintf.o)
- .debug_info    0x000558c4      0x7d7 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fwalk.o)
- .debug_info    0x0005609b      0xa95 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-stdio.o)
- .debug_info    0x00056b30      0x114 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memmove.o)
- .debug_info    0x00056c44       0xe5 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .debug_info    0x00056d29      0xa50 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-signal.o)
- .debug_info    0x00057779      0x762 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-closer.o)
- .debug_info    0x00057edb      0x8a6 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-reent.o)
- .debug_info    0x00058781      0x71a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
- .debug_info    0x00058e9b      0x7ad /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lseekr.o)
- .debug_info    0x00059648      0x7c4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-readr.o)
- .debug_info    0x00059e0c      0x7ef /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-signalr.o)
- .debug_info    0x0005a5fb      0x787 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-sbrkr.o)
- .debug_info    0x0005ad82      0x7ca /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-writer.o)
- .debug_info    0x0005b54c      0x700 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
- .debug_info    0x0005bc4c      0x110 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
- .debug_info    0x0005bd5c      0x21d /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lock.o)
- .debug_info    0x0005bf79      0x126 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memcpy-stub.o)
- .debug_info    0x0005c09f      0x2da /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__atexit.o)
- .debug_info    0x0005c379      0x2fc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__call_atexit.o)
- .debug_info    0x0005c675      0x845 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-freer.o)
- .debug_info    0x0005ceba      0x104 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-on_exit_args.o)
- .debug_info    0x0005cfbe     0x1099 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf.o)
- .debug_info    0x0005e057      0xdf2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf_i.o)
- .debug_info    0x0005ee49      0x9f7 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fflush.o)
- .debug_info    0x0005f840      0x879 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-wbuf.o)
- .debug_info    0x000600b9      0x7c0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-wsetup.o)
- .debug_info    0x00060879       0x25 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memchr.o)
- .debug_info    0x0006089e      0xb25 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-makebuf.o)
- .debug_info    0x000613c3      0x986 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fstatr.o)
- .debug_info    0x00061d49      0x762 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-isattyr.o)
+ .debug_info    0x00029e7c     0x7765 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+ .debug_info    0x000315e1     0x27c6 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .debug_info    0x00033da7      0x677 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+ .debug_info    0x0003441e     0x2f17 CMakeFiles/three_friction.dir/UserCode/Common/kalman_filter.cpp.obj
+ .debug_info    0x00037335      0x7ec CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
+ .debug_info    0x00037b21      0xc27 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+ .debug_info    0x00038748      0xd7b CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
+ .debug_info    0x000394c3      0x8f9 CMakeFiles/three_friction.dir/UserCode/DRV/led/drv_led.cpp.obj
+ .debug_info    0x00039dbc     0x6e0f CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+ .debug_info    0x00040bcb     0x5238 CMakeFiles/three_friction.dir/UserCode/ENT/ent_main.cpp.obj
+ .debug_info    0x00045e03     0x6c88 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+ .debug_info    0x0004ca8b     0x3a9d CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
+ .debug_info    0x00050528      0x14c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(atexit_arm.o)
+ .debug_info    0x00050674       0xb4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(del_ops.o)
+ .debug_info    0x00050728     0x10a5 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(assert_fail.o)
+ .debug_info    0x000517cd      0x5b6 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(del_op.o)
+ .debug_info    0x00051d83       0x24 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_info    0x00051da7      0x6fc /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_info    0x000524a3       0x3c /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x000524df       0xdd /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-abort.o)
+ .debug_info    0x000525bc      0x7a5 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-malloc.o)
+ .debug_info    0x00052d61      0x9c1 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mallocr.o)
+ .debug_info    0x00053722      0x770 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mlock.o)
+ .debug_info    0x00053e92      0x216 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-cxa_atexit.o)
+ .debug_info    0x000540a8      0xfbf /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+ .debug_info    0x00055067      0x86c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fprintf.o)
+ .debug_info    0x000558d3      0x7d7 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fwalk.o)
+ .debug_info    0x000560aa      0xa95 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-stdio.o)
+ .debug_info    0x00056b3f      0x114 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memmove.o)
+ .debug_info    0x00056c53       0xe5 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_info    0x00056d38      0xa50 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-signal.o)
+ .debug_info    0x00057788      0x762 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-closer.o)
+ .debug_info    0x00057eea      0x8a6 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-reent.o)
+ .debug_info    0x00058790      0x71a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
+ .debug_info    0x00058eaa      0x7ad /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lseekr.o)
+ .debug_info    0x00059657      0x7c4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-readr.o)
+ .debug_info    0x00059e1b      0x7ef /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-signalr.o)
+ .debug_info    0x0005a60a      0x787 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-sbrkr.o)
+ .debug_info    0x0005ad91      0x7ca /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-writer.o)
+ .debug_info    0x0005b55b      0x700 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
+ .debug_info    0x0005bc5b      0x110 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+ .debug_info    0x0005bd6b      0x21d /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lock.o)
+ .debug_info    0x0005bf88      0x126 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memcpy-stub.o)
+ .debug_info    0x0005c0ae      0x2da /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__atexit.o)
+ .debug_info    0x0005c388      0x2fc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__call_atexit.o)
+ .debug_info    0x0005c684      0x845 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-freer.o)
+ .debug_info    0x0005cec9      0x104 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-on_exit_args.o)
+ .debug_info    0x0005cfcd     0x1099 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf.o)
+ .debug_info    0x0005e066      0xdf2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_info    0x0005ee58      0x9f7 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fflush.o)
+ .debug_info    0x0005f84f      0x879 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-wbuf.o)
+ .debug_info    0x000600c8      0x7c0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-wsetup.o)
+ .debug_info    0x00060888       0x25 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memchr.o)
+ .debug_info    0x000608ad      0xb25 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-makebuf.o)
+ .debug_info    0x000613d2      0x986 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fstatr.o)
+ .debug_info    0x00061d58      0x762 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-isattyr.o)
 
-.debug_abbrev   0x00000000     0xfcbf
+.debug_abbrev   0x00000000     0xfcc2
  .debug_abbrev  0x00000000      0x11a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Src/system_stm32f4xx.c.obj
  .debug_abbrev  0x0000011a      0x278 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .debug_abbrev  0x00000392      0x283 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
@@ -15796,62 +15796,62 @@ LOAD linker stubs
  .debug_abbrev  0x000065ac       0xbc CMakeFiles/three_friction.dir/Src/sysmem.c.obj
  .debug_abbrev  0x00006668      0x1bc CMakeFiles/three_friction.dir/Src/syscalls.c.obj
  .debug_abbrev  0x00006824       0x24 CMakeFiles/three_friction.dir/startup_stm32f407xx.s.obj
- .debug_abbrev  0x00006848      0xca3 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
- .debug_abbrev  0x000074eb      0x5a5 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
- .debug_abbrev  0x00007a90      0x23b CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
- .debug_abbrev  0x00007ccb      0x4cf CMakeFiles/three_friction.dir/UserCode/Common/kalman_filter.cpp.obj
- .debug_abbrev  0x0000819a      0x2e4 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
- .debug_abbrev  0x0000847e      0x374 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
- .debug_abbrev  0x000087f2      0x39a CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
- .debug_abbrev  0x00008b8c      0x283 CMakeFiles/three_friction.dir/UserCode/DRV/led/drv_led.cpp.obj
- .debug_abbrev  0x00008e0f      0xb8f CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
- .debug_abbrev  0x0000999e      0x7c3 CMakeFiles/three_friction.dir/UserCode/ENT/ent_main.cpp.obj
- .debug_abbrev  0x0000a161      0xb69 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
- .debug_abbrev  0x0000acca      0x709 CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
- .debug_abbrev  0x0000b3d3       0xba /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(atexit_arm.o)
- .debug_abbrev  0x0000b48d       0xb2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(del_ops.o)
- .debug_abbrev  0x0000b53f      0x2b5 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(assert_fail.o)
- .debug_abbrev  0x0000b7f4      0x1a4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(del_op.o)
- .debug_abbrev  0x0000b998       0x14 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
- .debug_abbrev  0x0000b9ac      0x170 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
- .debug_abbrev  0x0000bb1c       0x26 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
- .debug_abbrev  0x0000bb42       0x9f /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-abort.o)
- .debug_abbrev  0x0000bbe1      0x1d5 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-malloc.o)
- .debug_abbrev  0x0000bdb6      0x250 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mallocr.o)
- .debug_abbrev  0x0000c006      0x1c5 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mlock.o)
- .debug_abbrev  0x0000c1cb      0x15d /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-cxa_atexit.o)
- .debug_abbrev  0x0000c328      0x419 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .debug_abbrev  0x0000c741      0x223 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fprintf.o)
- .debug_abbrev  0x0000c964      0x1a1 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fwalk.o)
- .debug_abbrev  0x0000cb05      0x227 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-stdio.o)
- .debug_abbrev  0x0000cd2c       0xb2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memmove.o)
- .debug_abbrev  0x0000cdde       0xa4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .debug_abbrev  0x0000ce82      0x297 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-signal.o)
- .debug_abbrev  0x0000d119      0x1b6 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-closer.o)
- .debug_abbrev  0x0000d2cf      0x1fd /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-reent.o)
- .debug_abbrev  0x0000d4cc      0x14f /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
- .debug_abbrev  0x0000d61b      0x1ca /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lseekr.o)
- .debug_abbrev  0x0000d7e5      0x1b6 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-readr.o)
- .debug_abbrev  0x0000d99b      0x203 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-signalr.o)
- .debug_abbrev  0x0000db9e      0x1e0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-sbrkr.o)
- .debug_abbrev  0x0000dd7e      0x1bb /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-writer.o)
- .debug_abbrev  0x0000df39      0x164 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
- .debug_abbrev  0x0000e09d       0xcf /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
- .debug_abbrev  0x0000e16c      0x11b /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lock.o)
- .debug_abbrev  0x0000e287       0xc7 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memcpy-stub.o)
- .debug_abbrev  0x0000e34e      0x1ee /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__atexit.o)
- .debug_abbrev  0x0000e53c      0x1e9 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__call_atexit.o)
- .debug_abbrev  0x0000e725      0x23a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-freer.o)
- .debug_abbrev  0x0000e95f       0xbe /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-on_exit_args.o)
- .debug_abbrev  0x0000ea1d      0x31c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf.o)
- .debug_abbrev  0x0000ed39      0x28f /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf_i.o)
- .debug_abbrev  0x0000efc8      0x2b8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fflush.o)
- .debug_abbrev  0x0000f280      0x233 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-wbuf.o)
- .debug_abbrev  0x0000f4b3      0x1e8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-wsetup.o)
- .debug_abbrev  0x0000f69b       0x14 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memchr.o)
- .debug_abbrev  0x0000f6af      0x291 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-makebuf.o)
- .debug_abbrev  0x0000f940      0x1c9 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fstatr.o)
- .debug_abbrev  0x0000fb09      0x1b6 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-isattyr.o)
+ .debug_abbrev  0x00006848      0xca6 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+ .debug_abbrev  0x000074ee      0x5a5 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .debug_abbrev  0x00007a93      0x23b CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+ .debug_abbrev  0x00007cce      0x4cf CMakeFiles/three_friction.dir/UserCode/Common/kalman_filter.cpp.obj
+ .debug_abbrev  0x0000819d      0x2e4 CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
+ .debug_abbrev  0x00008481      0x374 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+ .debug_abbrev  0x000087f5      0x39a CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
+ .debug_abbrev  0x00008b8f      0x283 CMakeFiles/three_friction.dir/UserCode/DRV/led/drv_led.cpp.obj
+ .debug_abbrev  0x00008e12      0xb8f CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+ .debug_abbrev  0x000099a1      0x7c3 CMakeFiles/three_friction.dir/UserCode/ENT/ent_main.cpp.obj
+ .debug_abbrev  0x0000a164      0xb69 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+ .debug_abbrev  0x0000accd      0x709 CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
+ .debug_abbrev  0x0000b3d6       0xba /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(atexit_arm.o)
+ .debug_abbrev  0x0000b490       0xb2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(del_ops.o)
+ .debug_abbrev  0x0000b542      0x2b5 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(assert_fail.o)
+ .debug_abbrev  0x0000b7f7      0x1a4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(del_op.o)
+ .debug_abbrev  0x0000b99b       0x14 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_abbrev  0x0000b9af      0x170 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_abbrev  0x0000bb1f       0x26 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x0000bb45       0x9f /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-abort.o)
+ .debug_abbrev  0x0000bbe4      0x1d5 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-malloc.o)
+ .debug_abbrev  0x0000bdb9      0x250 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mallocr.o)
+ .debug_abbrev  0x0000c009      0x1c5 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mlock.o)
+ .debug_abbrev  0x0000c1ce      0x15d /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-cxa_atexit.o)
+ .debug_abbrev  0x0000c32b      0x419 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+ .debug_abbrev  0x0000c744      0x223 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fprintf.o)
+ .debug_abbrev  0x0000c967      0x1a1 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fwalk.o)
+ .debug_abbrev  0x0000cb08      0x227 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-stdio.o)
+ .debug_abbrev  0x0000cd2f       0xb2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memmove.o)
+ .debug_abbrev  0x0000cde1       0xa4 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_abbrev  0x0000ce85      0x297 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-signal.o)
+ .debug_abbrev  0x0000d11c      0x1b6 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-closer.o)
+ .debug_abbrev  0x0000d2d2      0x1fd /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-reent.o)
+ .debug_abbrev  0x0000d4cf      0x14f /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
+ .debug_abbrev  0x0000d61e      0x1ca /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lseekr.o)
+ .debug_abbrev  0x0000d7e8      0x1b6 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-readr.o)
+ .debug_abbrev  0x0000d99e      0x203 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-signalr.o)
+ .debug_abbrev  0x0000dba1      0x1e0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-sbrkr.o)
+ .debug_abbrev  0x0000dd81      0x1bb /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-writer.o)
+ .debug_abbrev  0x0000df3c      0x164 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
+ .debug_abbrev  0x0000e0a0       0xcf /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+ .debug_abbrev  0x0000e16f      0x11b /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lock.o)
+ .debug_abbrev  0x0000e28a       0xc7 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memcpy-stub.o)
+ .debug_abbrev  0x0000e351      0x1ee /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__atexit.o)
+ .debug_abbrev  0x0000e53f      0x1e9 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__call_atexit.o)
+ .debug_abbrev  0x0000e728      0x23a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-freer.o)
+ .debug_abbrev  0x0000e962       0xbe /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-on_exit_args.o)
+ .debug_abbrev  0x0000ea20      0x31c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf.o)
+ .debug_abbrev  0x0000ed3c      0x28f /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_abbrev  0x0000efcb      0x2b8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fflush.o)
+ .debug_abbrev  0x0000f283      0x233 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-wbuf.o)
+ .debug_abbrev  0x0000f4b6      0x1e8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-wsetup.o)
+ .debug_abbrev  0x0000f69e       0x14 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memchr.o)
+ .debug_abbrev  0x0000f6b2      0x291 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-makebuf.o)
+ .debug_abbrev  0x0000f943      0x1c9 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fstatr.o)
+ .debug_abbrev  0x0000fb0c      0x1b6 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-isattyr.o)
 
 .debug_aranges  0x00000000     0x3448
  .debug_aranges
@@ -16591,7 +16591,7 @@ LOAD linker stubs
  .debug_macro   0x0003c63d     0x10c6 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
  .debug_macro   0x0003d703      0x4b0 CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
 
-.debug_line     0x00000000    0x4069f
+.debug_line     0x00000000    0x4069c
  .debug_line    0x00000000      0x732 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Src/system_stm32f4xx.c.obj
  .debug_line    0x00000732     0x379d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .debug_line    0x00003ecf     0x1910 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
@@ -16639,62 +16639,62 @@ LOAD linker stubs
  .debug_line    0x00029cb5      0x213 CMakeFiles/three_friction.dir/Src/sysmem.c.obj
  .debug_line    0x00029ec8      0x537 CMakeFiles/three_friction.dir/Src/syscalls.c.obj
  .debug_line    0x0002a3ff       0x7a CMakeFiles/three_friction.dir/startup_stm32f407xx.s.obj
- .debug_line    0x0002a479     0x269d CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
- .debug_line    0x0002cb16     0x1a03 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
- .debug_line    0x0002e519      0x8e3 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
- .debug_line    0x0002edfc     0x163b CMakeFiles/three_friction.dir/UserCode/Common/kalman_filter.cpp.obj
- .debug_line    0x00030437      0xcdb CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
- .debug_line    0x00031112      0x990 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
- .debug_line    0x00031aa2      0xb00 CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
- .debug_line    0x000325a2      0x776 CMakeFiles/three_friction.dir/UserCode/DRV/led/drv_led.cpp.obj
- .debug_line    0x00032d18     0x2391 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
- .debug_line    0x000350a9     0x1eff CMakeFiles/three_friction.dir/UserCode/ENT/ent_main.cpp.obj
- .debug_line    0x00036fa8     0x2213 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
- .debug_line    0x000391bb     0x12dc CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
- .debug_line    0x0003a497      0x11e /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(atexit_arm.o)
- .debug_line    0x0003a5b5      0x10d /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(del_ops.o)
- .debug_line    0x0003a6c2      0x275 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(assert_fail.o)
- .debug_line    0x0003a937      0x1de /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(del_op.o)
- .debug_line    0x0003ab15       0x4e /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
- .debug_line    0x0003ab63      0x565 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
- .debug_line    0x0003b0c8       0x4a /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
- .debug_line    0x0003b112      0x141 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-abort.o)
- .debug_line    0x0003b253      0x19e /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-malloc.o)
- .debug_line    0x0003b3f1      0x490 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mallocr.o)
- .debug_line    0x0003b881      0x18a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mlock.o)
- .debug_line    0x0003ba0b      0x117 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-cxa_atexit.o)
- .debug_line    0x0003bb22      0x580 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .debug_line    0x0003c0a2      0x1db /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fprintf.o)
- .debug_line    0x0003c27d      0x1da /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fwalk.o)
- .debug_line    0x0003c457      0x28b /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-stdio.o)
- .debug_line    0x0003c6e2      0x177 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memmove.o)
- .debug_line    0x0003c859      0x12e /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .debug_line    0x0003c987      0x405 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-signal.o)
- .debug_line    0x0003cd8c      0x1bc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-closer.o)
- .debug_line    0x0003cf48      0x2a2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-reent.o)
- .debug_line    0x0003d1ea      0x108 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
- .debug_line    0x0003d2f2      0x1bb /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lseekr.o)
- .debug_line    0x0003d4ad      0x1ba /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-readr.o)
- .debug_line    0x0003d667      0x1ed /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-signalr.o)
- .debug_line    0x0003d854      0x1bc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-sbrkr.o)
- .debug_line    0x0003da10      0x1bb /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-writer.o)
- .debug_line    0x0003dbcb      0x12a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
- .debug_line    0x0003dcf5      0x117 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
- .debug_line    0x0003de0c      0x17d /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lock.o)
- .debug_line    0x0003df89      0x1a1 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memcpy-stub.o)
- .debug_line    0x0003e12a      0x232 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__atexit.o)
- .debug_line    0x0003e35c      0x222 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__call_atexit.o)
- .debug_line    0x0003e57e      0x2b0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-freer.o)
- .debug_line    0x0003e82e       0xc3 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-on_exit_args.o)
- .debug_line    0x0003e8f1      0x647 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf.o)
- .debug_line    0x0003ef38      0x6a8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf_i.o)
- .debug_line    0x0003f5e0      0x421 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fflush.o)
- .debug_line    0x0003fa01      0x257 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-wbuf.o)
- .debug_line    0x0003fc58      0x285 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-wsetup.o)
- .debug_line    0x0003fedd       0x84 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memchr.o)
- .debug_line    0x0003ff61      0x339 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-makebuf.o)
- .debug_line    0x0004029a      0x248 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fstatr.o)
- .debug_line    0x000404e2      0x1bd /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-isattyr.o)
+ .debug_line    0x0002a479     0x269a CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
+ .debug_line    0x0002cb13     0x1a03 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
+ .debug_line    0x0002e516      0x8e3 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj
+ .debug_line    0x0002edf9     0x163b CMakeFiles/three_friction.dir/UserCode/Common/kalman_filter.cpp.obj
+ .debug_line    0x00030434      0xcdb CMakeFiles/three_friction.dir/UserCode/Common/ols.cpp.obj
+ .debug_line    0x0003110f      0x990 CMakeFiles/three_friction.dir/UserCode/Common/vofa.cpp.obj
+ .debug_line    0x00031a9f      0xb00 CMakeFiles/three_friction.dir/UserCode/DRV/buzzer/drv_buzzer.cpp.obj
+ .debug_line    0x0003259f      0x776 CMakeFiles/three_friction.dir/UserCode/DRV/led/drv_led.cpp.obj
+ .debug_line    0x00032d15     0x2391 CMakeFiles/three_friction.dir/UserCode/DRV/motor/drv_dji_motor.cpp.obj
+ .debug_line    0x000350a6     0x1eff CMakeFiles/three_friction.dir/UserCode/ENT/ent_main.cpp.obj
+ .debug_line    0x00036fa5     0x2213 CMakeFiles/three_friction.dir/UserCode/HAL/hal_can.cpp.obj
+ .debug_line    0x000391b8     0x12dc CMakeFiles/three_friction.dir/UserCode/SRV/srv_ins.cpp.obj
+ .debug_line    0x0003a494      0x11e /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(atexit_arm.o)
+ .debug_line    0x0003a5b2      0x10d /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(del_ops.o)
+ .debug_line    0x0003a6bf      0x275 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(assert_fail.o)
+ .debug_line    0x0003a934      0x1de /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(del_op.o)
+ .debug_line    0x0003ab12       0x4e /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_line    0x0003ab60      0x565 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_line    0x0003b0c5       0x4a /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x0003b10f      0x141 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-abort.o)
+ .debug_line    0x0003b250      0x19e /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-malloc.o)
+ .debug_line    0x0003b3ee      0x490 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mallocr.o)
+ .debug_line    0x0003b87e      0x18a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-mlock.o)
+ .debug_line    0x0003ba08      0x117 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-cxa_atexit.o)
+ .debug_line    0x0003bb1f      0x580 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+ .debug_line    0x0003c09f      0x1db /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fprintf.o)
+ .debug_line    0x0003c27a      0x1da /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fwalk.o)
+ .debug_line    0x0003c454      0x28b /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-stdio.o)
+ .debug_line    0x0003c6df      0x177 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memmove.o)
+ .debug_line    0x0003c856      0x12e /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_line    0x0003c984      0x405 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-signal.o)
+ .debug_line    0x0003cd89      0x1bc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-closer.o)
+ .debug_line    0x0003cf45      0x2a2 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-reent.o)
+ .debug_line    0x0003d1e7      0x108 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
+ .debug_line    0x0003d2ef      0x1bb /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lseekr.o)
+ .debug_line    0x0003d4aa      0x1ba /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-readr.o)
+ .debug_line    0x0003d664      0x1ed /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-signalr.o)
+ .debug_line    0x0003d851      0x1bc /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-sbrkr.o)
+ .debug_line    0x0003da0d      0x1bb /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-writer.o)
+ .debug_line    0x0003dbc8      0x12a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
+ .debug_line    0x0003dcf2      0x117 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+ .debug_line    0x0003de09      0x17d /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lock.o)
+ .debug_line    0x0003df86      0x1a1 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memcpy-stub.o)
+ .debug_line    0x0003e127      0x232 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__atexit.o)
+ .debug_line    0x0003e359      0x222 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-__call_atexit.o)
+ .debug_line    0x0003e57b      0x2b0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-freer.o)
+ .debug_line    0x0003e82b       0xc3 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-on_exit_args.o)
+ .debug_line    0x0003e8ee      0x647 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf.o)
+ .debug_line    0x0003ef35      0x6a8 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_line    0x0003f5dd      0x421 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fflush.o)
+ .debug_line    0x0003f9fe      0x257 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-wbuf.o)
+ .debug_line    0x0003fc55      0x285 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-wsetup.o)
+ .debug_line    0x0003feda       0x84 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memchr.o)
+ .debug_line    0x0003ff5e      0x339 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-makebuf.o)
+ .debug_line    0x00040297      0x248 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fstatr.o)
+ .debug_line    0x000404df      0x1bd /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-isattyr.o)
 
 .debug_str      0x00000000   0x109aa3
  .debug_str     0x00000000   0x109aa3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Src/system_stm32f4xx.c.obj
@@ -16792,7 +16792,7 @@ LOAD linker stubs
  .debug_str     0x00109aa3        0x0 CMakeFiles/three_friction.dir/startup_stm32f407xx.s.obj
                                  0x90 (size before relaxing)
  .debug_str     0x00109aa3        0x0 CMakeFiles/three_friction.dir/UserCode/APP/debug.cpp.obj
-                              0xf3eec (size before relaxing)
+                              0xf3ef7 (size before relaxing)
  .debug_str     0x00109aa3        0x0 CMakeFiles/three_friction.dir/UserCode/Common/cotr.cpp.obj
                               0x127b2 (size before relaxing)
  .debug_str     0x00109aa3        0x0 CMakeFiles/three_friction.dir/UserCode/Common/dwt.cpp.obj

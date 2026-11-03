@@ -102,10 +102,11 @@ void debugTask(void *ptr)
         static bool            reversing  = false;
 
 
+        vTaskDelay(3000);
         TickType_t last_wake = xTaskGetTickCount();
         for (;;)
         {
-                if (i++ % 1000 == 0) j++;
+                if (i++ % 500 == 0) j++;
 
                 // 堵转：回退 40° 并复位（reset 才能清掉 MotorBlocked）
                 if (trigger_pid_speed.blocked())
@@ -132,7 +133,7 @@ void debugTask(void *ptr)
 
                 for (int k = 0; k < 3; k++)
                 {
-                        friction_target_speed[k] = static_cast<float>(j % 2) * 6000;
+                        friction_target_speed[k] = 9000.0f;
                         if (k == 0 || k == 1) friction_target_speed[k] = -friction_target_speed[k];
 
                         friction_target_torque[k] = friction_pid_speed[k].calculate(friction[k].getTotalAngleSpeed(), friction_target_speed[k]);
