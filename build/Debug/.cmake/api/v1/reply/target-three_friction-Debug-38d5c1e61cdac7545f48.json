@@ -497,7 +497,13 @@
 				32,
 				33,
 				34,
-				35
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41
 			]
 		}
 	],
@@ -648,7 +654,13 @@
 				32,
 				33,
 				34,
-				35
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41
 			]
 		},
 		{
@@ -662,12 +674,6 @@
 			"name" : "Object Libraries",
 			"sourceIndexes" : 
 			[
-				36,
-				37,
-				38,
-				39,
-				40,
-				41,
 				42,
 				43,
 				44,
@@ -701,7 +707,13 @@
 				72,
 				73,
 				74,
-				75
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81
 			]
 		}
 	],
@@ -924,6 +936,16 @@
 				9
 			],
 			"compileGroupIndex" : 2,
+			"path" : "UserCode/APP/motor_demo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 9,
+			"backtraces" : 
+			[
+				9
+			],
+			"compileGroupIndex" : 2,
 			"path" : "UserCode/Common/cotr.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -1034,6 +1056,36 @@
 				9
 			],
 			"compileGroupIndex" : 2,
+			"path" : "UserCode/DRV/motor/drv_dm_motor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 9,
+			"backtraces" : 
+			[
+				9
+			],
+			"compileGroupIndex" : 2,
+			"path" : "UserCode/DRV/motor/drv_servo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 9,
+			"backtraces" : 
+			[
+				9
+			],
+			"compileGroupIndex" : 2,
+			"path" : "UserCode/DRV/motor/drv_zdt_motor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 9,
+			"backtraces" : 
+			[
+				9
+			],
+			"compileGroupIndex" : 2,
 			"path" : "UserCode/DRV/motor/motor_base.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -1055,6 +1107,26 @@
 			],
 			"compileGroupIndex" : 2,
 			"path" : "UserCode/HAL/hal_can.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 9,
+			"backtraces" : 
+			[
+				9
+			],
+			"compileGroupIndex" : 2,
+			"path" : "UserCode/HAL/hal_tim.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 9,
+			"backtraces" : 
+			[
+				9
+			],
+			"compileGroupIndex" : 2,
+			"path" : "UserCode/HAL/hal_uart.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

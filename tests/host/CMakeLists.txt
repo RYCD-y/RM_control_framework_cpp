@@ -39,7 +39,7 @@ target_compile_options(ref_algo PRIVATE -w -include string.h)   # 老 C 代码�
 # ── 新的 C++ 实现（按已存在的文件自动收集）──
 set(NEW_SRCS "")
 # dwt.cpp 是纯固件实现（直接读 DWT 寄存器），host 用 stubs/dwt_host.cpp 代替
-foreach(f ols crc pid kalman_filter quaternion_ekf)
+foreach(f ols cotr crc kalman_filter quaternion_ekf)
     if(EXISTS ${FW_ROOT}/UserCode/Common/${f}.cpp)
         list(APPEND NEW_SRCS ${FW_ROOT}/UserCode/Common/${f}.cpp)
     endif()
@@ -64,6 +64,7 @@ function(add_host_test name)
         target_link_libraries(${name} PRIVATE new_algo)
     endif()
     target_include_directories(${name} PRIVATE ${STUBS} ${V2_ROOT}/Common ${FW_ROOT}/UserCode/Common)
+    target_include_directories(${name} PRIVATE ${FW_ROOT}/UserCode/DRV/motor ${FW_ROOT}/UserCode/HAL)
     target_compile_options(${name} PRIVATE -Wall -Wextra)
     add_test(NAME ${name} COMMAND ${name})
 endfunction()

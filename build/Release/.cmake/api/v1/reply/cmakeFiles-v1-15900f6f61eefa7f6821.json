@@ -11,6 +11,7 @@
 			"paths" : 
 			[
 				"/home/ye/Projects/embedded/three_friction/UserCode/APP/debug.cpp",
+				"/home/ye/Projects/embedded/three_friction/UserCode/APP/motor_demo.cpp",
 				"/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp",
 				"/home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp",
 				"/home/ye/Projects/embedded/three_friction/UserCode/Common/dwt.cpp",
@@ -22,9 +23,14 @@
 				"/home/ye/Projects/embedded/three_friction/UserCode/DRV/buzzer/drv_buzzer.cpp",
 				"/home/ye/Projects/embedded/three_friction/UserCode/DRV/led/drv_led.cpp",
 				"/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp",
+				"/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp",
+				"/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_servo.cpp",
+				"/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp",
 				"/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.cpp",
 				"/home/ye/Projects/embedded/three_friction/UserCode/ENT/ent_main.cpp",
 				"/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.cpp",
+				"/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_tim.cpp",
+				"/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp",
 				"/home/ye/Projects/embedded/three_friction/UserCode/SRV/srv_ins.cpp"
 			],
 			"recurse" : true
@@ -37,7 +43,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "build/Debug/CMakeFiles/4.4.5/CMakeSystem.cmake"
+			"path" : "build/Release/CMakeFiles/4.4.5/CMakeSystem.cmake"
 		},
 		{
 			"path" : "cmake/gcc-arm-none-eabi.cmake"
@@ -49,11 +55,11 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "build/Debug/CMakeFiles/4.4.5/CMakeCCompiler.cmake"
+			"path" : "build/Release/CMakeFiles/4.4.5/CMakeCCompiler.cmake"
 		},
 		{
 			"isGenerated" : true,
-			"path" : "build/Debug/CMakeFiles/4.4.5/CMakeCXXCompiler.cmake"
+			"path" : "build/Release/CMakeFiles/4.4.5/CMakeCXXCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -162,7 +168,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "build/Debug/CMakeFiles/4.4.5/CMakeASMCompiler.cmake"
+			"path" : "build/Release/CMakeFiles/4.4.5/CMakeASMCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -191,7 +197,7 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/ye/Projects/embedded/three_friction/build/Debug",
+		"build" : "/home/ye/Projects/embedded/three_friction/build/Release",
 		"source" : "/home/ye/Projects/embedded/three_friction"
 	},
 	"version" : 

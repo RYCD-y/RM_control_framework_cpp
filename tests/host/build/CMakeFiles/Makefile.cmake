@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/ye/Projects/embedded/three_friction/tests/host/CMakeLists.txt"
-  "CMakeFiles/4.4.4/CMakeCCompiler.cmake"
-  "CMakeFiles/4.4.4/CMakeCXXCompiler.cmake"
-  "CMakeFiles/4.4.4/CMakeSystem.cmake"
+  "CMakeFiles/4.4.5/CMakeCCompiler.cmake"
+  "CMakeFiles/4.4.5/CMakeCXXCompiler.cmake"
+  "CMakeFiles/4.4.5/CMakeSystem.cmake"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"

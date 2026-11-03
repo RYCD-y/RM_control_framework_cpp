@@ -4,7 +4,7 @@
 # compile CXX with /usr/sbin/c++
 CXX_DEFINES = -DHOST_TEST=1
 
-CXX_INCLUDES = -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/control_framework_v2/UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/Common
+CXX_INCLUDES = -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/control_framework_v2/UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/DRV/motor -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/HAL
 
 CXX_FLAGS = -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra
 

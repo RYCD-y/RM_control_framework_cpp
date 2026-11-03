@@ -30,6 +30,7 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ye/Projects/embedded/three_friction/UserCode/*.cpp")
 set(OLD_GLOB
   "/home/ye/Projects/embedded/three_friction/UserCode/APP/debug.cpp"
+  "/home/ye/Projects/embedded/three_friction/UserCode/APP/motor_demo.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/Common/dwt.cpp"
@@ -41,9 +42,14 @@ set(OLD_GLOB
   "/home/ye/Projects/embedded/three_friction/UserCode/DRV/buzzer/drv_buzzer.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/DRV/led/drv_led.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp"
+  "/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp"
+  "/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_servo.cpp"
+  "/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/ENT/ent_main.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.cpp"
+  "/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_tim.cpp"
+  "/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/SRV/srv_ins.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

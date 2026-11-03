@@ -1,0 +1,5 @@
+/usr/arm-none-eabi/include/c++/16.2.0/cmath:1133:3:constexpr bool std::isfinite(float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/APP/motor_demo.cpp:10:15:motor::Status motor_demo::{anonymous}::FirstFailure(motor::Status, motor::Status)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/APP/motor_demo.cpp:16:15:motor::Status motor_demo::DrivePositions(motor::IPositionControl* const*, size_t, float)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/APP/motor_demo.cpp:29:15:motor::Status motor_demo::DriveTorques(motor::ITorqueControl* const*, size_t, float)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/APP/motor_demo.cpp:41:15:motor::Status motor_demo::DriveVelocities(motor::IVelocityControl* const*, size_t, float)	32	static

@@ -1,89 +1,61 @@
-//
-// VOFA+ 调试输出实现（JustFloat：12 个 float + 帧尾 0x00 0x00 0x80 0x7F）
-//
 #include "vofa.hpp"
 
+#include <array>
 #include <cstring>
 
 #include "dwt.hpp"
+#include "hal_uart.hpp"
+#include "usart.h"
 
-namespace
-{
-        constexpr uint8_t kTxSize    = vofa::kChannelCount;
-        constexpr uint8_t kRxSize    = 12;
-        constexpr float   kTxDelayMs = 20.0f;
+namespace {
+constexpr size_t kFrameSize = vofa::kChannelCount * sizeof(float) + 4U;
+constexpr float kTxDelayMs = 20.0f;
 
-        // 全部为静态存储期、零初始化：没有构造顺序问题，也不需要析构
-        UART_HandleTypeDef *s_huart                    = nullptr;
-        float               s_tx_data[kTxSize]         = {};
-        float               s_rx_data[kRxSize]         = {};
-        uint8_t             s_message[kTxSize * 4 + 4] = {};
-        float               s_tx_time_last             = -kTxDelayMs;
-        volatile uint32_t   s_error_count              = 0;
+struct VofaState {
+    UartBus uart{&huart6};
 
-        void rxEventCallback(UART_HandleTypeDef *huart, uint16_t pos)
-        {
-                (void) pos;
-                if (s_huart == nullptr) { return; }
+    std::array<float, vofa::kChannelCount> channels{};
+    std::array<uint8_t, kFrameSize> frame{};
+    float last_tx_time_ms = -kTxDelayMs;
+    uint32_t error_count = 0U;
+};
 
-                // 重新开启下一次接收（必须在 ISR 内完成，否则丢帧）
-                (void) HAL_UARTEx_ReceiveToIdle_DMA(huart, (uint8_t *) s_rx_data, sizeof(s_rx_data));
-                if (huart->hdmarx != nullptr) { __HAL_DMA_DISABLE_IT(huart->hdmarx, DMA_IT_HT); }
+VofaState g_vofa;
 
-                // TODO: 需要收上位机指令时，用 pos 作为本帧长度解析 s_rx_data
-        }
+void OnUartError(void* context, uint32_t error_code) {
+    (void)error_code;
+    ++static_cast<VofaState*>(context)->error_count;
+}
+}  // namespace
 
-        void uartErrorCallback(UART_HandleTypeDef *huart)
-        {
-                (void) huart; // 各串口互相独立，这里只计数
-                s_error_count++;
-        }
-} // namespace
+namespace vofa {
+void Init(UART_HandleTypeDef* huart) {
+    if (huart != &huart6 || g_vofa.uart.IsStarted()) return;
+    constexpr uint8_t kTail[4] = {0x00, 0x00, 0x80, 0x7F};
+    std::memcpy(g_vofa.frame.data() + kChannelCount * sizeof(float), kTail, sizeof(kTail));
+    if (g_vofa.uart.RegisterCallback(nullptr, OnUartError, &g_vofa) != HAL_OK) return;
+    (void)g_vofa.uart.Start();
+}
 
-namespace vofa
-{
-        void init(UART_HandleTypeDef *huart)
-        {
-                // JustFloat 帧尾放在最后 4 字节
-                static constexpr uint8_t kTail[4] = {0x00, 0x00, 0x80, 0x7F};
-                std::memcpy(s_message + kTxSize * 4, kTail, sizeof(kTail));
+void Set(uint8_t channel, float value) {
+    if (channel < kChannelCount) g_vofa.channels[channel] = value;
+}
 
-                s_huart = huart;
-                if (huart == nullptr) { return; }
+HAL_StatusTypeDef Flush() {
+    if (!g_vofa.uart.IsStarted()) return HAL_ERROR;
+    const float now = Dwt::TimelineMs();
+    if (now - g_vofa.last_tx_time_ms <= kTxDelayMs) return HAL_BUSY;
+    std::memcpy(g_vofa.frame.data(), g_vofa.channels.data(), kChannelCount * sizeof(float));
+    const HAL_StatusTypeDef status = g_vofa.uart.Send(g_vofa.frame.data(), g_vofa.frame.size());
+    if (status == HAL_OK) g_vofa.last_tx_time_ms = now;
+    return status;
+}
 
-                (void) HAL_UART_RegisterRxEventCallback(huart, rxEventCallback);
-                (void) HAL_UART_RegisterCallback(huart, HAL_UART_ERROR_CB_ID, uartErrorCallback);
+HAL_StatusTypeDef Send(uint8_t channel, float value) {
+    if (channel >= kChannelCount) return HAL_ERROR;
+    Set(channel, value);
+    return Flush();
+}
 
-                (void) HAL_UARTEx_ReceiveToIdle_DMA(huart, (uint8_t *) s_rx_data, sizeof(s_rx_data));
-                if (huart->hdmarx != nullptr) { __HAL_DMA_DISABLE_IT(huart->hdmarx, DMA_IT_HT); }
-        }
-
-        void set(uint8_t channel, float value)
-        {
-                if (channel < kTxSize) { s_tx_data[channel] = value; }
-        }
-
-        HAL_StatusTypeDef flush()
-        {
-                if (s_huart == nullptr) { return HAL_ERROR; }
-
-                const float now = Dwt::timelineMs();
-                if (now - s_tx_time_last <= kTxDelayMs) { return HAL_BUSY; }
-                if (s_huart->gState != HAL_UART_STATE_READY) { return HAL_BUSY; }
-
-                s_tx_time_last = now;
-
-                std::memcpy(s_message, s_tx_data, sizeof(s_tx_data));
-                return HAL_UART_Transmit_DMA(s_huart, s_message, sizeof(s_message));
-        }
-
-        HAL_StatusTypeDef send(uint8_t channel, float value)
-        {
-                if (channel >= kTxSize) { return HAL_ERROR; }
-
-                set(channel, value);
-                return flush();
-        }
-
-        uint32_t errorCount() { return s_error_count; }
-} // namespace vofa
+uint32_t ErrorCount() { return g_vofa.error_count; }
+}  // namespace vofa

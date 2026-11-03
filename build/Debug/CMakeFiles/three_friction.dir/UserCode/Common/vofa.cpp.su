@@ -1,7 +1,12 @@
-/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:24:14:void {anonymous}::rxEventCallback(UART_HandleTypeDef*, uint16_t)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:36:14:void {anonymous}::uartErrorCallback(UART_HandleTypeDef*)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:45:14:void vofa::init(UART_HandleTypeDef*)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:61:14:void vofa::set(uint8_t, float)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:66:27:HAL_StatusTypeDef vofa::flush()	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:80:27:HAL_StatusTypeDef vofa::send(uint8_t, float)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:88:18:uint32_t vofa::errorCount()	4	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.hpp:39:10:bool UartBus::IsStarted() const	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:14:8:constexpr {anonymous}::VofaState::VofaState()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:25:6:void {anonymous}::OnUartError(void*, uint32_t)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:32:6:void vofa::Init(UART_HandleTypeDef*)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:40:6:void vofa::Set(uint8_t, float)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:44:19:HAL_StatusTypeDef vofa::Flush()	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:54:19:HAL_StatusTypeDef vofa::Send(uint8_t, float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:60:10:uint32_t vofa::ErrorCount()	4	static
+/usr/arm-none-eabi/include/c++/16.2.0/array:208:7:constexpr std::array<_Tp, _Nm>::value_type& std::array<_Tp, _Nm>::operator[](size_type) [with _Tp = float; unsigned int _Nm = 12]	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:14:8:{anonymous}::VofaState::~VofaState()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:61:1:void __static_initialization_and_destruction_0()	8	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:61:1:cpp)	8	static

@@ -544,6 +544,30 @@ home/ye/Projects/embedded/control_framework_v2/UserCode/Common/utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ref_algo.dir/build.make CMakeFiles/ref_algo.dir/home/ye/Projects/embedded/control_framework_v2/UserCode/Common/utils.c.s
 .PHONY : home/ye/Projects/embedded/control_framework_v2/UserCode/Common/utils.c.s
 
+home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.o: home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.o
+.PHONY : home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.o
+
+# target to build an object file
+home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new_algo.dir/build.make CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.o
+.PHONY : home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.o
+
+home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.i: home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.i
+.PHONY : home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.i
+
+# target to preprocess a source file
+home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new_algo.dir/build.make CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.i
+.PHONY : home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.i
+
+home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.s: home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.s
+.PHONY : home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.s
+
+# target to generate assembly for a file
+home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new_algo.dir/build.make CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.s
+.PHONY : home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.s
+
 home/ye/Projects/embedded/three_friction/UserCode/Common/crc.o: home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp.o
 .PHONY : home/ye/Projects/embedded/three_friction/UserCode/Common/crc.o
 
@@ -615,30 +639,6 @@ home/ye/Projects/embedded/three_friction/UserCode/Common/ols.s: home/ye/Projects
 home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/new_algo.dir/build.make CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp.s
 .PHONY : home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp.s
-
-home/ye/Projects/embedded/three_friction/UserCode/Common/pid.o: home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.o
-.PHONY : home/ye/Projects/embedded/three_friction/UserCode/Common/pid.o
-
-# target to build an object file
-home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new_algo.dir/build.make CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.o
-.PHONY : home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.o
-
-home/ye/Projects/embedded/three_friction/UserCode/Common/pid.i: home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.i
-.PHONY : home/ye/Projects/embedded/three_friction/UserCode/Common/pid.i
-
-# target to preprocess a source file
-home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new_algo.dir/build.make CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.i
-.PHONY : home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.i
-
-home/ye/Projects/embedded/three_friction/UserCode/Common/pid.s: home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.s
-.PHONY : home/ye/Projects/embedded/three_friction/UserCode/Common/pid.s
-
-# target to generate assembly for a file
-home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new_algo.dir/build.make CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.s
-.PHONY : home/ye/Projects/embedded/three_friction/UserCode/Common/pid.cpp.s
 
 home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.o: home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.cpp.o
 .PHONY : home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.o
@@ -815,6 +815,9 @@ help:
 	@echo "... home/ye/Projects/embedded/control_framework_v2/UserCode/Common/utils.o"
 	@echo "... home/ye/Projects/embedded/control_framework_v2/UserCode/Common/utils.i"
 	@echo "... home/ye/Projects/embedded/control_framework_v2/UserCode/Common/utils.s"
+	@echo "... home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.o"
+	@echo "... home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.i"
+	@echo "... home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.s"
 	@echo "... home/ye/Projects/embedded/three_friction/UserCode/Common/crc.o"
 	@echo "... home/ye/Projects/embedded/three_friction/UserCode/Common/crc.i"
 	@echo "... home/ye/Projects/embedded/three_friction/UserCode/Common/crc.s"
@@ -824,9 +827,6 @@ help:
 	@echo "... home/ye/Projects/embedded/three_friction/UserCode/Common/ols.o"
 	@echo "... home/ye/Projects/embedded/three_friction/UserCode/Common/ols.i"
 	@echo "... home/ye/Projects/embedded/three_friction/UserCode/Common/ols.s"
-	@echo "... home/ye/Projects/embedded/three_friction/UserCode/Common/pid.o"
-	@echo "... home/ye/Projects/embedded/three_friction/UserCode/Common/pid.i"
-	@echo "... home/ye/Projects/embedded/three_friction/UserCode/Common/pid.s"
 	@echo "... home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.o"
 	@echo "... home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.i"
 	@echo "... home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.s"

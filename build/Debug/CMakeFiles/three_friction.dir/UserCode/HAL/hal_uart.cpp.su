@@ -1,0 +1,21 @@
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp:8:1:UartBus::UartBus(UART_HandleTypeDef*)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp:19:1:UartBus::~UartBus()	48	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp:29:10:static UartBus* UartBus::Find(UART_HandleTypeDef*)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp:36:19:HAL_StatusTypeDef UartBus::RegisterCallback(RxCallback, ErrorCallback, void*)	56	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp:52:19:HAL_StatusTypeDef UartBus::UnregisterCallback(void*)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp:63:19:HAL_StatusTypeDef UartBus::Start()	56	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp:123:19:HAL_StatusTypeDef UartBus::Send(const uint8_t*, size_t)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp:131:6:static void UartBus::RxEventThunk(UART_HandleTypeDef*, uint16_t)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp:136:6:static void UartBus::TxCompleteThunk(UART_HandleTypeDef*)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp:141:6:static void UartBus::ErrorThunk(UART_HandleTypeDef*)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp:146:6:static void UartBus::RxTaskEntry(void*)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp:147:6:static void UartBus::TxTaskEntry(void*)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp:149:6:void UartBus::OnRxEvent(uint16_t)	80	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp:187:6:void UartBus::OnTxComplete()	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp:193:6:void UartBus::OnError()	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp:201:6:void UartBus::RxTask()	104	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp:226:6:void UartBus::TxTask()	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp:242:19:HAL_StatusTypeDef UartBus::RestartRx()	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.cpp:256:6:void UartBus::NotifyErrors(uint32_t)	32	static
+/usr/arm-none-eabi/include/c++/16.2.0/array:134:7:constexpr std::array<_Tp, _Nm>::value_type* std::array<_Tp, _Nm>::begin() [with _Tp = UartBus::CallbackEntry; unsigned int _Nm = 4]	24	static
+/usr/arm-none-eabi/include/c++/16.2.0/array:144:7:constexpr std::array<_Tp, _Nm>::value_type* std::array<_Tp, _Nm>::end() [with _Tp = UartBus::CallbackEntry; unsigned int _Nm = 4]	24	static

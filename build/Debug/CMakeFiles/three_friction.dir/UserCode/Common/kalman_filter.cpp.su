@@ -1,31 +1,31 @@
 /home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.hpp:18:14:void* kfAlloc(size_t)	16	static
 /home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:18:1:KalmanFilter::~KalmanFilter()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:20:6:void KalmanFilter::releaseAll()	144	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:45:6:void KalmanFilter::init(uint8_t, uint8_t, uint8_t)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:129:6:void KalmanFilter::setStateTransition(const float*)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:134:6:void KalmanFilter::setControlMatrix(const float*)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:140:6:void KalmanFilter::setMeasurementMatrix(const float*)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:145:6:void KalmanFilter::setMeasurementMap(const uint8_t*)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:150:6:void KalmanFilter::setMeasurementDegree(const float*)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:155:6:void KalmanFilter::setProcessNoise(const float*)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:160:6:void KalmanFilter::setMeasurementNoiseDiag(const float*)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:165:6:void KalmanFilter::setStateMinVariance(const float*)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:170:6:void KalmanFilter::setInitialState(const float*)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:175:6:void KalmanFilter::setInitialCovariance(const float*)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:180:6:void KalmanFilter::setMeasurement(uint8_t, float)	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:185:6:void KalmanFilter::setControl(uint8_t, float)	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:190:7:float KalmanFilter::measurement(uint8_t) const	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:196:6:void KalmanFilter::clearMeasurements()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:201:7:float KalmanFilter::filteredValue(uint8_t) const	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:207:6:void KalmanFilter::setSkipFlags(bool, bool, bool, bool, bool)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:216:6:void KalmanFilter::setHooks(Hook, Hook, Hook, Hook, Hook, Hook, Hook, void*)	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:228:6:void KalmanFilter::hkrAdjustment()	32	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:266:6:void KalmanFilter::measure()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:277:6:void KalmanFilter::xhatMinusUpdate()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:297:6:void KalmanFilter::pMinusUpdate()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:309:6:void KalmanFilter::setK()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:330:6:void KalmanFilter::xhatUpdate()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:346:6:void KalmanFilter::pUpdate()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:359:14:const float* KalmanFilter::update()	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:11:13:void {anonymous}::zeroInit(T*&, size_t) [with T = unsigned char]	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:11:13:void {anonymous}::zeroInit(T*&, size_t) [with T = float]	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:20:6:void KalmanFilter::ReleaseAll()	144	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:59:6:void KalmanFilter::Init(uint8_t, uint8_t, uint8_t)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:140:6:void KalmanFilter::SetStateTransition(const float*)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:144:6:void KalmanFilter::SetControlMatrix(const float*)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:151:6:void KalmanFilter::SetMeasurementMatrix(const float*)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:155:6:void KalmanFilter::SetMeasurementMap(const uint8_t*)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:159:6:void KalmanFilter::SetMeasurementDegree(const float*)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:163:6:void KalmanFilter::SetProcessNoise(const float*)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:167:6:void KalmanFilter::SetMeasurementNoiseDiag(const float*)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:171:6:void KalmanFilter::SetStateMinVariance(const float*)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:175:6:void KalmanFilter::SetInitialState(const float*)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:179:6:void KalmanFilter::SetInitialCovariance(const float*)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:183:6:void KalmanFilter::SetMeasurement(uint8_t, float)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:189:6:void KalmanFilter::SetControl(uint8_t, float)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:195:7:float KalmanFilter::Measurement(uint8_t) const	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:202:6:void KalmanFilter::ClearMeasurements()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:208:7:float KalmanFilter::FilteredValue(uint8_t) const	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:215:6:void KalmanFilter::SetSkipFlags(bool, bool, bool, bool, bool)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:223:6:void KalmanFilter::SetHooks(Hook, Hook, Hook, Hook, Hook, Hook, Hook, void*)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:235:6:void KalmanFilter::HkrAdjustment()	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:269:6:void KalmanFilter::Measure()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:279:6:void KalmanFilter::XhatMinusUpdate()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:297:6:void KalmanFilter::PMinusUpdate()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:310:6:void KalmanFilter::SetK()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:332:6:void KalmanFilter::XhatUpdate()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:349:6:void KalmanFilter::PUpdate()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:363:14:const float* KalmanFilter::Update()	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:10:13:void {anonymous}::zeroInit(T*&, size_t) [with T = unsigned char]	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp:10:13:void {anonymous}::zeroInit(T*&, size_t) [with T = float]	16	static

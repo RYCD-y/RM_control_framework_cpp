@@ -1,12 +1,12 @@
 /usr/arm-none-eabi/include/c++/16.2.0/cmath:245:3:constexpr float std::fabs(float)	16	static
 /home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp:14:21:void* olsAlloc(size_t)	16	static
 /home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp:17:1:OrdinaryLeastSquares::~OrdinaryLeastSquares()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp:23:6:void OrdinaryLeastSquares::init(uint16_t)	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp:42:6:void OrdinaryLeastSquares::advance(float, float)	32	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp:56:6:void OrdinaryLeastSquares::accumulate()	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp:71:6:void OrdinaryLeastSquares::computeSlope()	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp:77:6:void OrdinaryLeastSquares::computeIntercept()	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp:83:6:void OrdinaryLeastSquares::computeStdDev()	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp:93:6:void OrdinaryLeastSquares::update(float, float)	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp:103:7:float OrdinaryLeastSquares::derivative(float, float)	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp:113:7:float OrdinaryLeastSquares::smooth(float, float)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp:28:6:void OrdinaryLeastSquares::Init(uint16_t)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp:56:6:void OrdinaryLeastSquares::Advance(float, float)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp:70:6:void OrdinaryLeastSquares::Accumulate()	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp:83:6:void OrdinaryLeastSquares::ComputeSlope()	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp:88:6:void OrdinaryLeastSquares::ComputeIntercept()	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp:93:6:void OrdinaryLeastSquares::ComputeStdDev()	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp:101:6:void OrdinaryLeastSquares::Update(float, float)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp:112:7:float OrdinaryLeastSquares::Derivative(float, float)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp:123:7:float OrdinaryLeastSquares::Smooth(float, float)	24	static

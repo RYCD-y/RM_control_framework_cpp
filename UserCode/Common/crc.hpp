@@ -5,27 +5,24 @@
 #ifndef THREE_FRICTION_CRC_HPP
 #define THREE_FRICTION_CRC_HPP
 
-#include <stdint.h>
 #include <stddef.h>
+#include <stdint.h>
 
-namespace crc
-{
-        inline constexpr uint8_t  kInit8  = 0xFFU;
-        inline constexpr uint16_t kInit16 = 0xFFFFU;
+namespace crc {
+inline constexpr uint8_t kInit8 = 0xFFU;
+inline constexpr uint16_t kInit16 = 0xFFFFU;
 
-        // ── CRC8（G(x)=x^8+x^5+x^4+1），init 默认 0xFF ──
-        uint8_t  crc8(const uint8_t *msg, uint32_t len, uint8_t init = kInit8);
-        bool     verify8(const uint8_t *msg, uint32_t len);       // len = 数据 + 1 字节校验
-        void     append8(uint8_t *msg, uint32_t len);             // 校验写入末尾 1 字节
+// ── CRC8（G(X)=X^8+X^5+X^4+1），Init 默认 0xFF ──
+uint8_t Crc8(const uint8_t* message, uint32_t length, uint8_t initial = kInit8);
+bool Verify8(const uint8_t* message, uint32_t length);
+void Append8(uint8_t* message, uint32_t length);
 
-        // ── CRC16（RoboMaster 表驱动），init 默认 0xFFFF ──
-        uint16_t crc16(const uint8_t *msg, uint32_t len, uint16_t init = kInit16);
-        bool     verify16(const uint8_t *msg, uint32_t len);      // len = 数据 + 2 字节校验
-        void     append16(uint8_t *msg, uint32_t len);            // 校验写入末尾 2 字节（小端）
+uint16_t Crc16(const uint8_t* message, uint32_t length, uint16_t initial = kInit16);
+bool Verify16(const uint8_t* message, uint32_t length);
+void Append16(uint8_t* message, uint32_t length);
 
-        // ── CRC-CCITT ──
-        uint16_t ccittByte(uint16_t value, uint8_t c);
-        uint16_t ccitt(uint16_t value, const uint8_t *buf, size_t len);
-} // namespace crc
+uint16_t CcittByte(uint16_t value, uint8_t byte);
+uint16_t Ccitt(uint16_t value, const uint8_t* buffer, size_t length);
+}  // namespace crc
 
-#endif //THREE_FRICTION_CRC_HPP
+#endif  // THREE_FRICTION_CRC_HPP
