@@ -1,2 +1,2 @@
-/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_tim.cpp:5:10:uint32_t tim_util::ClockFreqHz(const TIM_TypeDef*)	56	static
-/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_tim.cpp:17:7:float tim_util::TicksPerUs(const TIM_HandleTypeDef*)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_tim.cpp:6:10:uint32_t tim_util::ClockFreqHz(const TIM_TypeDef*)	56	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_tim.cpp:19:7:float tim_util::TicksPerUs(const TIM_HandleTypeDef*)	24	static

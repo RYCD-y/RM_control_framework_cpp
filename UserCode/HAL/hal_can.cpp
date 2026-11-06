@@ -4,8 +4,10 @@
 
 #include "hal_can.hpp"
 
+// 全局节点表定义（各节点构造时注册、析构时移除）
 etl::vector<CanNode*, canCfg::kCanNodeSizeMax> CanNode::node_tab_;
 
+// 发标准帧：ID 取低 11 位
 HAL_StatusTypeDef CanNode::SendStandard(const uint8_t* data, uint16_t len) {
     if (hcan_ == nullptr || data == nullptr || len > 8U) {
         return HAL_ERROR;
@@ -24,6 +26,7 @@ HAL_StatusTypeDef CanNode::SendStandard(const uint8_t* data, uint16_t len) {
     return HAL_CAN_AddTxMessage(hcan_, &tx_header, const_cast<uint8_t*>(data), &mailbox);
 }
 
+// 发扩展帧：ID 取低 29 位
 HAL_StatusTypeDef CanNode::SendExtended(const uint8_t* data, uint16_t len) {
     if (hcan_ == nullptr || data == nullptr || len > 8U) {
         return HAL_ERROR;
@@ -40,8 +43,10 @@ HAL_StatusTypeDef CanNode::SendExtended(const uint8_t* data, uint16_t len) {
     return HAL_CAN_AddTxMessage(hcan_, &tx_header, const_cast<uint8_t*>(data), &mailbox);
 }
 
+// 基类默认不处理任何帧
 HAL_StatusTypeDef CanNode::OnFrame(const uint8_t* data, uint16_t len) { return HAL_ERROR; }
 
+// 配置过滤器（全放行 + FIFO0）并开启接收/错误通知
 HAL_StatusTypeDef CanNode::FilterInit(CAN_HandleTypeDef* hcan) {
     if (hcan == nullptr) {
         return HAL_ERROR;
@@ -74,6 +79,7 @@ HAL_StatusTypeDef CanNode::FilterInit(CAN_HandleTypeDef* hcan) {
 }
 
 // ─────────────── CAN 中断回调（覆盖 HAL 的 weak 版本）───────────────
+// CAN 接收中断：取出 FIFO0 所有帧，按 ID 分发给已注册节点
 extern "C" void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef* hcan) {
     CAN_RxHeaderTypeDef hdr = {};
     uint8_t data[8] = {};

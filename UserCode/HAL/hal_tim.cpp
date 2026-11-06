@@ -2,6 +2,7 @@
 
 namespace tim_util {
 
+// 取定时器计数时钟：按挂载总线选 APB1/APB2，分频不为 1 时翻倍
 uint32_t ClockFreqHz(const TIM_TypeDef* tim) {
     if (tim == nullptr) return 0U;
     RCC_ClkInitTypeDef clk_config = {};
@@ -14,6 +15,7 @@ uint32_t ClockFreqHz(const TIM_TypeDef* tim) {
     return divider == RCC_HCLK_DIV1 ? pclk : pclk * 2U;
 }
 
+// 1us 对应的计数值 = 计数时钟 / (PSC+1) / 1e6
 float TicksPerUs(const TIM_HandleTypeDef* htim) {
     if (htim == nullptr) return 0.0f;
     const uint32_t psc = static_cast<uint32_t>(htim->Instance->PSC) + 1U;

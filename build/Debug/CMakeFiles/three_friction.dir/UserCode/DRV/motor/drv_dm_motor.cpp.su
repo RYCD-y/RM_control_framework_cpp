@@ -5,27 +5,34 @@
 /home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/private/pvoidvector.h:660:14:void** etl::pvoidvector::erase(const_iterator, const_iterator)	40	static
 /home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/private/pvoidvector.h:713:15:etl::pvoidvector::size_type etl::pvoidvector::size() const	16	static
 /home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/private/pvoidvector.h:784:14:void** etl::pvoidvector::to_iterator(const_iterator) const	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:33:5:CanNode::CanNode(CAN_HandleTypeDef*, uint32_t, uint32_t, uint32_t)	40	static
-/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:44:13:CanNode::~CanNode()	40	static
-/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:44:13:virtual CanNode::~CanNode()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:19:7:constexpr motor::ITorqueControl::ITorqueControl()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:21:13:motor::ITorqueControl::~ITorqueControl()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:21:13:virtual motor::ITorqueControl::~ITorqueControl()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:13:1:DmMotor::DmMotor(CAN_HandleTypeDef*, uint32_t, uint32_t, const DmMotorSpec&)	40	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:35:5:CanNode::CanNode(CAN_HandleTypeDef*, uint32_t, uint32_t, uint32_t)	40	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:47:13:CanNode::~CanNode()	40	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:47:13:virtual CanNode::~CanNode()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:15:15:motor::Status {anonymous}::ToMotorStatus(HAL_StatusTypeDef)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:20:15:constexpr motor::ITorqueControl::ITorqueControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:23:33:motor::ITorqueControl::~ITorqueControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:23:33:virtual motor::ITorqueControl::~ITorqueControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:67:15:constexpr motor::IEnableControl::IEnableControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:70:33:motor::IEnableControl::~IEnableControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:70:33:virtual motor::IEnableControl::~IEnableControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:80:15:constexpr motor::IMitControl::IMitControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:83:33:motor::IMitControl::~IMitControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:83:33:virtual motor::IMitControl::~IMitControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:30:1:DmMotor::DmMotor(CAN_HandleTypeDef*, uint32_t, uint32_t, const DmMotorSpec&)	40	static
 /usr/arm-none-eabi/include/c++/16.2.0/bits/stl_algo.h:3614:5:constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = float]	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:17:10:static uint16_t DmMotor::FloatToUInt(float, float, float, uint8_t)	32	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:24:6:static void DmMotor::PutFloatLe(uint8_t*, float)	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:33:19:HAL_StatusTypeDef DmMotor::SendCommand(const uint8_t*, uint16_t)	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:38:19:virtual HAL_StatusTypeDef DmMotor::OnFrame(const uint8_t*, uint16_t)	32	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:55:15:virtual motor::Status DmMotor::SetTargetTorqueNm(float)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:62:15:virtual motor::Status DmMotor::SendTorque()	40	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:64:15:motor::Status DmMotor::SendMit(const DmMitCommand&)	40	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:93:19:HAL_StatusTypeDef DmMotor::Enable()	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:98:19:HAL_StatusTypeDef DmMotor::Disable()	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:103:19:HAL_StatusTypeDef DmMotor::ClearError()	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:108:19:HAL_StatusTypeDef DmMotor::SetZero(bool)	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:114:15:motor::Status DmMotor::SendPositionVelocity(float, float, float)	32	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:126:15:motor::Status DmMotor::SendVelocity(float, float)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:35:10:static uint16_t DmMotor::FloatToUInt(float, float, float, uint8_t)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:43:6:static void DmMotor::PutFloatLe(uint8_t*, float)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:53:19:HAL_StatusTypeDef DmMotor::SendCommand(const uint8_t*, uint16_t)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:59:19:virtual HAL_StatusTypeDef DmMotor::OnFrame(const uint8_t*, uint16_t)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:77:15:virtual motor::Status DmMotor::SetTargetTorqueNm(float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:85:15:virtual motor::Status DmMotor::SendTorque()	40	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:90:15:virtual motor::Status DmMotor::SendMit(const motor::MitCommand&)	40	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:120:15:virtual motor::Status DmMotor::Enable()	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:126:15:virtual motor::Status DmMotor::Disable()	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:132:19:HAL_StatusTypeDef DmMotor::ClearError()	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:138:19:HAL_StatusTypeDef DmMotor::SetZero(bool)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:145:15:motor::Status DmMotor::SendPositionVelocity(float, float, float)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp:159:15:motor::Status DmMotor::SendVelocity(float, float)	32	static
 /home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/memory.h:3368:6:T* etl::mem_move(const T*, const T*, T*) [with T = void*]	24	static
 /home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/iterator.h:279:77:constexpr typename etl::iterator_traits<TIterator>::difference_type etl::distance(TIterator, TIterator) [with TIterator = void* const*]	16	static
 /home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/vector.h:1503:10:void etl::ivector<T, typename etl::enable_if<etl::is_object_pointer<T>::value>::type>::push_back(const_reference) [with T = CanNode*]	24	static
@@ -39,5 +46,5 @@
 /home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/vector.h:1721:34:static constexpr void* etl::ivector<T, typename etl::enable_if<etl::is_object_pointer<T>::value>::type>::to_void_ptr(const_reference) [with T = CanNode*]	16	static
 /home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/algorithm.h:528:43:constexpr TIterator etl::find(TIterator, TIterator, const T&) [with TIterator = CanNode**; T = CanNode*]	24	static
 /home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/utility.h:57:55:constexpr typename etl::remove_reference<T>::type&& etl::move(T&&) [with T = CanNode*&]	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.hpp:29:7:DmMotor::~DmMotor()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.hpp:29:7:virtual DmMotor::~DmMotor()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.hpp:25:7:DmMotor::~DmMotor()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.hpp:25:7:virtual DmMotor::~DmMotor()	16	static

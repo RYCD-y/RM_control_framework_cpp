@@ -1,3 +1,5 @@
-/home/ye/Projects/embedded/three_friction/UserCode/APP/motor_demo.cpp:16:15:motor::Status motor_demo::DrivePositions(motor::IPositionControl* const*, size_t, float)	32	static
-/home/ye/Projects/embedded/three_friction/UserCode/APP/motor_demo.cpp:29:15:motor::Status motor_demo::DriveTorques(motor::ITorqueControl* const*, size_t, float)	32	static
-/home/ye/Projects/embedded/three_friction/UserCode/APP/motor_demo.cpp:41:15:motor::Status motor_demo::DriveVelocities(motor::IVelocityControl* const*, size_t, float)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/APP/motor_demo.cpp:17:15:motor::Status motor_demo::DrivePositions(motor::IPositionControl* const*, size_t, float)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/APP/motor_demo.cpp:31:15:motor::Status motor_demo::DriveTorques(motor::ITorqueControl* const*, size_t, float)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/APP/motor_demo.cpp:44:15:motor::Status motor_demo::DriveVelocities(motor::IVelocityControl* const*, size_t, float)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/APP/motor_demo.cpp:59:15:motor::Status motor_demo::SetEnabled(motor::IEnableControl* const*, size_t, bool)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/APP/motor_demo.cpp:71:15:motor::Status motor_demo::SendMitToAll(motor::IMitControl* const*, size_t, const motor::MitCommand&)	24	static

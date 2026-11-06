@@ -8,6 +8,7 @@
 #include <etl/vector.h>
 #include <stdint.h>
 
+// pi-lens-ignore: unused-include
 #include "can.h"
 
 class CanNode;
@@ -30,6 +31,7 @@ inline constexpr uint8_t kCanNodeSizeMax = 32;
 
 class CanNode {
    public:
+    // 构造即注册：把自身加入全局节点表供中断分发
     CanNode(CAN_HandleTypeDef* hcan, uint32_t id, uint32_t feedback_id, uint32_t id_mask)
         : hcan_(hcan), id_(id), feedback_id_(feedback_id), id_mask_(id_mask) {
         uint32_t primask = __get_PRIMASK();
@@ -41,6 +43,7 @@ class CanNode {
         __set_PRIMASK(primask);
     }
 
+    // 析构即注销：从全局节点表移除
     virtual ~CanNode() {
         uint32_t primask = __get_PRIMASK();
         __disable_irq();
@@ -56,21 +59,27 @@ class CanNode {
     // 只读遍历接口（供中断分发使用），增删仍由构造/析构负责
     static const etl::ivector<CanNode*>& Nodes() { return node_tab_; }
 
+    // 只读访问器：句柄/发送 ID/反馈 ID/过滤掩码
     CAN_HandleTypeDef* Hcan() const { return hcan_; }
     uint32_t Id() const { return id_; }
     uint32_t FeedbackId() const { return feedback_id_; }
     uint32_t IdMask() const { return id_mask_; }
 
+    // 运行期修改绑定参数
     void SetHcan(CAN_HandleTypeDef* hcan) { hcan_ = hcan; }
     void SetId(uint32_t id) { id_ = id; }
     void SetFeedbackId(uint32_t feedback_id) { feedback_id_ = feedback_id; }
     void SetIdMask(uint32_t id_mask) { id_mask_ = id_mask; }
 
+    // 反馈帧回调，由中断按 ID 分发进入
     virtual HAL_StatusTypeDef OnFrame(const uint8_t* data, uint16_t len);
+    // 配置过滤器与中断：全部放行，由软件按 ID 分发
     static HAL_StatusTypeDef FilterInit(CAN_HandleTypeDef* hcan);
 
    protected:
+    // 发标准帧（最长 8 字节）
     HAL_StatusTypeDef SendStandard(const uint8_t* data, uint16_t len);
+    // 发扩展帧（最长 8 字节）
     HAL_StatusTypeDef SendExtended(const uint8_t* data, uint16_t len);
 
    private:

@@ -8,9 +8,12 @@
 #include "usart.h"
 
 namespace {
+// 整帧大小 = 12 个 float + 4 字节帧尾
 constexpr size_t kFrameSize = vofa::kChannelCount * sizeof(float) + 4U;
+// 发送节流间隔（ms）
 constexpr float kTxDelayMs = 20.0f;
 
+// 全局唯一状态：统一 UART 通道 + 通道缓冲 + 组帧缓冲
 struct VofaState {
     UartBus uart{&huart6};
 
@@ -22,6 +25,7 @@ struct VofaState {
 
 VofaState g_vofa;
 
+// UART 错误回调：只计数
 void OnUartError(void* context, uint32_t error_code) {
     (void)error_code;
     ++static_cast<VofaState*>(context)->error_count;
@@ -29,6 +33,7 @@ void OnUartError(void* context, uint32_t error_code) {
 }  // namespace
 
 namespace vofa {
+// 绑定 huart6 并启动统一 UART 通道，预置 JustFloat 帧尾
 void Init(UART_HandleTypeDef* huart) {
     if (huart != &huart6 || g_vofa.uart.IsStarted()) return;
     constexpr uint8_t kTail[4] = {0x00, 0x00, 0x80, 0x7F};
@@ -37,10 +42,12 @@ void Init(UART_HandleTypeDef* huart) {
     (void)g_vofa.uart.Start();
 }
 
+// 只写通道缓存，不做发送
 void Set(uint8_t channel, float value) {
     if (channel < kChannelCount) g_vofa.channels[channel] = value;
 }
 
+// 节流后整帧入队；返回 HAL_BUSY 表示本次未发
 HAL_StatusTypeDef Flush() {
     if (!g_vofa.uart.IsStarted()) return HAL_ERROR;
     const float now = Dwt::TimelineMs();
@@ -51,11 +58,13 @@ HAL_StatusTypeDef Flush() {
     return status;
 }
 
+// 便捷接口：写一个通道后立即尝试发送
 HAL_StatusTypeDef Send(uint8_t channel, float value) {
     if (channel >= kChannelCount) return HAL_ERROR;
     Set(channel, value);
     return Flush();
 }
 
+// 读取累计 UART 错误次数
 uint32_t ErrorCount() { return g_vofa.error_count; }
 }  // namespace vofa

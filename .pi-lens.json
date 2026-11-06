@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/apmantza/pi-lens/master/docs/schema/pi-lens-config-v1.json",
+  "ignore": [
+    "build/**",
+    "tests/host/build/**",
+    "Drivers/**",
+    "Middlewares/**"
+  ],
+  "rules": {
+    "no-reserved-identifiers": {
+      "ignorePaths": [
+        "Src/**",
+        "Inc/**"
+      ]
+    }
+  }
+}

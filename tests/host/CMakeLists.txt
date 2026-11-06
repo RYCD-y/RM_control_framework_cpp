@@ -8,6 +8,9 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# 导出编译数据库，供 clangd/编辑器解析 host 测试的 include 路径
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 if(NOT DEFINED V2_ROOT)
     set(V2_ROOT "/home/ye/Projects/embedded/control_framework_v2/UserCode" CACHE PATH "control_framework_v2/UserCode")
 endif()

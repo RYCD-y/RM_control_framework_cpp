@@ -1,0 +1,128 @@
+[
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/c++  -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/host_stubs.dir/stubs/arm_math_stub.cpp.o -c /home/ye/Projects/embedded/three_friction/tests/host/stubs/arm_math_stub.cpp",
+  "file": "/home/ye/Projects/embedded/three_friction/tests/host/stubs/arm_math_stub.cpp",
+  "output": "CMakeFiles/host_stubs.dir/stubs/arm_math_stub.cpp.o"
+},
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/c++  -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/host_stubs.dir/stubs/hal_dwt_host.cpp.o -c /home/ye/Projects/embedded/three_friction/tests/host/stubs/hal_dwt_host.cpp",
+  "file": "/home/ye/Projects/embedded/three_friction/tests/host/stubs/hal_dwt_host.cpp",
+  "output": "CMakeFiles/host_stubs.dir/stubs/hal_dwt_host.cpp.o"
+},
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/cc  -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/control_framework_v2/UserCode/Common -O3 -DNDEBUG -std=gnu11 -w -include string.h -o CMakeFiles/ref_algo.dir/home/ye/Projects/embedded/control_framework_v2/UserCode/Common/utils.c.o -c /home/ye/Projects/embedded/control_framework_v2/UserCode/Common/utils.c",
+  "file": "/home/ye/Projects/embedded/control_framework_v2/UserCode/Common/utils.c",
+  "output": "CMakeFiles/ref_algo.dir/home/ye/Projects/embedded/control_framework_v2/UserCode/Common/utils.c.o"
+},
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/cc  -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/control_framework_v2/UserCode/Common -O3 -DNDEBUG -std=gnu11 -w -include string.h -o CMakeFiles/ref_algo.dir/home/ye/Projects/embedded/control_framework_v2/UserCode/Common/controller.c.o -c /home/ye/Projects/embedded/control_framework_v2/UserCode/Common/controller.c",
+  "file": "/home/ye/Projects/embedded/control_framework_v2/UserCode/Common/controller.c",
+  "output": "CMakeFiles/ref_algo.dir/home/ye/Projects/embedded/control_framework_v2/UserCode/Common/controller.c.o"
+},
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/cc  -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/control_framework_v2/UserCode/Common -O3 -DNDEBUG -std=gnu11 -w -include string.h -o CMakeFiles/ref_algo.dir/home/ye/Projects/embedded/control_framework_v2/UserCode/Common/kalman_filter.c.o -c /home/ye/Projects/embedded/control_framework_v2/UserCode/Common/kalman_filter.c",
+  "file": "/home/ye/Projects/embedded/control_framework_v2/UserCode/Common/kalman_filter.c",
+  "output": "CMakeFiles/ref_algo.dir/home/ye/Projects/embedded/control_framework_v2/UserCode/Common/kalman_filter.c.o"
+},
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/cc  -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/control_framework_v2/UserCode/Common -O3 -DNDEBUG -std=gnu11 -w -include string.h -o CMakeFiles/ref_algo.dir/ref/QuaternionEKF_host.c.o -c /home/ye/Projects/embedded/three_friction/tests/host/ref/QuaternionEKF_host.c",
+  "file": "/home/ye/Projects/embedded/three_friction/tests/host/ref/QuaternionEKF_host.c",
+  "output": "CMakeFiles/ref_algo.dir/ref/QuaternionEKF_host.c.o"
+},
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/cc  -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/control_framework_v2/UserCode/Common -O3 -DNDEBUG -std=gnu11 -w -include string.h -o CMakeFiles/ref_algo.dir/home/ye/Projects/embedded/control_framework_v2/UserCode/Common/crc8_crc16.c.o -c /home/ye/Projects/embedded/control_framework_v2/UserCode/Common/crc8_crc16.c",
+  "file": "/home/ye/Projects/embedded/control_framework_v2/UserCode/Common/crc8_crc16.c",
+  "output": "CMakeFiles/ref_algo.dir/home/ye/Projects/embedded/control_framework_v2/UserCode/Common/crc8_crc16.c.o"
+},
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/cc  -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/control_framework_v2/UserCode/Common -O3 -DNDEBUG -std=gnu11 -w -include string.h -o CMakeFiles/ref_algo.dir/cases/ref_wrap.c.o -c /home/ye/Projects/embedded/three_friction/tests/host/cases/ref_wrap.c",
+  "file": "/home/ye/Projects/embedded/three_friction/tests/host/cases/ref_wrap.c",
+  "output": "CMakeFiles/ref_algo.dir/cases/ref_wrap.c.o"
+},
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/c++ -DHOST_TEST=1 -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wshadow -o CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp.o -c /home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp",
+  "file": "/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp",
+  "output": "CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/ols.cpp.o"
+},
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/c++ -DHOST_TEST=1 -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wshadow -o CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.o -c /home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp",
+  "file": "/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp",
+  "output": "CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/cotr.cpp.o"
+},
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/c++ -DHOST_TEST=1 -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wshadow -o CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp.o -c /home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp",
+  "file": "/home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp",
+  "output": "CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/crc.cpp.o"
+},
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/c++ -DHOST_TEST=1 -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wshadow -o CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp.o -c /home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp",
+  "file": "/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp",
+  "output": "CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/kalman_filter.cpp.o"
+},
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/c++ -DHOST_TEST=1 -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wshadow -o CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.cpp.o -c /home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.cpp",
+  "file": "/home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.cpp",
+  "output": "CMakeFiles/new_algo.dir/home/ye/Projects/embedded/three_friction/UserCode/Common/quaternion_ekf.cpp.o"
+},
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/c++ -DHOST_TEST=1 -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wshadow -o CMakeFiles/new_algo.dir/stubs/dwt_host.cpp.o -c /home/ye/Projects/embedded/three_friction/tests/host/stubs/dwt_host.cpp",
+  "file": "/home/ye/Projects/embedded/three_friction/tests/host/stubs/dwt_host.cpp",
+  "output": "CMakeFiles/new_algo.dir/stubs/dwt_host.cpp.o"
+},
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/c++ -DHOST_TEST=1 -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/control_framework_v2/UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/DRV/motor -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/HAL -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -o CMakeFiles/test_smoke.dir/cases/test_smoke.cpp.o -c /home/ye/Projects/embedded/three_friction/tests/host/cases/test_smoke.cpp",
+  "file": "/home/ye/Projects/embedded/three_friction/tests/host/cases/test_smoke.cpp",
+  "output": "CMakeFiles/test_smoke.dir/cases/test_smoke.cpp.o"
+},
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/c++ -DHOST_TEST=1 -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/control_framework_v2/UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/DRV/motor -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/HAL -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -o CMakeFiles/test_dwt.dir/cases/test_dwt.cpp.o -c /home/ye/Projects/embedded/three_friction/tests/host/cases/test_dwt.cpp",
+  "file": "/home/ye/Projects/embedded/three_friction/tests/host/cases/test_dwt.cpp",
+  "output": "CMakeFiles/test_dwt.dir/cases/test_dwt.cpp.o"
+},
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/c++ -DHOST_TEST=1 -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/control_framework_v2/UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/DRV/motor -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/HAL -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -o CMakeFiles/test_ols.dir/cases/test_ols.cpp.o -c /home/ye/Projects/embedded/three_friction/tests/host/cases/test_ols.cpp",
+  "file": "/home/ye/Projects/embedded/three_friction/tests/host/cases/test_ols.cpp",
+  "output": "CMakeFiles/test_ols.dir/cases/test_ols.cpp.o"
+},
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/c++ -DHOST_TEST=1 -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/control_framework_v2/UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/DRV/motor -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/HAL -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -o CMakeFiles/test_crc.dir/cases/test_crc.cpp.o -c /home/ye/Projects/embedded/three_friction/tests/host/cases/test_crc.cpp",
+  "file": "/home/ye/Projects/embedded/three_friction/tests/host/cases/test_crc.cpp",
+  "output": "CMakeFiles/test_crc.dir/cases/test_crc.cpp.o"
+},
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/c++ -DHOST_TEST=1 -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/control_framework_v2/UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/DRV/motor -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/HAL -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -o CMakeFiles/test_pid.dir/cases/test_pid.cpp.o -c /home/ye/Projects/embedded/three_friction/tests/host/cases/test_pid.cpp",
+  "file": "/home/ye/Projects/embedded/three_friction/tests/host/cases/test_pid.cpp",
+  "output": "CMakeFiles/test_pid.dir/cases/test_pid.cpp.o"
+},
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/c++ -DHOST_TEST=1 -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/control_framework_v2/UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/DRV/motor -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/HAL -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -o CMakeFiles/test_kf.dir/cases/test_kf.cpp.o -c /home/ye/Projects/embedded/three_friction/tests/host/cases/test_kf.cpp",
+  "file": "/home/ye/Projects/embedded/three_friction/tests/host/cases/test_kf.cpp",
+  "output": "CMakeFiles/test_kf.dir/cases/test_kf.cpp.o"
+},
+{
+  "directory": "/home/ye/Projects/embedded/three_friction/tests/host/build",
+  "command": "/usr/sbin/c++ -DHOST_TEST=1 -I/home/ye/Projects/embedded/three_friction/tests/host/stubs -I/home/ye/Projects/embedded/control_framework_v2/UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/Common -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/DRV/motor -I/home/ye/Projects/embedded/three_friction/tests/host/../../UserCode/HAL -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -o CMakeFiles/test_ekf.dir/cases/test_ekf.cpp.o -c /home/ye/Projects/embedded/three_friction/tests/host/cases/test_ekf.cpp",
+  "file": "/home/ye/Projects/embedded/three_friction/tests/host/cases/test_ekf.cpp",
+  "output": "CMakeFiles/test_ekf.dir/cases/test_ekf.cpp.o"
+}
+]

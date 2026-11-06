@@ -1,38 +1,43 @@
-/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.hpp:39:10:bool UartBus::IsStarted() const	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_uart.hpp:52:10:bool UartBus::IsStarted() const	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.hpp:41:19:virtual motor::Status ZdtMotor::Enable()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.hpp:43:19:virtual motor::Status ZdtMotor::Disable()	16	static
 /usr/arm-none-eabi/include/c++/16.2.0/cmath:245:3:constexpr float std::fabs(float)	16	static
 /usr/arm-none-eabi/include/c++/16.2.0/cmath:1133:3:constexpr bool std::isfinite(float)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:21:10:{anonymous}::BusSlot* {anonymous}::FindBus(UartBus&)	48	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:33:9:uint8_t {anonymous}::Checksum(const uint8_t*, size_t)	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:39:8:size_t {anonymous}::FrameLength(uint8_t)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:60:6:void {anonymous}::Dispatch(BusSlot&)	48	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:89:6:void {anonymous}::OnBusReceive(void*, const uint8_t*, size_t)	56	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:101:6:void {anonymous}::OnBusError(void*, uint32_t)	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:109:6:void ZdtMotor::BeginPending(uint8_t)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:115:6:void ZdtMotor::ResetPending()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:26:7:constexpr motor::IVelocityControl::IVelocityControl()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:28:13:motor::IVelocityControl::~IVelocityControl()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:28:13:virtual motor::IVelocityControl::~IVelocityControl()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:33:7:constexpr motor::IPositionControl::IPositionControl()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:35:13:motor::IPositionControl::~IPositionControl()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:35:13:virtual motor::IPositionControl::~IPositionControl()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:117:1:ZdtMotor::ZdtMotor(UartBus&, uint8_t, const ZdtMotorConfig&)	40	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:129:6:static void ZdtMotor::OnReceive(void*, const uint8_t*, size_t)	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:133:6:static void ZdtMotor::OnError(void*, uint32_t)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:137:6:void ZdtMotor::Receive(const uint8_t*, size_t)	48	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:179:6:void ZdtMotor::Error(uint32_t)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:184:15:motor::Status ZdtMotor::SendFrame(const uint8_t*, size_t, uint8_t)	32	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:204:15:virtual motor::Status ZdtMotor::SetTargetVelocityRadPerSec(float)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:211:15:virtual motor::Status ZdtMotor::SetTargetPositionRad(float)	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:218:15:virtual motor::Status ZdtMotor::SendVelocity()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:220:15:virtual motor::Status ZdtMotor::SendPosition()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:222:15:motor::Status ZdtMotor::SendVelocityFrame(float)	32	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:237:15:motor::Status ZdtMotor::SendPositionFrame(float)	56	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:261:15:motor::Status ZdtMotor::Enable(bool, bool)	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:268:15:motor::Status ZdtMotor::Stop()	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:273:15:motor::Status ZdtMotor::SetZero()	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:278:15:motor::Status ZdtMotor::QueryPosition()	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:283:15:motor::Status ZdtMotor::QueryVelocity()	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:288:15:motor::Status ZdtMotor::QueryStatus()	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:25:10:{anonymous}::BusSlot* {anonymous}::FindBus(UartBus&)	48	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:38:9:uint8_t {anonymous}::Checksum(const uint8_t*, size_t)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:45:8:size_t {anonymous}::FrameLength(uint8_t)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:67:6:void {anonymous}::Dispatch(BusSlot&)	48	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:97:6:void {anonymous}::OnBusReceive(void*, const uint8_t*, size_t)	56	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:110:6:void {anonymous}::OnBusError(void*, uint32_t)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:119:6:void ZdtMotor::BeginPending(uint8_t)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:126:6:void ZdtMotor::ResetPending()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:32:15:constexpr motor::IVelocityControl::IVelocityControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:35:33:motor::IVelocityControl::~IVelocityControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:35:33:virtual motor::IVelocityControl::~IVelocityControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:44:15:constexpr motor::IPositionControl::IPositionControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:47:33:motor::IPositionControl::~IPositionControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:47:33:virtual motor::IPositionControl::~IPositionControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:67:15:constexpr motor::IEnableControl::IEnableControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:70:33:motor::IEnableControl::~IEnableControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:70:33:virtual motor::IEnableControl::~IEnableControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:129:1:ZdtMotor::ZdtMotor(UartBus&, uint8_t, const ZdtMotorConfig&)	40	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:142:6:static void ZdtMotor::OnReceive(void*, const uint8_t*, size_t)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:147:6:static void ZdtMotor::OnError(void*, uint32_t)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:152:6:void ZdtMotor::Receive(const uint8_t*, size_t)	48	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:194:6:void ZdtMotor::Error(uint32_t)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:200:15:motor::Status ZdtMotor::SendFrame(const uint8_t*, size_t, uint8_t)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:221:15:virtual motor::Status ZdtMotor::SetTargetVelocityDegPerSec(float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:229:15:virtual motor::Status ZdtMotor::SetTargetPositionDeg(float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:237:15:virtual motor::Status ZdtMotor::SendVelocity()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:240:15:virtual motor::Status ZdtMotor::SendPosition()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:243:15:motor::Status ZdtMotor::SendVelocityFrame(float)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:259:15:motor::Status ZdtMotor::SendPositionFrame(float)	56	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:284:15:motor::Status ZdtMotor::Enable(bool, bool)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:292:15:motor::Status ZdtMotor::Stop()	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:298:15:motor::Status ZdtMotor::SetZero()	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:304:15:motor::Status ZdtMotor::QueryPosition()	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:310:15:motor::Status ZdtMotor::QueryVelocity()	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp:316:15:motor::Status ZdtMotor::QueryStatus()	24	static
 /usr/arm-none-eabi/include/c++/16.2.0/array:208:7:constexpr std::array<_Tp, _Nm>::value_type& std::array<_Tp, _Nm>::operator[](size_type) [with _Tp = unsigned char; unsigned int _Nm = 64]	24	static
 /usr/arm-none-eabi/include/c++/16.2.0/array:208:7:constexpr std::array<_Tp, _Nm>::value_type& std::array<_Tp, _Nm>::operator[](size_type) [with _Tp = ZdtMotor*; unsigned int _Nm = 16]	24	static
 /usr/arm-none-eabi/include/c++/16.2.0/array:134:7:constexpr std::array<_Tp, _Nm>::value_type* std::array<_Tp, _Nm>::begin() [with _Tp = unsigned char; unsigned int _Nm = 64]	24	static
@@ -43,5 +48,5 @@
 /usr/arm-none-eabi/include/c++/16.2.0/bits/cpp_type_traits.h:709:5:_Iterator std::__miter_base(_Iterator) [with _Iterator = const unsigned char*]	16	static
 /usr/arm-none-eabi/include/c++/16.2.0/bits/stl_algobase.h:411:5:_OutIter std::__copy_move_a2(_InIter, _Sent, _OutIter) [with bool _IsMove = true; _InIter = unsigned char*; _Sent = unsigned char*; _OutIter = unsigned char*]	56	static
 /usr/arm-none-eabi/include/c++/16.2.0/bits/stl_algobase.h:411:5:_OutIter std::__copy_move_a2(_InIter, _Sent, _OutIter) [with bool _IsMove = false; _InIter = const unsigned char*; _Sent = const unsigned char*; _OutIter = unsigned char*]	48	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.hpp:16:7:ZdtMotor::~ZdtMotor()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.hpp:16:7:virtual ZdtMotor::~ZdtMotor()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.hpp:19:7:ZdtMotor::~ZdtMotor()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.hpp:19:7:virtual ZdtMotor::~ZdtMotor()	16	static

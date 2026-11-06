@@ -9,6 +9,7 @@
 #include "dwt.hpp"
 #include "utils.hpp"
 
+// 解析反馈帧：角度/转速/电流/温度，并换算到输出轴
 HAL_StatusTypeDef DjiMotor::OnFrame(const uint8_t* data, uint16_t len) {
     if (data == nullptr || len < 7U) {
         return HAL_ERROR;
@@ -32,6 +33,7 @@ HAL_StatusTypeDef DjiMotor::OnFrame(const uint8_t* data, uint16_t len) {
     return HAL_OK;
 }
 
+// 建立一组成员：校验同总线、按反馈 ID 算出槽位、共享同一份组表
 HAL_StatusTypeDef DjiMotor::GroupInit(DjiMotor* dji_motor1, DjiMotor* dji_motor2,
                                       DjiMotor* dji_motor3, DjiMotor* dji_motor4) {
     DjiMotor* const motor[kGroupSize] = {dji_motor1, dji_motor2, dji_motor3, dji_motor4};
@@ -58,12 +60,14 @@ HAL_StatusTypeDef DjiMotor::GroupInit(DjiMotor* dji_motor1, DjiMotor* dji_motor2
     return HAL_OK;
 }
 
+// 保存目标扭矩并钳位到 ±最大扭矩
 motor::Status DjiMotor::SetTargetTorqueNm(float torque_nm) {
     if (!std::isfinite(torque_nm) || max_torque_nm_ <= 0.0f) return motor::Status::kInvalidArgument;
     target_torque_nm_ = std::clamp(torque_nm, -max_torque_nm_, max_torque_nm_);
     return motor::Status::kOk;
 }
 
+// 提交：由组内槽位 0 的成员发整帧，其余成员无需重复发
 motor::Status DjiMotor::SendTorque() {
     if (Slot() == 0U) {
         return GroupSendTorque() == HAL_OK ? motor::Status::kOk : motor::Status::kIoError;
@@ -71,6 +75,7 @@ motor::Status DjiMotor::SendTorque() {
     return motor::Status::kOk;
 }
 
+// 把组内四台目标扭矩大端打包成 8 字节并发送
 HAL_StatusTypeDef DjiMotor::GroupSendTorque() {
     uint8_t frame[8] = {};
 
@@ -85,16 +90,19 @@ HAL_StatusTypeDef DjiMotor::GroupSendTorque() {
     return SendStandard(frame, sizeof(frame));
 }
 
+// 计算本机在控制帧中的槽位
 uint8_t DjiMotor::Slot() const {
     return static_cast<uint8_t>((FeedbackId() - kFirstFbId) % kGroupSize);
 }
 
+// 目标扭矩换算为协议 raw
 int16_t DjiMotor::torqueToRaw() const {
     // N·m → 协议 raw：满量程力矩对应 ±ctrl_raw_full
     const float ratio = std::clamp(target_torque_nm_ / spec_.MaxTorque(), -1.0f, 1.0f);
     return static_cast<int16_t>(std::lround(ratio * spec_.ctrl_raw_full));
 }
 
+// 用编码器半圈判据累加圈数，得到连续角度
 void DjiMotor::UpdateTotalAngle(int16_t raw_angle) {
     // 判圈：编码器值跳变超过半圈，说明跨圈（两帧间转过半圈会漏判，见注释）
     if (total_angle_ready_) {
@@ -113,6 +121,7 @@ void DjiMotor::UpdateTotalAngle(int16_t raw_angle) {
     UpdateTotalAngleSpeed();
 }
 
+// 累计角度差分→rpm，再做一阶低通
 void DjiMotor::UpdateTotalAngleSpeed(float k) {
     const float Dt = Dwt::DeltaT(dwt_cnt_);
 

@@ -153,15 +153,20 @@ class DjiMotor : public motor::ITorqueControl, public CanNode {
                                        DjiMotor* dji_motor3 = nullptr,
                                        DjiMotor* dji_motor4 = nullptr);
 
+    // 保存目标扭矩并钳位到最大扭矩内
     motor::Status SetTargetTorqueNm(float torque_nm) override;
+    // 提交：组内 0 号槽统一打包发一帧
     motor::Status SendTorque() override;
 
+    // 兼容别名：设置目标扭矩
     motor::Status SetTorque(float torque_nm) { return SetTargetTorqueNm(torque_nm); }
+    // 读取当前目标扭矩
     float TargetTorqueNm() const { return target_torque_nm_; }
 
     // 整组打包成一帧，用本组共用帧 ID 发出。组内任意成员调用一次即可。
     HAL_StatusTypeDef GroupSendTorque();
 
+    // 只读：规格与反馈（扭矩/转速/单圈角/累计角/累计角速度/温度/最大扭矩）
     const djiMotorSpec& Spec() const { return spec_; }
 
     float TorqueNm() const { return torque_; }
@@ -173,7 +178,9 @@ class DjiMotor : public motor::ITorqueControl, public CanNode {
     float MaxTorqueNm() const { return max_torque_nm_; }
 
    private:
+    // 目标扭矩→协议 raw（按满量程比例）
     int16_t torqueToRaw() const;
+    // 本机在帧内的槽位 = (feedback_id-0x201)%4
     uint8_t Slot() const;
 
     djiMotorSpec spec_ = {};  // 按值存：允许运行期自定义减速箱，也不会悬垂
@@ -192,7 +199,9 @@ class DjiMotor : public motor::ITorqueControl, public CanNode {
     static constexpr float kTotalAngleSpeedLpf = 0.3f;  // 一阶低通系数：新值权重
     static constexpr int16_t kEncHalfTurn = 4096;       // 编码器半圈，用于判圈
 
+    // 用原始编码器值判圈并更新累计角度
     void UpdateTotalAngle(int16_t raw_angle);
+    // 由累计角度差分并低通得到角速度
     void UpdateTotalAngleSpeed(float k = kTotalAngleSpeedLpf);
 
     int32_t round_ = 0;               // 圈数（可负）
