@@ -43,6 +43,24 @@ HAL_StatusTypeDef CanNode::SendExtended(const uint8_t* data, uint16_t len) {
     return HAL_CAN_AddTxMessage(hcan_, &tx_header, const_cast<uint8_t*>(data), &mailbox);
 }
 
+// 按显式扩展 ID 发送：用于每条命令高字节不同的协议（如 VESC）
+HAL_StatusTypeDef CanNode::SendExtendedWithId(uint32_t ext_id, const uint8_t* data,
+                                              uint16_t len) {
+    if (hcan_ == nullptr || data == nullptr || len > 8U) {
+        return HAL_ERROR;
+    }
+
+    CAN_TxHeaderTypeDef tx_header = {};
+    tx_header.ExtId = ext_id & canCfg::kExtIdMask;
+    tx_header.IDE = CAN_ID_EXT;
+    tx_header.RTR = CAN_RTR_DATA;
+    tx_header.DLC = len;
+    tx_header.TransmitGlobalTime = DISABLE;
+
+    uint32_t mailbox = 0;
+    return HAL_CAN_AddTxMessage(hcan_, &tx_header, const_cast<uint8_t*>(data), &mailbox);
+}
+
 // 基类默认不处理任何帧
 HAL_StatusTypeDef CanNode::OnFrame(const uint8_t* data, uint16_t len) { return HAL_ERROR; }
 
@@ -90,6 +108,7 @@ extern "C" void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef* hcan) {
         }
 
         const uint32_t id = (hdr.IDE == CAN_ID_EXT) ? hdr.ExtId : hdr.StdId;
+        ++canCfg::g_rx_frame_count;
 
         for (CanNode* node : CanNode::Nodes()) {
             if (node == nullptr || node->Hcan() != hcan) {

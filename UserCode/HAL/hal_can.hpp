@@ -23,10 +23,14 @@ inline constexpr uint32_t kStdIdMask = 0x7FFU;
 inline constexpr uint32_t kExtIdMask = 0x1FFFFFFFU;
 
 // 掩码预设
-inline constexpr uint32_t kIdMaskNone = 0x7FF;  // 标准帧11位全匹配
-inline constexpr uint32_t kIdMaskLow8 = 0x780;  // 只比较高4位(ID 分组)
+inline constexpr uint32_t kIdMaskNone = 0x7FF;    // 标准帧11位全匹配
+inline constexpr uint32_t kIdMaskLow8 = 0x780;    // 只比较高4位(ID 分组)
+inline constexpr uint32_t kExtIdMaskFull = 0x1FFFFFFFU;  // 扩展帧29位全匹配（VESC 等）
 
 inline constexpr uint8_t kCanNodeSizeMax = 32;
+
+// 累计收到的 CAN 帧数（含未匹配任何节点的帧），用于诊断
+inline volatile uint32_t g_rx_frame_count = 0U;
 }  // namespace canCfg
 
 class CanNode {
@@ -81,6 +85,8 @@ class CanNode {
     HAL_StatusTypeDef SendStandard(const uint8_t* data, uint16_t len);
     // 发扩展帧（最长 8 字节）
     HAL_StatusTypeDef SendExtended(const uint8_t* data, uint16_t len);
+    // 按显式扩展 ID 发送：用于每条命令高字节不同的协议（如 VESC）
+    HAL_StatusTypeDef SendExtendedWithId(uint32_t ext_id, const uint8_t* data, uint16_t len);
 
    private:
     static etl::vector<CanNode*, canCfg::kCanNodeSizeMax> node_tab_;

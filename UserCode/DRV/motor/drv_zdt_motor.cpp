@@ -166,7 +166,7 @@ void ZdtMotor::Receive(const uint8_t* data, size_t size) {
         case 0x35U: {
             const int16_t rpm = static_cast<int16_t>((data[3] << 8U) | data[4]);
             const float direction = data[2] == 0U ? 1.0f : -1.0f;
-            velocity_deg_per_sec_ = direction * static_cast<float>(rpm) * kDegPerRevolution / 60.0f;
+            velocity_rpm_ = direction * static_cast<float>(rpm);
             break;
         }
         case 0x36U: {
@@ -218,9 +218,9 @@ motor::Status ZdtMotor::SendFrame(const uint8_t* data, size_t size, uint8_t func
 }
 
 // 保存目标速度并切到速度模式
-motor::Status ZdtMotor::SetTargetVelocityDegPerSec(float velocity_deg_per_sec) {
-    if (!std::isfinite(velocity_deg_per_sec)) return motor::Status::kInvalidArgument;
-    target_velocity_deg_per_sec_ = velocity_deg_per_sec;
+motor::Status ZdtMotor::SetTargetVelocityRpm(float velocity_rpm) {
+    if (!std::isfinite(velocity_rpm)) return motor::Status::kInvalidArgument;
+    target_velocity_rpm_ = velocity_rpm;
     velocity_mode_ = true;
     return motor::Status::kOk;
 }
@@ -234,19 +234,20 @@ motor::Status ZdtMotor::SetTargetPositionDeg(float position_deg) {
 }
 
 // 提交速度目标
-motor::Status ZdtMotor::SendVelocity() { return SendVelocityFrame(target_velocity_deg_per_sec_); }
+motor::Status ZdtMotor::SendVelocity() { return SendVelocityFrame(target_velocity_rpm_); }
 
 // 提交位置目标
 motor::Status ZdtMotor::SendPosition() { return SendPositionFrame(target_position_deg_); }
 
 // 组帧：地址+0xF6+方向+转速(16位)+加速度+同步+校验
-motor::Status ZdtMotor::SendVelocityFrame(float velocity_deg_per_sec) {
-    const float rpm = std::fabs(velocity_deg_per_sec) * 60.0f / kDegPerRevolution;
-    if (rpm > 5000.0f) return motor::Status::kInvalidArgument;
-    const uint16_t raw = static_cast<uint16_t>(rpm);
+motor::Status ZdtMotor::SendVelocityFrame(float velocity_rpm) {
+    // 协议本身就是 RPM，无需换算
+    const float magnitude = std::fabs(velocity_rpm);
+    if (magnitude > 5000.0f) return motor::Status::kInvalidArgument;
+    const uint16_t raw = static_cast<uint16_t>(magnitude);
     const uint8_t frame[8] = {address_,
                               0xF6U,
-                              static_cast<uint8_t>(velocity_deg_per_sec < 0.0f ? 1U : 0U),
+                              static_cast<uint8_t>(velocity_rpm < 0.0f ? 1U : 0U),
                               static_cast<uint8_t>(raw >> 8U),
                               static_cast<uint8_t>(raw),
                               config_.default_acceleration,

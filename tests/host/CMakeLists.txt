@@ -73,7 +73,7 @@ function(add_host_test name)
 endfunction()
 
 add_host_test(test_smoke)
-foreach(t test_dwt test_ols test_crc test_pid test_kf test_ekf)
+foreach(t test_dwt test_ols test_crc test_pid test_kf test_ekf test_vesc)
     if(EXISTS ${CASES}/${t}.cpp)
         add_host_test(${t})
     endif()

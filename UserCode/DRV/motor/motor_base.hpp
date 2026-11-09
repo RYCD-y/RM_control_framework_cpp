@@ -34,8 +34,8 @@ namespace motor
                 public:
                         virtual ~IVelocityControl() = default;
 
-                        // 保存目标速度（度/秒）；只表示已接受
-                        virtual Status SetTargetVelocityDegPerSec(float velocity_deg_per_sec) = 0;
+                        // 保存目标速度（RPM）；只表示已接受
+                        virtual Status SetTargetVelocityRpm(float velocity_rpm) = 0;
 
                         // 提交已保存的目标速度
                         virtual Status SendVelocity() = 0;
@@ -53,16 +53,6 @@ namespace motor
                         virtual Status SendPosition() = 0;
         };
 
-        // MIT 五参数命令（位置/速度/kp/kd/前馈力矩），全部度制
-        struct MitCommand
-        {
-                        float position_deg         = 0.0f;
-                        float velocity_deg_per_sec = 0.0f;
-                        float kp                   = 0.0f; // N·m/deg
-                        float kd                   = 0.0f; // N·m·s/deg
-                        float feedforward_torque_nm = 0.0f;
-        };
-
         // 使能能力：仅驱动硬件真的支持软件使能时继承
         class IEnableControl
         {
@@ -74,6 +64,16 @@ namespace motor
 
                         // 失能电机（失去保持力矩）
                         virtual Status Disable() = 0;
+        };
+
+        // MIT 五参数命令（位置/速度/kp/kd/前馈力矩），全部度制
+        struct MitCommand
+        {
+                float position_deg         = 0.0f;
+                float velocity_rpm = 0.0f;
+                float kp                   = 0.0f; // N·m/deg
+                float kd                   = 0.0f; // N·m·s/deg
+                float feedforward_torque_nm = 0.0f;
         };
 
         // MIT 能力：位置/速度/kp/kd/前馈力矩一次下发

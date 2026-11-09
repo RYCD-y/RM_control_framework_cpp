@@ -44,6 +44,7 @@ set(OLD_GLOB
   "/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dm_motor.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_servo.cpp"
+  "/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_zdt_motor.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.cpp"
   "/home/ye/Projects/embedded/three_friction/UserCode/ENT/ent_main.cpp"

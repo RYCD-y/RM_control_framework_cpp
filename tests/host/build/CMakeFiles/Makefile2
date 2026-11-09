@@ -73,6 +73,7 @@ all: CMakeFiles/test_crc.dir/all
 all: CMakeFiles/test_pid.dir/all
 all: CMakeFiles/test_kf.dir/all
 all: CMakeFiles/test_ekf.dir/all
+all: CMakeFiles/test_vesc.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
@@ -86,6 +87,7 @@ codegen: CMakeFiles/test_crc.dir/codegen
 codegen: CMakeFiles/test_pid.dir/codegen
 codegen: CMakeFiles/test_kf.dir/codegen
 codegen: CMakeFiles/test_ekf.dir/codegen
+codegen: CMakeFiles/test_vesc.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -103,6 +105,7 @@ clean: CMakeFiles/test_crc.dir/clean
 clean: CMakeFiles/test_pid.dir/clean
 clean: CMakeFiles/test_kf.dir/clean
 clean: CMakeFiles/test_ekf.dir/clean
+clean: CMakeFiles/test_vesc.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -438,6 +441,40 @@ CMakeFiles/test_ekf.dir/codegen:
 CMakeFiles/test_ekf.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ekf.dir/build.make CMakeFiles/test_ekf.dir/clean
 .PHONY : CMakeFiles/test_ekf.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_vesc.dir
+
+# All Build rule for target.
+CMakeFiles/test_vesc.dir/all: CMakeFiles/host_stubs.dir/all
+CMakeFiles/test_vesc.dir/all: CMakeFiles/ref_algo.dir/all
+CMakeFiles/test_vesc.dir/all: CMakeFiles/new_algo.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_vesc.dir/build.make CMakeFiles/test_vesc.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_vesc.dir/build.make CMakeFiles/test_vesc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ye/Projects/embedded/three_friction/tests/host/build/CMakeFiles --progress-num=32,33 "Built target test_vesc"
+.PHONY : CMakeFiles/test_vesc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_vesc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ye/Projects/embedded/three_friction/tests/host/build/CMakeFiles 19
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_vesc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ye/Projects/embedded/three_friction/tests/host/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_vesc.dir/rule
+
+# Convenience name for target.
+test_vesc: CMakeFiles/test_vesc.dir/rule
+.PHONY : test_vesc
+
+# codegen rule for target.
+CMakeFiles/test_vesc.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_vesc.dir/build.make CMakeFiles/test_vesc.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ye/Projects/embedded/three_friction/tests/host/build/CMakeFiles --progress-num=32,33 "Finished codegen for target test_vesc"
+.PHONY : CMakeFiles/test_vesc.dir/codegen
+
+# clean rule for target.
+CMakeFiles/test_vesc.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_vesc.dir/build.make CMakeFiles/test_vesc.dir/clean
+.PHONY : CMakeFiles/test_vesc.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

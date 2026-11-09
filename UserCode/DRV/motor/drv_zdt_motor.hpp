@@ -23,8 +23,8 @@ class ZdtMotor final : public motor::IVelocityControl,
     // 构造：向总线登记地址并注册接收回调；不碰硬件
     ZdtMotor(UartBus& uart, uint8_t address, const ZdtMotorConfig& config = {});
 
-    // 保存目标速度（度/秒）并切到速度模式
-    motor::Status SetTargetVelocityDegPerSec(float velocity_deg_per_sec) override;
+    // 保存目标速度（RPM）并切到速度模式
+    motor::Status SetTargetVelocityRpm(float velocity_rpm) override;
     // 下发速度帧（地址 0xF6）
     motor::Status SendVelocity() override;
     // 保存目标位置（度）并切到位置模式
@@ -54,7 +54,7 @@ class ZdtMotor final : public motor::IVelocityControl,
 
     // 反馈：位置/速度/状态/错误码/是否有在途应答
     float PositionDeg() const { return position_deg_; }
-    float VelocityDegPerSec() const { return velocity_deg_per_sec_; }
+    float VelocityRpm() const { return velocity_rpm_; }
     uint8_t StatusFlags() const { return status_flags_; }
     uint8_t ErrorCode() const { return error_code_; }
     bool ResponsePending() const { return response_pending_; }
@@ -75,17 +75,17 @@ class ZdtMotor final : public motor::IVelocityControl,
     // 加校验后入队发送，并登记在途应答
     motor::Status SendFrame(const uint8_t* data, size_t size, uint8_t function);
     // 组装速度帧
-    motor::Status SendVelocityFrame(float velocity_deg_per_sec);
+    motor::Status SendVelocityFrame(float velocity_rpm);
     // 组装绝对位置帧
     motor::Status SendPositionFrame(float position_deg);
 
     UartBus& uart_;
     uint8_t address_;
     ZdtMotorConfig config_;
-    float target_velocity_deg_per_sec_ = 0.0f;
+    float target_velocity_rpm_ = 0.0f;
     float target_position_deg_ = 0.0f;
     float position_deg_ = 0.0f;
-    float velocity_deg_per_sec_ = 0.0f;
+    float velocity_rpm_ = 0.0f;
     uint8_t status_flags_ = 0U;
     uint8_t error_code_ = 0U;
     uint8_t expected_function_ = 0U;

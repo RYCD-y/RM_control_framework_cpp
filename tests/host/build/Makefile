@@ -256,6 +256,19 @@ test_ekf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ekf.dir/build.make CMakeFiles/test_ekf.dir/build
 .PHONY : test_ekf/fast
 
+#=============================================================================
+# Target rules for targets named test_vesc
+
+# Build rule for target.
+test_vesc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_vesc
+.PHONY : test_vesc
+
+# fast build rule for target.
+test_vesc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_vesc.dir/build.make CMakeFiles/test_vesc.dir/build
+.PHONY : test_vesc/fast
+
 cases/ref_wrap.o: cases/ref_wrap.c.o
 .PHONY : cases/ref_wrap.o
 
@@ -447,6 +460,30 @@ cases/test_smoke.s: cases/test_smoke.cpp.s
 cases/test_smoke.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_smoke.dir/build.make CMakeFiles/test_smoke.dir/cases/test_smoke.cpp.s
 .PHONY : cases/test_smoke.cpp.s
+
+cases/test_vesc.o: cases/test_vesc.cpp.o
+.PHONY : cases/test_vesc.o
+
+# target to build an object file
+cases/test_vesc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_vesc.dir/build.make CMakeFiles/test_vesc.dir/cases/test_vesc.cpp.o
+.PHONY : cases/test_vesc.cpp.o
+
+cases/test_vesc.i: cases/test_vesc.cpp.i
+.PHONY : cases/test_vesc.i
+
+# target to preprocess a source file
+cases/test_vesc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_vesc.dir/build.make CMakeFiles/test_vesc.dir/cases/test_vesc.cpp.i
+.PHONY : cases/test_vesc.cpp.i
+
+cases/test_vesc.s: cases/test_vesc.cpp.s
+.PHONY : cases/test_vesc.s
+
+# target to generate assembly for a file
+cases/test_vesc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_vesc.dir/build.make CMakeFiles/test_vesc.dir/cases/test_vesc.cpp.s
+.PHONY : cases/test_vesc.cpp.s
 
 home/ye/Projects/embedded/control_framework_v2/UserCode/Common/controller.o: home/ye/Projects/embedded/control_framework_v2/UserCode/Common/controller.c.o
 .PHONY : home/ye/Projects/embedded/control_framework_v2/UserCode/Common/controller.o
@@ -779,6 +816,7 @@ help:
 	@echo "... test_ols"
 	@echo "... test_pid"
 	@echo "... test_smoke"
+	@echo "... test_vesc"
 	@echo "... cases/ref_wrap.o"
 	@echo "... cases/ref_wrap.i"
 	@echo "... cases/ref_wrap.s"
@@ -803,6 +841,9 @@ help:
 	@echo "... cases/test_smoke.o"
 	@echo "... cases/test_smoke.i"
 	@echo "... cases/test_smoke.s"
+	@echo "... cases/test_vesc.o"
+	@echo "... cases/test_vesc.i"
+	@echo "... cases/test_vesc.s"
 	@echo "... home/ye/Projects/embedded/control_framework_v2/UserCode/Common/controller.o"
 	@echo "... home/ye/Projects/embedded/control_framework_v2/UserCode/Common/controller.i"
 	@echo "... home/ye/Projects/embedded/control_framework_v2/UserCode/Common/controller.s"

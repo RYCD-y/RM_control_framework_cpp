@@ -1,9 +1,10 @@
-/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.cpp:47:19:virtual HAL_StatusTypeDef CanNode::OnFrame(const uint8_t*, uint16_t)	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.cpp:65:19:virtual HAL_StatusTypeDef CanNode::OnFrame(const uint8_t*, uint16_t)	0	static
 /home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/vector.h:1966:7:etl::vector<T, MAX_SIZE_>::~vector() [with T = CanNode*; unsigned int MAX_SIZE_ = 32]	0	static
-/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:47:13:CanNode::~CanNode()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:47:13:virtual CanNode::~CanNode()	8	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:51:13:CanNode::~CanNode()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:51:13:virtual CanNode::~CanNode()	8	static
 /home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.cpp:11:19:HAL_StatusTypeDef CanNode::SendStandard(const uint8_t*, uint16_t)	56	static
 /home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.cpp:30:19:HAL_StatusTypeDef CanNode::SendExtended(const uint8_t*, uint16_t)	56	static
-/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.cpp:50:19:static HAL_StatusTypeDef CanNode::FilterInit(CAN_HandleTypeDef*)	56	static
-/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.cpp:83:17:void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef*)	64	static
-/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.cpp:103:1:cpp)	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.cpp:47:19:HAL_StatusTypeDef CanNode::SendExtendedWithId(uint32_t, const uint8_t*, uint16_t)	56	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.cpp:68:19:static HAL_StatusTypeDef CanNode::FilterInit(CAN_HandleTypeDef*)	56	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.cpp:101:17:void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef*)	72	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.cpp:122:1:cpp)	0	static

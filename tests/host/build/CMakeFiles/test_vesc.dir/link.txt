@@ -1,0 +1,1 @@
+/usr/sbin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/test_vesc.dir/link.d CMakeFiles/test_vesc.dir/cases/test_vesc.cpp.o -o test_vesc  libref_algo.a libhost_stubs.a libnew_algo.a libhost_stubs.a

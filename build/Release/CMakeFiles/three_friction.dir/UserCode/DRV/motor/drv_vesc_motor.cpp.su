@@ -1,0 +1,15 @@
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:41:15:virtual motor::Status VescMotor::SetTargetTorqueNm(float)	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:57:15:virtual motor::Status VescMotor::SetTargetVelocityRpm(float)	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:73:15:virtual motor::Status VescMotor::SetTargetPositionDeg(float)	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:30:19:virtual HAL_StatusTypeDef VescMotor::OnFrame(const uint8_t*, uint16_t)	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:51:13:CanNode::~CanNode()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.hpp:39:7:VescMotor::~VescMotor()	8	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.hpp:39:7:virtual VescMotor::~VescMotor()	8	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:51:13:virtual CanNode::~CanNode()	8	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:8:1:VescMotor::VescMotor(CAN_HandleTypeDef*, uint8_t, const VescSpec&)	20	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:14:15:motor::Status VescMotor::SendPacket(VescPacket, int32_t)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:48:15:virtual motor::Status VescMotor::SendTorque()	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:63:15:virtual motor::Status VescMotor::SendVelocity()	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:79:15:virtual motor::Status VescMotor::SendPosition()	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:85:15:motor::Status VescMotor::SetDuty(float)	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:91:15:motor::Status VescMotor::SetBrakeCurrent(float)	0	static

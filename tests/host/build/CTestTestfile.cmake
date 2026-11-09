@@ -18,3 +18,5 @@ add_test(test_kf "/home/ye/Projects/embedded/three_friction/tests/host/build/tes
 set_tests_properties(test_kf PROPERTIES  _BACKTRACE_TRIPLES "/home/ye/Projects/embedded/three_friction/tests/host/CMakeLists.txt;72;add_test;/home/ye/Projects/embedded/three_friction/tests/host/CMakeLists.txt;78;add_host_test;/home/ye/Projects/embedded/three_friction/tests/host/CMakeLists.txt;0;")
 add_test(test_ekf "/home/ye/Projects/embedded/three_friction/tests/host/build/test_ekf")
 set_tests_properties(test_ekf PROPERTIES  _BACKTRACE_TRIPLES "/home/ye/Projects/embedded/three_friction/tests/host/CMakeLists.txt;72;add_test;/home/ye/Projects/embedded/three_friction/tests/host/CMakeLists.txt;78;add_host_test;/home/ye/Projects/embedded/three_friction/tests/host/CMakeLists.txt;0;")
+add_test(test_vesc "/home/ye/Projects/embedded/three_friction/tests/host/build/test_vesc")
+set_tests_properties(test_vesc PROPERTIES  _BACKTRACE_TRIPLES "/home/ye/Projects/embedded/three_friction/tests/host/CMakeLists.txt;72;add_test;/home/ye/Projects/embedded/three_friction/tests/host/CMakeLists.txt;78;add_host_test;/home/ye/Projects/embedded/three_friction/tests/host/CMakeLists.txt;0;")

@@ -15,6 +15,6 @@
 /home/ye/Projects/embedded/three_friction/UserCode/SRV/srv_ins.cpp:202:6:static void Ins::EulerToQuaternion(float, float, float, float*)	48	static
 /home/ye/Projects/embedded/three_friction/UserCode/SRV/srv_ins.cpp:220:6:static void Ins::BodyToEarth(const float*, float*, const float*)	40	static
 /home/ye/Projects/embedded/three_friction/UserCode/SRV/srv_ins.cpp:235:6:static void Ins::EarthToBody(const float*, float*, const float*)	40	static
-/home/ye/Projects/embedded/three_friction/UserCode/SRV/srv_ins.hpp:21:7:Ins::~Ins()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/SRV/srv_ins.hpp:22:7:Ins::~Ins()	16	static
 /home/ye/Projects/embedded/three_friction/UserCode/SRV/srv_ins.cpp:248:1:void __static_initialization_and_destruction_0()	8	static
 /home/ye/Projects/embedded/three_friction/UserCode/SRV/srv_ins.cpp:248:1:cpp)	8	static

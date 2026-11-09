@@ -1,0 +1,53 @@
+/usr/arm-none-eabi/include/c++/16.2.0/cmath:1133:3:constexpr bool std::isfinite(float)	16	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/private/pvoidvector.h:76:14:void** etl::pvoidvector::begin()	16	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/private/pvoidvector.h:94:14:void** etl::pvoidvector::end()	16	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/private/pvoidvector.h:412:10:void etl::pvoidvector::push_back(value_type)	16	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/private/pvoidvector.h:660:14:void** etl::pvoidvector::erase(const_iterator, const_iterator)	40	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/private/pvoidvector.h:713:15:etl::pvoidvector::size_type etl::pvoidvector::size() const	16	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/private/pvoidvector.h:784:14:void** etl::pvoidvector::to_iterator(const_iterator) const	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:39:5:CanNode::CanNode(CAN_HandleTypeDef*, uint32_t, uint32_t, uint32_t)	40	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:51:13:CanNode::~CanNode()	40	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:51:13:virtual CanNode::~CanNode()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/vesc_protocol.hpp:14:13:void vesc::PutBeI32(uint8_t*, int32_t)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/vesc_protocol.hpp:23:16:int32_t vesc::GetBeI32(const uint8_t*)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/vesc_protocol.hpp:31:16:int16_t vesc::GetBeI16(const uint8_t*)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/vesc_protocol.hpp:36:14:float vesc::Clamp(float, float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/vesc_protocol.hpp:43:16:int32_t vesc::DutyToRaw(float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/vesc_protocol.hpp:48:16:int32_t vesc::CurrentToRaw(float, float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/vesc_protocol.hpp:53:16:int32_t vesc::RotorDegToRaw(float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/vesc_protocol.hpp:58:14:float vesc::ErpmToRpm(int32_t, uint8_t, float)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/vesc_protocol.hpp:64:16:int32_t vesc::RpmToErpm(float, uint8_t, float)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/vesc_protocol.hpp:69:14:float vesc::TorqueToCurrent(float, float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:20:15:constexpr motor::ITorqueControl::ITorqueControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:23:33:motor::ITorqueControl::~ITorqueControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:23:33:virtual motor::ITorqueControl::~ITorqueControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:32:15:constexpr motor::IVelocityControl::IVelocityControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:35:33:motor::IVelocityControl::~IVelocityControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:35:33:virtual motor::IVelocityControl::~IVelocityControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:44:15:constexpr motor::IPositionControl::IPositionControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:47:33:motor::IPositionControl::~IPositionControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:47:33:virtual motor::IPositionControl::~IPositionControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:8:1:VescMotor::VescMotor(CAN_HandleTypeDef*, uint8_t, const VescSpec&)	40	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:14:15:motor::Status VescMotor::SendPacket(VescPacket, int32_t)	32	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:30:19:virtual HAL_StatusTypeDef VescMotor::OnFrame(const uint8_t*, uint16_t)	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:41:15:virtual motor::Status VescMotor::SetTargetTorqueNm(float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:48:15:virtual motor::Status VescMotor::SendTorque()	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:57:15:virtual motor::Status VescMotor::SetTargetVelocityRpm(float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:63:15:virtual motor::Status VescMotor::SendVelocity()	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:73:15:virtual motor::Status VescMotor::SetTargetPositionDeg(float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:79:15:virtual motor::Status VescMotor::SendPosition()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:85:15:motor::Status VescMotor::SetDuty(float)	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.cpp:91:15:motor::Status VescMotor::SetBrakeCurrent(float)	16	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/memory.h:3368:6:T* etl::mem_move(const T*, const T*, T*) [with T = void*]	24	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/iterator.h:279:77:constexpr typename etl::iterator_traits<TIterator>::difference_type etl::distance(TIterator, TIterator) [with TIterator = void* const*]	16	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/vector.h:1503:10:void etl::ivector<T, typename etl::enable_if<etl::is_object_pointer<T>::value>::type>::push_back(const_reference) [with T = CanNode*]	24	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/vector.h:1228:14:T* etl::ivector<T, typename etl::enable_if<etl::is_object_pointer<T>::value>::type>::begin() [with T = CanNode*]	16	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/vector.h:1246:14:T* etl::ivector<T, typename etl::enable_if<etl::is_object_pointer<T>::value>::type>::end() [with T = CanNode*]	16	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/algorithm.h:2381:29:constexpr TIterator etl::remove(TIterator, TIterator, const T&) [with TIterator = CanNode**; T = CanNode*]	32	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/vector.h:1629:14:T* etl::ivector<T, typename etl::enable_if<etl::is_object_pointer<T>::value>::type>::erase(const_iterator, const_iterator) [with T = CanNode*]	24	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/iterator.h:272:77:constexpr typename etl::iterator_traits<TIterator>::difference_type etl::distance_helper(TIterator, TIterator, std::random_access_iterator_tag) [with TIterator = void* const*]	24	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/vector.h:1721:34:static constexpr void* etl::ivector<T, typename etl::enable_if<etl::is_object_pointer<T>::value>::type>::to_void_ptr(const_reference) [with T = CanNode*]	16	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/algorithm.h:528:43:constexpr TIterator etl::find(TIterator, TIterator, const T&) [with TIterator = CanNode**; T = CanNode*]	24	static
+/home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/utility.h:57:55:constexpr typename etl::remove_reference<T>::type&& etl::move(T&&) [with T = CanNode*&]	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.hpp:39:7:VescMotor::~VescMotor()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_vesc_motor.hpp:39:7:virtual VescMotor::~VescMotor()	16	static

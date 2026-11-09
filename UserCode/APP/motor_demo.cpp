@@ -42,14 +42,14 @@ motor::Status DriveTorques(motor::ITorqueControl* const* motors, size_t count, f
 
 // 对一组速度能力电机下发同一目标速度并提交
 motor::Status DriveVelocities(motor::IVelocityControl* const* motors, size_t count,
-                              float velocity_deg_per_sec) {
-    if (motors == nullptr || !std::isfinite(velocity_deg_per_sec))
+                              float velocity_rpm) {
+    if (motors == nullptr || !std::isfinite(velocity_rpm))
         return motor::Status::kInvalidArgument;
 
     motor::Status result = motor::Status::kOk;
     for (size_t i = 0; i < count; ++i) {
         if (motors[i] == nullptr) continue;
-        result = FirstFailure(result, motors[i]->SetTargetVelocityDegPerSec(velocity_deg_per_sec));
+        result = FirstFailure(result, motors[i]->SetTargetVelocityRpm(velocity_rpm));
         result = FirstFailure(result, motors[i]->SendVelocity());
     }
     return result;

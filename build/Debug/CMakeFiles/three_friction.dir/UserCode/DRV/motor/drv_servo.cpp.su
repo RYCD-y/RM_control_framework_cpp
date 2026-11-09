@@ -4,9 +4,9 @@
 /home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:44:15:constexpr motor::IPositionControl::IPositionControl()	16	static
 /home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:47:33:motor::IPositionControl::~IPositionControl()	16	static
 /home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:47:33:virtual motor::IPositionControl::~IPositionControl()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:67:15:constexpr motor::IEnableControl::IEnableControl()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:70:33:motor::IEnableControl::~IEnableControl()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:70:33:virtual motor::IEnableControl::~IEnableControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:57:15:constexpr motor::IEnableControl::IEnableControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:60:33:motor::IEnableControl::~IEnableControl()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/motor_base.hpp:60:33:virtual motor::IEnableControl::~IEnableControl()	16	static
 /home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_servo.cpp:27:1:PwmServo::PwmServo(TIM_HandleTypeDef*, uint32_t, const ServoCalibration&)	32	static
 /home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_servo.cpp:31:6:static bool PwmServo::IsValidChannel(uint32_t)	16	static
 /home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_servo.cpp:37:19:HAL_StatusTypeDef PwmServo::Init()	24	static

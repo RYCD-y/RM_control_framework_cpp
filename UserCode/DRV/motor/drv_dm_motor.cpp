@@ -8,8 +8,9 @@ namespace {
 constexpr uint8_t kEnableCommand = 0xFCU;
 constexpr uint8_t kDisableCommand = 0xFDU;
 constexpr uint8_t kClearErrorCommand = 0xFBU;
-// 协议的位置/速度帧使用弧度，对外接口使用度，发帧前换算
+// 协议的位置帧用弧度、速度帧用 rad/s；对外位置用度、速度用 RPM
 constexpr float kDegToRad = 0.01745329251994329577f;
+constexpr float kRpmToRadPerSec = 0.10471975511965977f;  // 2π/60
 
 // HAL 结果→motor::Status：与计划中的映射表一致
 motor::Status ToMotorStatus(HAL_StatusTypeDef status) {
@@ -64,9 +65,9 @@ HAL_StatusTypeDef DmMotor::OnFrame(const uint8_t* data, uint16_t length) {
     const uint16_t torque = static_cast<uint16_t>(((data[4] & 0x0FU) << 8U) | data[5]);
     position_deg_ = spec_.position_min_deg + static_cast<float>(position) / 65535.0f *
                                                  (spec_.position_max_deg - spec_.position_min_deg);
-    velocity_deg_per_sec_ = spec_.velocity_min_deg_per_sec +
+    velocity_rpm_ = spec_.velocity_min_rpm +
                             static_cast<float>(velocity) / 4095.0f *
-                                (spec_.velocity_max_deg_per_sec - spec_.velocity_min_deg_per_sec);
+                                (spec_.velocity_max_rpm - spec_.velocity_min_rpm);
     torque_nm_ = spec_.torque_min_nm +
                  static_cast<float>(torque) / 4095.0f * (spec_.torque_max_nm - spec_.torque_min_nm);
     temperature_c_ = static_cast<int8_t>(data[7]);
@@ -88,18 +89,20 @@ motor::Status DmMotor::SendTorque() { return SendMit({0.0f, 0.0f, 0.0f, 0.0f, ta
 // 把五个参数按位拼成 8 字节（位置16 + 速度12 + kp12 + kd12 + 扭矩12）
 // kp/kd 入参为度制，这里换回协议弧度制后再映射
 motor::Status DmMotor::SendMit(const motor::MitCommand& command) {
-    if (!std::isfinite(command.position_deg) || !std::isfinite(command.velocity_deg_per_sec) ||
+    // MIT 帧只在 MIT 模式下有效；模式不匹配时电机不会响应
+    if (spec_.mode != DmCtrlMode::kMit) return motor::Status::kUnsupported;
+    if (!std::isfinite(command.position_deg) || !std::isfinite(command.velocity_rpm) ||
         !std::isfinite(command.kp) || !std::isfinite(command.kd) ||
         !std::isfinite(command.feedforward_torque_nm) ||
         spec_.position_max_deg <= spec_.position_min_deg ||
-        spec_.velocity_max_deg_per_sec <= spec_.velocity_min_deg_per_sec ||
+        spec_.velocity_max_rpm <= spec_.velocity_min_rpm ||
         spec_.torque_max_nm <= spec_.torque_min_nm || spec_.kp_max <= 0.0f || spec_.kd_max <= 0.0f)
         return motor::Status::kInvalidArgument;
 
     const uint16_t p =
         FloatToUInt(command.position_deg, spec_.position_min_deg, spec_.position_max_deg, 16U);
-    const uint16_t v = FloatToUInt(command.velocity_deg_per_sec, spec_.velocity_min_deg_per_sec,
-                                   spec_.velocity_max_deg_per_sec, 12U);
+    const uint16_t v = FloatToUInt(command.velocity_rpm, spec_.velocity_min_rpm,
+                                   spec_.velocity_max_rpm, 12U);
     const uint16_t kp = FloatToUInt(command.kp / kDegToRad, 0.0f, spec_.kp_max, 12U);
     const uint16_t kd = FloatToUInt(command.kd / kDegToRad, 0.0f, spec_.kd_max, 12U);
     const uint16_t torque =
@@ -142,26 +145,30 @@ HAL_StatusTypeDef DmMotor::SetZero(bool permanent) {
 }
 
 // 位置速度模式：两个 float 小端，kd 必须为正
-motor::Status DmMotor::SendPositionVelocity(float position_deg, float max_velocity_deg_per_sec,
+motor::Status DmMotor::SendPositionVelocity(float position_deg, float max_velocity_rpm,
                                             float kd) {
-    if (!std::isfinite(position_deg) || !std::isfinite(max_velocity_deg_per_sec) ||
+    // 0x100+ID 帧只在位置速度模式下有效
+    if (spec_.mode != DmCtrlMode::kPositionVelocity) return motor::Status::kUnsupported;
+    if (!std::isfinite(position_deg) || !std::isfinite(max_velocity_rpm) ||
         !std::isfinite(kd) || kd <= 0.0f)
         return motor::Status::kInvalidArgument;
     uint8_t frame[8]{};
-    // 协议要求弧度与弧度/秒
+    // 协议要求弧度与 rad/s
     PutFloatLe(frame, position_deg * kDegToRad);
-    PutFloatLe(frame + 4, max_velocity_deg_per_sec * kDegToRad);
+    PutFloatLe(frame + 4, max_velocity_rpm * kRpmToRadPerSec);
     return SendCommand(frame, sizeof(frame)) == HAL_OK ? motor::Status::kOk
                                                        : motor::Status::kIoError;
 }
 
 // 速度模式：目标速度与扭矩限幅各一个 float 小端
-motor::Status DmMotor::SendVelocity(float velocity_deg_per_sec, float torque_limit_nm) {
-    if (!std::isfinite(velocity_deg_per_sec) || !std::isfinite(torque_limit_nm))
+motor::Status DmMotor::SendVelocity(float velocity_rpm, float torque_limit_nm) {
+    // 0x200+ID 帧只在速度模式下有效
+    if (spec_.mode != DmCtrlMode::kVelocity) return motor::Status::kUnsupported;
+    if (!std::isfinite(velocity_rpm) || !std::isfinite(torque_limit_nm))
         return motor::Status::kInvalidArgument;
     uint8_t frame[8]{};
-    // 协议要求弧度/秒
-    PutFloatLe(frame, velocity_deg_per_sec * kDegToRad);
+    // 协议要求 rad/s
+    PutFloatLe(frame, velocity_rpm * kRpmToRadPerSec);
     PutFloatLe(frame + 4, torque_limit_nm);
     return SendCommand(frame, sizeof(frame)) == HAL_OK ? motor::Status::kOk
                                                        : motor::Status::kIoError;

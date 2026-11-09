@@ -4,10 +4,10 @@
 /home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/private/pvoidvector.h:94:14:void** etl::pvoidvector::end()	16	static
 /home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/private/pvoidvector.h:660:14:void** etl::pvoidvector::erase(const_iterator, const_iterator)	40	static
 /home/ye/Projects/embedded/three_friction/Middlewares/Third_Party/etl/include/etl/private/pvoidvector.h:784:14:void** etl::pvoidvector::to_iterator(const_iterator) const	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:47:13:CanNode::~CanNode()	40	static
-/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:47:13:virtual CanNode::~CanNode()	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:63:24:CAN_HandleTypeDef* CanNode::Hcan() const	16	static
-/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:65:14:uint32_t CanNode::FeedbackId() const	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:51:13:CanNode::~CanNode()	40	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:51:13:virtual CanNode::~CanNode()	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:67:24:CAN_HandleTypeDef* CanNode::Hcan() const	16	static
+/home/ye/Projects/embedded/three_friction/UserCode/HAL/hal_can.hpp:69:14:uint32_t CanNode::FeedbackId() const	16	static
 /home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.hpp:51:21:constexpr float djiMotorSpec::KtOutput() const	16	static
 /home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.hpp:52:21:constexpr float djiMotorSpec::MaxTorque() const	24	static
 /home/ye/Projects/embedded/three_friction/UserCode/DRV/motor/drv_dji_motor.hpp:54:21:constexpr float djiMotorSpec::SpeedScale() const	16	static

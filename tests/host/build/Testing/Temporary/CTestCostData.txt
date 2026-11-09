@@ -1,8 +1,9 @@
-test_smoke 21 4.69817e-05
-test_dwt 21 4.837e-05
-test_ols 21 4.47333e-05
-test_crc 21 5.40767e-05
-test_pid 21 7.52977e-05
-test_kf 21 4.33985e-05
-test_ekf 21 0.00011232
+test_smoke 27 6.10838e-05
+test_dwt 27 4.50354e-05
+test_ols 27 5.19697e-05
+test_crc 27 4.77139e-05
+test_pid 27 6.19744e-05
+test_kf 27 4.63976e-05
+test_ekf 27 0.000107068
+test_vesc 4 0.000286072
 ---

@@ -1,8 +1,7 @@
-/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:29:6:void {anonymous}::OnUartError(void*, uint32_t)	0	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:17:8:{anonymous}::VofaState::~VofaState()	8	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:37:6:void vofa::Init(UART_HandleTypeDef*)	8	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:46:6:void vofa::Set(uint8_t, float)	0	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:51:19:HAL_StatusTypeDef vofa::Flush()	24	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:62:19:HAL_StatusTypeDef vofa::Send(uint8_t, float)	8	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:69:10:uint32_t vofa::ErrorCount()	0	static
-/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:70:1:cpp)	8	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:31:14:void {anonymous}::OnUartError(void*, uint32_t)	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:41:14:void vofa::Init(UART_HandleTypeDef*)	8	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:51:14:void vofa::Set(uint8_t, float)	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:57:27:HAL_StatusTypeDef vofa::Flush()	24	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:69:27:HAL_StatusTypeDef vofa::Send(uint8_t, float)	8	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:77:18:uint32_t vofa::ErrorCount()	0	static
+/home/ye/Projects/embedded/three_friction/UserCode/Common/vofa.cpp:78:1:cpp)	8	static

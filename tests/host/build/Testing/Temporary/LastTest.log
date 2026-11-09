@@ -1,10 +1,10 @@
-Start testing: Nov 07 00:40 CST
+Start testing: Nov 09 23:55 CST
 ----------------------------------------------------------
-1/7 Testing: test_smoke
-1/7 Test: test_smoke
+1/8 Testing: test_smoke
+1/8 Test: test_smoke
 Command: "/home/ye/Projects/embedded/three_friction/tests/host/build/test_smoke"
 Directory: /home/ye/Projects/embedded/three_friction/tests/host/build
-"test_smoke" start time: Nov 07 00:40 CST
+"test_smoke" start time: Nov 09 23:55 CST
 Output:
 ----------------------------------------------------------
 PID  out=1.000500  Dt=0.001000
@@ -15,15 +15,15 @@ test_smoke: PASS
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_smoke" end time: Nov 07 00:40 CST
+"test_smoke" end time: Nov 09 23:55 CST
 "test_smoke" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/7 Testing: test_dwt
-2/7 Test: test_dwt
+2/8 Testing: test_dwt
+2/8 Test: test_dwt
 Command: "/home/ye/Projects/embedded/three_friction/tests/host/build/test_dwt"
 Directory: /home/ye/Projects/embedded/three_friction/tests/host/build
-"test_dwt" start time: Nov 07 00:40 CST
+"test_dwt" start time: Nov 09 23:55 CST
 Output:
 ----------------------------------------------------------
 DeltaT[0]=0.001000000  DeltaT[15]=0.001000000  cpu=168000000 Hz
@@ -33,15 +33,15 @@ test_dwt: PASS
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_dwt" end time: Nov 07 00:40 CST
+"test_dwt" end time: Nov 09 23:55 CST
 "test_dwt" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/7 Testing: test_ols
-3/7 Test: test_ols
+3/8 Testing: test_ols
+3/8 Test: test_ols
 Command: "/home/ye/Projects/embedded/three_friction/tests/host/build/test_ols"
 Directory: /home/ye/Projects/embedded/three_friction/tests/host/build
-"test_ols" start time: Nov 07 00:40 CST
+"test_ols" start time: Nov 09 23:55 CST
 Output:
 ----------------------------------------------------------
 Order=3: k=-1621.851807 b=72.947487 std=0.720820
@@ -52,15 +52,15 @@ test_ols: PASS
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_ols" end time: Nov 07 00:40 CST
+"test_ols" end time: Nov 09 23:55 CST
 "test_ols" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-4/7 Testing: test_crc
-4/7 Test: test_crc
+4/8 Testing: test_crc
+4/8 Test: test_crc
 Command: "/home/ye/Projects/embedded/three_friction/tests/host/build/test_crc"
 Directory: /home/ye/Projects/embedded/three_friction/tests/host/build
-"test_crc" start time: Nov 07 00:40 CST
+"test_crc" start time: Nov 09 23:55 CST
 Output:
 ----------------------------------------------------------
 last: Crc8=0xDE Crc16=0xFB02 Ccitt=0xFB02
@@ -69,15 +69,15 @@ test_crc: PASS
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_crc" end time: Nov 07 00:40 CST
+"test_crc" end time: Nov 09 23:55 CST
 "test_crc" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-5/7 Testing: test_pid
-5/7 Test: test_pid
+5/8 Testing: test_pid
+5/8 Test: test_pid
 Command: "/home/ye/Projects/embedded/three_friction/tests/host/build/test_pid"
 Directory: /home/ye/Projects/embedded/three_friction/tests/host/build
-"test_pid" start time: Nov 07 00:40 CST
+"test_pid" start time: Nov 09 23:55 CST
 Output:
 ----------------------------------------------------------
 PID ImproveMask 位遍历完成（10 组）
@@ -90,15 +90,15 @@ test_pid: PASS
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_pid" end time: Nov 07 00:40 CST
+"test_pid" end time: Nov 09 23:55 CST
 "test_pid" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-6/7 Testing: test_kf
-6/7 Test: test_kf
+6/8 Testing: test_kf
+6/8 Test: test_kf
 Command: "/home/ye/Projects/embedded/three_friction/tests/host/build/test_kf"
 Directory: /home/ye/Projects/embedded/three_friction/tests/host/build
-"test_kf" start time: Nov 07 00:40 CST
+"test_kf" start time: Nov 09 23:55 CST
 Output:
 ----------------------------------------------------------
 final xhat = [0.039114 0.170801 0.014876]  (ref=[0.039114 0.170801 0.014876])
@@ -107,15 +107,15 @@ test_kf: PASS
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_kf" end time: Nov 07 00:40 CST
+"test_kf" end time: Nov 09 23:55 CST
 "test_kf" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-7/7 Testing: test_ekf
-7/7 Test: test_ekf
+7/8 Testing: test_ekf
+7/8 Test: test_ekf
 Command: "/home/ye/Projects/embedded/three_friction/tests/host/build/test_ekf"
 Directory: /home/ye/Projects/embedded/three_friction/tests/host/build
-"test_ekf" start time: Nov 07 00:40 CST
+"test_ekf" start time: Nov 09 23:55 CST
 Output:
 ----------------------------------------------------------
 final: q=[0.99800 0.00369 0.00122 0.02494] bias=[0.00001 0.00001]
@@ -125,8 +125,24 @@ test_ekf: PASS
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_ekf" end time: Nov 07 00:40 CST
+"test_ekf" end time: Nov 09 23:55 CST
 "test_ekf" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Nov 07 00:40 CST
+8/8 Testing: test_vesc
+8/8 Test: test_vesc
+Command: "/home/ye/Projects/embedded/three_friction/tests/host/build/test_vesc"
+Directory: /home/ye/Projects/embedded/three_friction/tests/host/build
+"test_vesc" start time: Nov 09 23:55 CST
+Output:
+----------------------------------------------------------
+test_vesc: PASS
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_vesc" end time: Nov 09 23:55 CST
+"test_vesc" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 09 23:55 CST
